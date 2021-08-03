@@ -6,6 +6,10 @@ path+=(/home/senaex/bin)
 export ZSH="/home/senaex/.oh-my-zsh"
 export DRONEAI_LIBRARY="/home/senaex/ALEX/DroneAI/Firmware/Flightcontroller/librarys/"
 
+#export LANG=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
+#export LC_CTYPE=en_US.UTF-8
+
 ###################Oh my zsh###############
 ZSH_THEME="senaex"
 
@@ -13,7 +17,6 @@ plugins=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-	zsh-z
 )
 
 ZSH_DISABLE_COMPFIX=true
@@ -21,14 +24,12 @@ ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 ###################Aliases#################
-alias mi="micro"
-alias smi="sudo micro"
-alias rc="vi /home/senaex/.zshrc"
+alias rc="vim /home/senaex/.zshrc"
 alias src="exec zsh"
 alias la="ls -al"
 alias ran="ranger"
 alias sran="sudo ranger"
-alias svi="sudo vi"
+alias vi="sudo vim"
 alias ipconfig="curl ifconfig.me"
 ###################Bookmarks###############
 alias A="cd /home/ALEX"

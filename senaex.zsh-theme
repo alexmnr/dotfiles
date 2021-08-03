@@ -1,8 +1,8 @@
-prompt_symbol=㉿
+prompt_symbol=⩓
 [ "$EUID" -eq 0 ] && prompt_symbol=💀
 
 username() {
-   echo "%F{%(#.red.blue)}%B%n$prompt_symbol%m%b"
+   echo "%F{%(#.red.blue)}%B%n $prompt_symbol %m%b"
 }
 
 current_dir() {
