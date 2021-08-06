@@ -8,60 +8,60 @@ Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
+" Colors
 colorscheme delek
 let g:airline_theme='simple'
 
-set clipboard=unnamedplus
-
+" Settings essential
 syntax on
-set number
-set ruler
-
-set encoding=utf-8
-
-" Whitespace
-set wrap
-set textwidth=79
-set formatoptions=tcqrn1
-set tabstop=3
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-set noshiftround
-
-" Cursor motion
-set scrolloff=3
-set backspace=indent,eol,start
-set matchpairs+=<:> " use % to jump between pairs
-runtime! macros/matchit.vim
-
-" Move up/down editor lines
-nnoremap j gj
-nnoremap k gk
-
-" Rendering
-set ttyfast
-
-" Status bar
-set laststatus=2
-
-" Last line
-set showmode
-set showcmd
-
-" Searching
-set hlsearch
+set number relativenumber
+set clipboard=unnamedplus
+set shiftwidth=4
+set tabstop=4
 set incsearch
 set ignorecase
 set smartcase
-set showmatch
-map <leader><space> :let @/=''<cr> " clear search
 
-map <leader>q gqip
+" Settings 
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+set nowrap
 
-set listchars=tab:▸\ ,eol:¬
-map <leader>l :set list!<CR> " Toggle tabs and EOL
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-cmap w!! w !sudo tee > /dev/null %
+" maybe sometime
+"set cursorcolumn
+
+" PLUGINS ---------------------------------------------------------------- {{{
+
+" Plugin code goes here.
+
+" }}}
 
 
+" MAPPINGS --------------------------------------------------------------- {{{
+
+" Mappings code goes here.
+
+" }}}
+
+
+" VIMSCRIPT -------------------------------------------------------------- {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" More Vimscripts code goes here.
+
+" }}}
+
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Status bar code goes here.
+
+" }}}
