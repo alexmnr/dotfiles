@@ -8,6 +8,13 @@ Plug 'joshdick/onedark.vim'
 
 call plug#end()
 
+" Keybindings
+map H 0
+map L $
+map Q :wq <CR>
+map <space> :noh <CR>
+cmap w!! w !sudo tee > /dev/null %
+
 " Colors
 colorscheme delek
 let g:airline_theme='simple'
@@ -18,9 +25,6 @@ set number relativenumber
 set clipboard=unnamedplus
 set shiftwidth=4
 set tabstop=4
-set incsearch
-set ignorecase
-set smartcase
 
 " Settings 
 set nocompatible
@@ -28,40 +32,18 @@ filetype on
 filetype plugin on
 filetype indent on
 set nowrap
+set incsearch
+set ignorecase
+set smartcase
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
 
 " maybe sometime
 "set cursorcolumn
-
-" PLUGINS ---------------------------------------------------------------- {{{
-
-" Plugin code goes here.
-
-" }}}
-
-
-" MAPPINGS --------------------------------------------------------------- {{{
-
-" Mappings code goes here.
-
-" }}}
-
-
-" VIMSCRIPT -------------------------------------------------------------- {{{
-
-" This will enable code folding.
-" Use the marker method of folding.
-augroup filetype_vim
-    autocmd!
-    autocmd FileType vim setlocal foldmethod=marker
-augroup END
-
-" More Vimscripts code goes here.
-
-" }}}
-
-
-" STATUS LINE ------------------------------------------------------------ {{{
-
-" Status bar code goes here.
-
-" }}}
