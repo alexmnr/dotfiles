@@ -1,17 +1,5 @@
 let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1
 argglobal
-vnoremap <buffer> <silent> [" :exe "normal! gv"|call search('\%(^\s*".*\n\)\%(^\s*"\)\@!', "bW")
-nnoremap <buffer> <silent> [" :call search('\%(^\s*".*\n\)\%(^\s*"\)\@!', "bW")
-vnoremap <buffer> <silent> [] m':exe "normal! gv"|call search('^\s*end\(f\%[unction]\|def\)\>', "bW")
-nnoremap <buffer> <silent> [] m':call search('^\s*end\(f\%[unction]\|def\)\>', "bW")
-vnoremap <buffer> <silent> [[ m':exe "normal! gv"|call search('^\s*\(fu\%[nction]\|def\)\>', "bW")
-nnoremap <buffer> <silent> [[ m':call search('^\s*\(fu\%[nction]\|def\)\>', "bW")
-vnoremap <buffer> <silent> ]" :exe "normal! gv"|call search('^\(\s*".*\n\)\@<!\(\s*"\)', "W")
-nnoremap <buffer> <silent> ]" :call search('^\(\s*".*\n\)\@<!\(\s*"\)', "W")
-vnoremap <buffer> <silent> ][ m':exe "normal! gv"|call search('^\s*end\(f\%[unction]\|def\)\>', "W")
-nnoremap <buffer> <silent> ][ m':call search('^\s*end\(f\%[unction]\|def\)\>', "W")
-vnoremap <buffer> <silent> ]] m':exe "normal! gv"|call search('^\s*\(fu\%[nction]\|def\)\>', "W")
-nnoremap <buffer> <silent> ]] m':call search('^\s*\(fu\%[nction]\|def\)\>', "W")
 setlocal keymap=
 setlocal noarabic
 setlocal noautoindent
@@ -28,8 +16,8 @@ setlocal cinkeys=0{,0},0),0],:,0#,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
 setlocal colorcolumn=
-setlocal comments=sO:\"\ -,mO:\"\ \ ,eO:\"\",:\"
-setlocal commentstring=\"%s
+setlocal comments=fb:-,fb:*,n:>
+setlocal commentstring=
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=
 setlocal conceallevel=0
@@ -46,15 +34,15 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal expandtab
-if &filetype != 'vim'
-setlocal filetype=vim
+if &filetype != 'text'
+setlocal filetype=text
 endif
 setlocal fixendofline
 setlocal foldcolumn=0
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
-setlocal foldlevel=1
+setlocal foldlevel=0
 setlocal foldmarker={{{,}}}
 setlocal foldmethod=manual
 setlocal foldminlines=1
@@ -69,11 +57,11 @@ setlocal iminsert=0
 setlocal imsearch=-1
 setlocal include=
 setlocal includeexpr=
-setlocal indentexpr=GetVimIndent()
-setlocal indentkeys=0{,0},0),0],:,!^F,o,O,e,=end,=},=else,=cat,=finall,=END,0\\,0=\"\\\ 
+setlocal indentexpr=
+setlocal indentkeys=0{,0},0),0],:,0#,!^F,o,O,e
 setlocal noinfercase
 setlocal iskeyword=@,48-57,_,192-255
-setlocal keywordprg=:help
+setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
 setlocal lispwords=
@@ -91,7 +79,7 @@ setlocal path=
 setlocal nopreserveindent
 setlocal nopreviewwindow
 setlocal quoteescape=\\
-setlocal noreadonly
+setlocal readonly
 setlocal relativenumber
 setlocal norightleft
 setlocal rightleftcmd=search
@@ -113,8 +101,8 @@ setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=
 setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'vim'
-setlocal syntax=vim
+if &syntax != 'text'
+setlocal syntax=text
 endif
 setlocal tabstop=4
 setlocal tagcase=
@@ -123,7 +111,7 @@ setlocal tags=
 setlocal termwinkey=
 setlocal termwinscroll=10000
 setlocal termwinsize=
-setlocal textwidth=78
+setlocal textwidth=0
 setlocal thesaurus=
 setlocal undofile
 setlocal undolevels=-123456
@@ -135,18 +123,12 @@ setlocal nowinfixwidth
 setlocal nowrap
 setlocal wrapmargin=0
 silent! normal! zE
-1,8fold
-10,20fold
-22,24fold
-26,32fold
-34,52fold
-let s:l = 7 - ((6 * winheight(0) + 26) / 53)
+let s:l = 96 - ((26 * winheight(0) + 26) / 53)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 7
-normal! 0
+keepjumps 96
+normal! 05|
 let &g:so = s:so_save | let &g:siso = s:siso_save
-nohlsearch
 doautoall SessionLoadPost
 " vim: set ft=vim :
