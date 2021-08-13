@@ -1,0 +1,843 @@
+# Nmap 7.91 scan initiated Wed Aug 11 14:18:53 2021 as: nmap -p443 -iL ./hosts/hosts.txt -vv -sV -oN ./https.txt
+Nmap scan report for 172.29.0.7 [host down, received no-response]
+Nmap scan report for 172.29.0.26 [host down, received host-unreach]
+Nmap scan report for 172.29.61.122 [host down, received host-unreach]
+Nmap scan report for 172.29.122.161 [host down, received no-response]
+Nmap scan report for 172.29.122.188 [host down, received no-response]
+Nmap scan report for 172.29.122.219 [host down, received no-response]
+Nmap scan report for 172.29.168.216 [host down, received host-unreach]
+Nmap scan report for 172.29.168.221 [host down, received no-response]
+Nmap scan report for 172.29.180.249 [host down, received no-response]
+Nmap scan report for 172.29.200.168 [host down, received no-response]
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #fcfcfc; color: #333333; margin: 0; padding:0; \}\nh1 \{ font-size: 1\.5em; font-weight: normal; background-color: #9999cc; min-height:2em; line-height:2em; border-bottom: 1px inset black; margin: 0; \}\nh1, p \{ padding-left: 10px; \}\ncode\.url \{ background-color: #eeeeee; font-family:monospace; padding:0 2px;\}\n</style>'
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.0 404 Not Found\r\n(?:[^<]+|<(?!/head>))*?<style>\nbody \{ background-color: #ffffff; color: #000000; \}\nh1 \{ font-family: sans-serif; font-size: 150%; background-color: #9999cc; font-weight: bold; color: #000000; margin-top: 0;\}\n</style>'
+Nmap scan report for 172.29.0.1
+Host is up, received echo-reply ttl 64 (0.00061s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.0.10
+Host is up, received reset ttl 127 (0.0015s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON        VERSION
+443/tcp closed https   reset ttl 127
+
+Nmap scan report for 172.29.0.22
+Host is up, received reset ttl 63 (0.00086s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.0.23
+Host is up, received reset ttl 63 (0.00075s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 97s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Apache httpd 2.4.46 ((Unix) OpenSSL/1.1.1k mod_wsgi/4.7.1 Python/3.7)
+
+Nmap scan report for 172.29.0.24
+Host is up, received timestamp-reply ttl 63 (0.0013s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.0.30
+Host is up, received reset ttl 63 (0.0017s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 98s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 nginx
+
+Nmap scan report for 172.29.1.1
+Host is up, received echo-reply ttl 64 (0.00097s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.2.1
+Host is up, received echo-reply ttl 64 (0.00071s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.52.1
+Host is up, received echo-reply ttl 64 (0.00076s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.52.254
+Host is up, received reset ttl 63 (0.0016s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.61.1
+Host is up, received echo-reply ttl 64 (0.00088s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.61.36
+Host is up, received timestamp-reply ttl 63 (0.0015s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.61.45
+Host is up, received reset ttl 63 (0.019s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.64.1
+Host is up, received echo-reply ttl 64 (0.00060s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.64.51
+Host is up, received echo-reply ttl 63 (0.0021s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON                                VERSION
+443/tcp filtered https   port-unreach from 172.29.172.1 ttl 64
+
+Nmap scan report for 172.29.68.1
+Host is up, received echo-reply ttl 64 (0.00064s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.90.1
+Host is up, received echo-reply ttl 64 (0.00059s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.93.1
+Host is up, received echo-reply ttl 64 (0.00076s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.110.1
+Host is up, received echo-reply ttl 64 (0.00084s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.110.33
+Host is up, received reset ttl 59 (0.0025s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.112.1
+Host is up, received echo-reply ttl 64 (0.00048s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.112.30
+Host is up, received echo-reply ttl 254 (0.0021s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 102s
+
+PORT    STATE SERVICE        REASON         VERSION
+443/tcp open  ssl/tcpwrapped syn-ack ttl 63
+
+Nmap scan report for 172.29.114.1
+Host is up, received echo-reply ttl 64 (0.00040s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.120.1
+Host is up, received echo-reply ttl 64 (0.00048s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.120.96
+Host is up, received syn-ack ttl 63 (0.87s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 103s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  tcpwrapped syn-ack ttl 63
+
+Nmap scan report for 172.29.122.1
+Host is up, received echo-reply ttl 64 (0.00070s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.124.1
+Host is up, received echo-reply ttl 64 (0.00043s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.124.66
+Host is up, received reset ttl 63 (0.069s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.124.200
+Host is up, received echo-reply ttl 253 (0.0053s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.126.1
+Host is up, received echo-reply ttl 64 (0.00069s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.126.43
+Host is up, received reset ttl 63 (0.0016s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.128.1
+Host is up, received echo-reply ttl 64 (0.00042s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.130.1
+Host is up, received reset ttl 64 (0.00050s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.130.30
+Host is up, received reset ttl 63 (0.0013s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.132.1
+Host is up, received reset ttl 64 (0.00061s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.132.34
+Host is up, received syn-ack ttl 63 (0.0068s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 99s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 63
+
+Nmap scan report for 172.29.134.1
+Host is up, received reset ttl 64 (0.00052s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.134.21
+Host is up, received syn-ack ttl 63 (0.0016s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 101s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 FRITZ!Box http config
+Service Info: Device: broadband router
+
+Nmap scan report for 172.29.134.22
+Host is up, received admin-prohibited ttl 63 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON                  VERSION
+443/tcp filtered https   admin-prohibited ttl 63
+
+Nmap scan report for 172.29.136.1
+Host is up, received reset ttl 64 (0.00064s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.136.19
+Host is up, received reset ttl 63 (0.020s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 102s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 63
+
+Nmap scan report for 172.29.136.198
+Host is up, received echo-reply ttl 254 (0.0041s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.144.1
+Host is up, received reset ttl 64 (0.00056s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.144.36
+Host is up, received reset ttl 63 (0.0038s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 101s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.30 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.148.1
+Host is up, received reset ttl 64 (0.00049s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.160.1
+Host is up, received reset ttl 64 (0.00084s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.160.254
+Host is up, received syn-ack ttl 63 (0.0013s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 98s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 nginx 1.14.2
+
+Nmap scan report for 172.29.164.1
+Host is up, received reset ttl 64 (0.00048s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.164.35
+Host is up, received reset ttl 63 (0.016s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 103s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.30 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.164.92
+Host is up, received reset ttl 63 (0.0011s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.168.1
+Host is up, received reset ttl 64 (0.00048s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.168.10
+Host is up, received timestamp-reply ttl 63 (0.0014s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.168.11
+Host is up, received reset ttl 63 (0.0012s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.168.35
+Host is up, received reset ttl 63 (0.0067s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.168.120
+Host is up, received reset ttl 63 (0.0040s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 105s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.20 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.168.130
+Host is up, received echo-reply ttl 63 (0.0045s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.180.1
+Host is up, received reset ttl 64 (0.00079s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.180.233
+Host is up, received syn-ack ttl 63 (0.0036s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 100s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 63
+
+Nmap scan report for 172.29.180.241
+Host is up, received reset ttl 63 (0.055s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.180.242
+Host is up, received reset ttl 63 (0.063s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.180.246
+Host is up, received reset ttl 63 (0.063s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.184.1
+Host is up, received reset ttl 64 (0.00064s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.188.1
+Host is up, received reset ttl 64 (0.00049s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.188.241
+Host is up, received reset ttl 63 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.192.1
+Host is up, received reset ttl 64 (0.00072s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.196.1
+Host is up, received reset ttl 64 (0.00061s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.196.190
+Host is up, received echo-reply ttl 254 (0.87s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.200.1
+Host is up, received reset ttl 64 (0.00061s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.200.13
+Host is up, received reset ttl 63 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.200.15
+Host is up, received syn-ack ttl 63 (0.88s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 99s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.20 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.200.34
+Host is up, received reset ttl 59 (0.0024s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 105s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.200.35
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.200.36
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 105s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.200.37
+Host is up, received reset ttl 59 (0.0019s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.200.38
+Host is up, received reset ttl 59 (0.0014s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.204.1
+Host is up, received reset ttl 64 (0.00058s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.204.8
+Host is up, received echo-reply ttl 63 (0.0017s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 102s
+
+PORT    STATE SERVICE   REASON         VERSION
+443/tcp open  ssl/https syn-ack ttl 63 Apache/1.3.33 (Unix) DAV/1.0.3 PHP/4.3.11
+
+Nmap scan report for 172.29.204.11
+Host is up, received reset ttl 63 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 103s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 63
+
+Nmap scan report for 172.29.204.12
+Host is up, received reset ttl 63 (0.0020s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.204.14
+Host is up, received syn-ack ttl 63 (0.0027s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 100s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 63
+
+Nmap scan report for 172.29.204.35
+Host is up, received timestamp-reply ttl 63 (0.0017s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.204.50
+Host is up, received echo-reply ttl 127 (0.0011s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.204.136
+Host is up, received echo-reply ttl 63 (0.082s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.204.210
+Host is up, received echo-reply ttl 63 (0.0036s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 99s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 HP PageWide 377dw MFP printer http config (Serial CN0C3MX022)
+Service Info: Device: printer; CPE: cpe:/h:hp:pagewide_377dw_mfp
+
+Nmap scan report for 172.29.204.213
+Host is up, received echo-reply ttl 63 (0.0059s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.204.215
+Host is up, received reset ttl 63 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.204.223
+Host is up, received reset ttl 63 (0.0079s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.208.1
+Host is up, received echo-reply ttl 64 (0.00058s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.208.10
+Host is up, received reset ttl 63 (0.034s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 98s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.20 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.208.14
+Host is up, received reset ttl 63 (0.0027s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 97s
+
+PORT    STATE SERVICE  REASON         VERSION
+443/tcp open  ssl/http syn-ack ttl 63 Debut embedded httpd 1.20 (Brother/HP printer http admin)
+Service Info: Device: printer
+
+Nmap scan report for 172.29.208.35
+Host is up, received reset ttl 59 (0.0021s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 107s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.36
+Host is up, received reset ttl 59 (0.0025s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.38
+Host is up, received reset ttl 59 (0.0024s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 110s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.39
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 109s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.40
+Host is up, received echo-reply ttl 59 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.41
+Host is up, received reset ttl 59 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 105s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.42
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.43
+Host is up, received reset ttl 59 (0.0026s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 106s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.44
+Host is up, received reset ttl 59 (0.0022s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 106s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.45
+Host is up, received reset ttl 59 (0.0024s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 106s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.208.46
+Host is up, received reset ttl 59 (0.0020s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 104s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.212.1
+Host is up, received reset ttl 64 (0.00085s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.212.10
+Host is up, received reset ttl 63 (0.0023s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.212.25
+Host is up, received reset ttl 63 (0.0015s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 97s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  tcpwrapped syn-ack ttl 63
+
+Nmap scan report for 172.29.212.28
+Host is up, received reset ttl 59 (0.0033s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 106s
+
+PORT    STATE SERVICE    REASON         VERSION
+443/tcp open  ssl/https? syn-ack ttl 59
+
+Nmap scan report for 172.29.212.30
+Host is up, received timestamp-reply ttl 63 (0.00085s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.224.1
+Host is up, received echo-reply ttl 64 (0.00052s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.236.1
+Host is up, received echo-reply ttl 64 (0.00053s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.240.1
+Host is up, received reset ttl 64 (0.00039s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+
+Nmap scan report for 172.29.240.254
+Host is up, received reset ttl 63 (0.0028s latency).
+Scanned at 2021-08-11 14:18:54 CEST for 24s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 63
+
+Nmap scan report for 172.29.172.209 [host down, received no-response]
+Nmap scan report for 172.29.172.1
+Host is up, received arp-response (0.00054s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 89s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+MAC Address: 00:1A:8C:F0:92:80 (Sophos)
+
+Nmap scan report for 172.29.172.102
+Host is up, received arp-response (0.00029s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 89s
+
+PORT    STATE  SERVICE REASON       VERSION
+443/tcp closed https   reset ttl 64
+MAC Address: E4:95:6E:44:68:17 (Ieee Registration Authority)
+
+Nmap scan report for 172.29.172.109
+Host is up, received arp-response (1.1s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 100s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+MAC Address: 74:46:A0:94:51:95 (Hewlett Packard)
+
+Nmap scan report for 172.29.172.116
+Host is up, received arp-response (0.00033s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 89s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+MAC Address: 62:F2:3A:DF:4A:1C (Unknown)
+
+Nmap scan report for 172.29.172.142
+Host is up, received arp-response (0.00039s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 89s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+MAC Address: 74:46:A0:96:4E:88 (Hewlett Packard)
+
+Nmap scan report for 172.29.172.237
+Host is up, received arp-response (1.1s latency).
+Scanned at 2021-08-11 14:19:15 CEST for 100s
+
+PORT    STATE    SERVICE REASON      VERSION
+443/tcp filtered https   no-response
+MAC Address: 88:51:FB:66:39:8E (Hewlett Packard)
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Aug 11 14:20:55 2021 -- 127 IP addresses (116 hosts up) scanned in 121.95 seconds

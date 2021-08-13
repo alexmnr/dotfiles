@@ -1,0 +1,2177 @@
+# Nmap 7.91 scan initiated Tue Aug 10 21:32:04 2021 as: nmap -iL ./Documents/KGS/hosts/ssh.txt -p22 --script ssh* -vv -O -oN ./Documents/KGS/ssh-brute.txt
+Nmap scan report for 172.29.0.22
+Host is up, received echo-reply ttl 63 (0.00096s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 673s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   2048 06:61:1d:e2:a4:37:e2:4c:9a:f0:ba:8d:72:90:eb:c8 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDIE9RddmUeDVvSqcKmJVZ1vCayMRKrMU6uUrEaVolW78Hn6fRDRQH+nWlRqKYwI4gJYgPyCYPJu5s6w3BVIZS+l++aumhKHs24kedU/GM9g/Vtl6lSnkD1zYw8JyKn2lJtxNvAca/bf+iceF1uMPNNE2yHOW+qI1lfSItn2BYHw6LsID70a1zmDG0hvG//hhfG9jSiMBpuUa4xWFWJC8ZBFr3co5zzHa/SonXS6TyXN1wdofwTsLcDARR82K4kq7g5I4ZFrDZXSPmlvhfH/IHFp/sIlbjJchmDzfRWiW3aPvW7gNofllSPeHHcwoo34EnsHz092v1PNlsIQ7mPMUvZ
+|   256 4c:bf:a2:b5:9b:85:c3:8a:27:da:d8:46:6f:9b:90:48 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBrU++YozkpgD3peXDK8yX6qlmQZMN+oqFYL3aGhTfa1OQbOCBgp/2E5mhqFdIdSZU6OGU0NkTr9W38BdqlbWnY=
+|   256 08:77:ad:7e:51:ee:d6:2d:16:14:72:20:6c:af:4d:a5 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHKNFa3WytBjrlDnlYcqiAnjk52O6gOCAswwyFPGYTDd
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (5)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ssh-rsa
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.6, Linux 5.0 - 5.4
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=%PV=Y%G=N%TM=6112D6E9%P=aarch64-unkn
+OS:own-linux-gnu)SEQ(SP=108%GCD=1%ISR=10B%TI=Z%II=I%TS=A)OPS(O1=M5B4ST11NW7
+OS:%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST1
+OS:1)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%DF=Y%TG=40
+OS:%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T2(
+OS:R=N)T3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R=Y%DF=Y%TG=4
+OS:0%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%TG=40%CD=S)
+
+Uptime guess: 7.912 days (since Mon Aug  2 23:50:17 2021)
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.0.23
+Host is up, received echo-reply ttl 63 (0.0012s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 682s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-keyex
+|     gssapi-with-mic
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   2048 5d:a0:db:e9:43:e0:9a:db:fb:f0:f0:a5:d3:6c:ce:9f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkbfFVJazy7vCnxyQhl+StQloxCg1cP6DnlqvTto6TsC/SdIFoXuf5eYbIis2WNCZmE015GBBys1w1sf/T4sNyI9R3OUKHSmMCht5qXcBosO74j3lbKGP5W0XpBLs4sh6xaKAzBfaTrP7mbCOaPW1gb5J2/R9MV1DxkwKaNPsu6HpZZ5t+SBATmIh9yGfrCm05TdO+cidcIL8cq0hkQw+mp/RfPq41Ei/zYJHUJbZvcogeNWUzYfZkYiN5sq8HDz0X6JHVA0CdmGAnz4wD9Jg3+4KsoOSRtw/tuQrEAdzyf+Q1cfXzgQCs+DyV/WqvBpKkU9yrWyDyASoUEmaH8DHT
+|   256 dc:2f:31:30:27:98:94:11:1d:4a:cd:48:61:fb:22:7b (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFfxFS8W7Fo1uT6/lxhm9uPfMjA1UGecuYH3/5BdvcKkjhgoAkOoW9OnGuJ8CRSKRSQy+BXZiQ0I7FpLovB67vs=
+|   256 13:5b:8d:9f:7c:57:e9:02:75:22:c7:0e:08:76:91:54 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAlBEiiYguFwOJI3yXwBq5vCQb9AnlQeQ/unQrmY0Ezw
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (12)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (5)
+|       ssh-rsa
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (12)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|       aes128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       3des-cbc
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.9
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=%PV=Y%G=N%TM=6112D6E9%P=aarch64-unkn
+OS:own-linux-gnu)SEQ(SP=10A%GCD=1%ISR=10F%TI=Z%TS=A)OPS(O1=M5B4ST11NW7%O2=M
+OS:5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN
+OS:(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%TG=40%W=72
+OS:10%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T
+OS:3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%T
+OS:G=40%CD=S)
+
+Uptime guess: 3.393 days (since Sat Aug  7 12:17:12 2021)
+TCP Sequence Prediction: Difficulty=266 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.0.24
+Host is up, received echo-reply ttl 63 (0.0015s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 670s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-keyex
+|     gssapi-with-mic
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   2048 6f:20:58:6f:9f:10:cc:86:bc:76:72:3a:e7:d7:3f:4b (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCv7SXgospMXfjRAQtIFtCaMD7oysh6eGvbd5OAnaryRYAJKS6t3pzwEVgVCTKkt4tZh2oxi+i/wS4oDmsyy5y/EtkLx2j1zTz7o7cCE3F9Z7jsMQrkvd5kgFNpVHKKXLCQwRL6lPLJL/hFX/BbOTDynUxv/ct17kzMr2yKKuEjMuHUEaUZzUCqHUzp8Xoa9dMeyyao01pN9dKf+V/bekkgx3zxh4w0kkEGM80HRZFXyoW4FaRNPIv1R3S4CTGODB40ojqj2FTiVirBbj6Kc/bA4w+jO9SYOg1sNPzb+UenE3qdW4xGJYh9LDIynxWEerS/Pge4L4NDV/fNGxvql/sX
+|   256 22:08:e1:c6:53:88:c3:9c:43:f0:e7:5f:82:5e:5d:e7 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCVkV3/oDhJTO4Aptfy8FcQTD/XG4Rv/C09ai0ox4sH31bROrbWz223JYHuk+xxunOQyg69LNTzMYyhHkjLxNWk=
+|   256 c3:04:84:50:07:4a:af:68:e6:cd:08:15:7e:db:a4:b3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA/n11drsXkXaNZ7aqBfdrGLa1RKwivD2PIUJTdQHeO1
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (12)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (5)
+|       ssh-rsa
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (12)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|       aes128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       3des-cbc
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.11, Linux 3.2 - 4.9
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=%PV=Y%G=N%TM=6112D6E9%P=aarch64-unkn
+OS:own-linux-gnu)SEQ(SP=101%GCD=1%ISR=110%TI=Z%TS=A)OPS(O1=M5B4ST11NW7%O2=M
+OS:5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST11)WIN
+OS:(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%TG=40%W=72
+OS:10%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T
+OS:3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DFI=N%T
+OS:G=40%CD=S)
+
+Uptime guess: 18.849 days (since Fri Jul 23 01:21:30 2021)
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.52.254
+Host is up, received reset ttl 63 (0.0011s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 685s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 f4:6f:7e:7b:0c:6a:56:e1:ec:79:d6:45:9b:c4:a9:c6 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAM9dWz97e0kia1fNnYGyUjOVinUDMZeKSo21qGp2zjoJCVx+OGgtytnMnqQozGM2Y++nypBnLnnfwFq+RWVAK/1GTTfLpN9oH4svwa/wuS7wKg0k2865v8RRaBxaZh1VuVrxDvZTZZahk+99gS//03QeQCRIJJZteN1xv3f1WdBdAAAAFQC+H9a3PY4VORFqVcwCV7R3QyayzwAAAIB82bthjKYvSmYagBNUfZ5pua952H1lhW/KY/EQrRqFji4vngb7IQTtkyAIORpzmqR7Whf5WJidNAmcnBwtoBpPmvbZgZZeFmHXsiq4QPhS5HyVSUsHN822PKM9jHRHWFDK1vvGxJEUpUkdvHEUY9rcfi2LC9pUPoORq6ss27poogAAAIBKhf3Qz8yg5EmCh2AGxGHKPFRgynevnI7mWXJBDQ0VmxazkR9G5WOttVFGV3+UHb6l4b9zw8qptE7VBVcGI0rL7D0Zgl7ecEaUQ06SBK3NrfjhdMtsDgYuAnb//iZxm6GiXf4Tji5zsBNqzpRcTiOUKsDMIcdBvodFgOxlDtCPQQ==
+|   2048 11:39:b7:3e:74:90:ef:06:a7:63:0d:5a:e4:b7:c3:b9 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA05XPXd6lUw/3UNR4lyrIbXE7+6AAlIr9WV95Lm27vswHKfJ9WDVJq5s8fv3R12L4teZKciELp0TGeGvRNdVIFHEIT0CLcFcf7Y5S9LuM3oTOTnzLack2yj4Yugkv34sNvHqUzmyIAAhNn0nOoDyPi8+5xZZah/F9rv1BqjanNRijmNiP0VeKLXIQ27+65a63D9etTml1N2QhLjVSs0zhOReUfQ+APlLW8GC2CqOOf1CQvzOyz+77tozTEPkQ8cAyDghheyLSprczgt4Fi7YkKWy7z5Ts5A2XMkQqQFQgL/rP9rdyz2xdTdnRMNWIyUGsNE9B7W27purvRCkftgWHMw==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (3)
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms: (13)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       arcfour256
+|       arcfour128
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       arcfour
+|       rijndael-cbc@lysator.liu.se
+|   mac_algorithms: (6)
+|       hmac-md5
+|       hmac-sha1
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.18
+OS details: Linux 2.6.18
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=44608%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=108%TI=Z%CI=Z%TS=8)OPS
+OS:(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST1
+OS:1NW7%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN
+OS:(R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW7%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Uptime guess: 0.456 days (since Tue Aug 10 10:46:42 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.61.45
+Host is up, received reset ttl 63 (0.0043s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 683s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 6e:b0:5b:85:9e:56:c9:dd:f5:87:1b:00:02:29:14:a8 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAMZKxT2F4sHTe8sEoqC2BUhi4GpmSpxhO4+10AOzSIMDaHd/tDu50ORg3KmBUornGfjbXgrz8yyjGkkaph7QpCQ13trNp+4YuyamStbuF/4BDQNTYTCr7aU2TZQQufvlkfsmkpb2yEKpEjV3wleJyYvjmB0wiPmXe7wBzwi6aeTzAAAAFQCznclNOfdtl5Ht9/D0Vr54Car3ZQAAAIEAs1I6fqE+Kt00OI/9eAoRuTckiJe8FIaHCuVuPFk0u2gWkohJOXtPZhyPlg0JaIH7NTTgwmC+W6bkOq0ksIYr8UpyHLyHvnQbOAdyebS5hBWo2ZU+rbmTtsjiiFxMDxF5wsgQPS7uGhxkq5Di03egFj1qiXEWaBZsUHfJ9LSpLWkAAACBAJqRxbyHgnQY0TE4Z0gd70Riv5cyHTmiWSpBlTfvEFoZulHPbUITtgFzPNfH7OZDH6OAOvtv225CgGC2afixfsfoEx0gId3S695mIjJTQA+Jq4K9noYDe9yjA9/J1/lLQ9STovRA0qDuFMbtriCeeEzeb3G4w9vJ2US1tw3ESMqe
+|   1040 9f:c2:1c:d6:c9:17:cb:d5:92:01:ba:7c:71:df:3b:ed (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgwCPn2EgaE9p+ugHZxxOaDXN+G2Ro8xrK1ug65rDPspdiREwlFNni9sLudo2vt/yAB+NoBilMbivoeuNlJhwFunvLpJPa3VdPKA+ewGgWWC3O+5eTa2tyPOrb9kKhzCi98W8iR8FVVS8IR7GjHokZqHaISIv6sXCi5jQXReTw30WTi8p
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms: (9)
+|       aes128-ctr
+|       3des-ctr
+|       aes256-ctr
+|       aes128-cbc
+|       3des-cbc
+|       aes256-cbc
+|       twofish256-cbc
+|       twofish-cbc
+|       twofish128-cbc
+|   mac_algorithms: (3)
+|       hmac-sha1-96
+|       hmac-sha1
+|       hmac-md5
+|   compression_algorithms: (1)
+|_      none
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.17 - 2.6.36
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=42455%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=CC%GCD=1%ISR=CC%TI=Z%CI=Z%TS=8)OPS(O
+OS:1=M5B4ST11NW2%O2=M5B4ST11NW2%O3=M5B4NNT11NW2%O4=M5B4ST11NW2%O5=M5B4ST11N
+OS:W2%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R
+OS:=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW2%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%
+OS:RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A=S+%F=AS%O=M5B4ST11NW2%RD=0%
+OS:Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%
+OS:A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%
+OS:DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIP
+OS:L=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 183.060 days (since Mon Feb  8 19:16:37 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=204 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.110.33
+Host is up, received echo-reply ttl 59 (0.0016s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 664s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 22 guesses in 29 seconds, average tps: 0.7
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (98%), Lancom LCOS 8.X|9.X|6.X|7.X (98%), Crestron embedded (89%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (98%), Lancom LCOS 9.20 (96%), Lancom WAP (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (94%), Lancom L-54g WAP (LCOS) (90%), Lancom LCOS 8.00 (89%), Crestron CNMSX-AV control and automation system (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=40526%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=104%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=249 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.160.254
+Host is up, received syn-ack ttl 63 (0.0015s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 665s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     password
+|_    keyboard-interactive
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 9 guesses in 13 seconds, average tps: 0.7
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   2048 ad:5b:07:b5:34:50:d1:9d:19:e3:4e:2a:97:9b:37:99 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoW7Z3nEtZlpW+n558OawGi3S2J6yKiAnMraCaZhFRBsGHeboMXVu73yhtcrdmGq49+GD6Ure9OwE35/5JiMiim3JnTOhEdvT1+lpAyMO3+JKWXZfA5mpcxQisf0hwk202t+z0GtUgFxnnRHlxXYnqAJcGOo11J4nksTSWigiuDJVziu2glWQ/C3vZxZNNmWQP3PpkUNkTcLA1VUcJsXZlAjAY3mxmQmRnBPGbE/YjMpEgbkvEQ9t3d6LI2IuX8Wmv/g/oCq3YmkfP6u9PBbHIHVB3L88KXxo5y/UF+BDwAT/etQQH/jjsf1UN8cNx1lp9BObfy27GQnEQE4devK4t
+|   256 80:ea:4a:a2:7f:d4:ad:bf:30:4c:28:4c:2f:d6:f3:3d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH+27O5bUEjRqq9SY/vh0UuhQ3R8zvn8IVliAJDaWGIIGQzWp233s+9/W7NXuFpFpY8pegeurMALPdgRn1RXI1k=
+|   256 38:cf:3e:97:e9:ae:d5:5b:f6:ec:14:5f:7a:71:ce:ea (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEpdrzhdhBAbP/ttKt8ShUrZnpIHxTG02NvTjq8wSg3k
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (10)
+|       curve25519-sha256
+|       curve25519-sha256@libssh.org
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group16-sha512
+|       diffie-hellman-group18-sha512
+|       diffie-hellman-group14-sha256
+|       diffie-hellman-group14-sha1
+|   server_host_key_algorithms: (5)
+|       rsa-sha2-512
+|       rsa-sha2-256
+|       ssh-rsa
+|       ecdsa-sha2-nistp256
+|       ssh-ed25519
+|   encryption_algorithms: (6)
+|       chacha20-poly1305@openssh.com
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       aes128-gcm@openssh.com
+|       aes256-gcm@openssh.com
+|   mac_algorithms: (10)
+|       umac-64-etm@openssh.com
+|       umac-128-etm@openssh.com
+|       hmac-sha2-256-etm@openssh.com
+|       hmac-sha2-512-etm@openssh.com
+|       hmac-sha1-etm@openssh.com
+|       umac-64@openssh.com
+|       umac-128@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-512
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:/o:linux:linux_kernel:4 cpe:/o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.6, Linux 5.0 - 5.4
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=%PV=Y%DC=I%G=N%TM=6112D6E9%P=aarch64
+OS:-unknown-linux-gnu)SEQ(SP=102%GCD=1%ISR=10B%TI=Z%TS=A)OPS(O1=M5B4ST11NW7
+OS:%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11NW7%O6=M5B4ST1
+OS:1)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%DF=Y%TG=40
+OS:%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%TG=40%S=O%A=S+%F=AS%RD=0%Q=)T2(
+OS:R=N)T3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)U1(R=N)IE(R=Y%DF
+OS:I=N%TG=40%CD=S)
+
+Uptime guess: 2.041 days (since Sun Aug  8 20:45:04 2021)
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.168.10
+Host is up, received reset ttl 63 (0.0012s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 669s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 97:72:70:16:cb:61:f7:27:79:e1:30:79:82:32:d9:a4 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAMLTVrfGibDBurFuUkJTR6FOFJpgdigx/q92RmeJsmY0qcAOxq4RilgHfvUARrscRYLmOHC4rggtfrBUunfk8QM+GcsVL6mwmcyXAfigbzuOirVZVgi/KsHvtR+JtGeGnhi5JurcMabtVdjPCamrhpWYsTkDxKf2ZWR3s0Pi3vihAAAAFQDh7YvPse65hiB1QhP6qp/IK5xb8QAAAIEAnqYZC54CYQjcW3egzTfHUpQqndxtP7DGRUHKLMreGkeQHxvp17DG8pkA0rpgeEq9hq+SiuUep7ny9s/++H3W8XH56CKCOGNZe7fXaCsJuTG0Vz152uwtD1Uu61BcdrhwUSOmEqsjB4niCj2y0lRs7ZQe3W1AhCQy1v7l+sACoxkAAACALjSyTogNygO2L0wvmJB/73ytrzR52mnTM2047J2IHp7+jMywCTl2F1qXFd25wze5XNOwahPBtSCk+jgirE2YjyaidOyp2RfOf2HFPnns2/AsHVKwIMGjq1KEMqqRQYj4QS4joV1+0mxMWztpA6Ztkl/a7OcGx/LO9H3NsnMru54=
+|   2048 34:eb:e0:fb:60:d7:fc:7d:a6:ee:9c:d7:74:87:43:44 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzN7dNAigPvO68Tu3L7r5vbbjU0rQwtwPovFiaXNmn1JbU3wBgiOk1cmnXYblcOamSrHuFMEbYC/D0L3sNFvxYrZfhWnHHjKt6GtSUrpTLTF1gB+jJhiHIFKy/o20Bw1hbguC2SKzYvUdvEmlFCNha3MCQ7eRhrLoyROZXuP331P1vRIfjg68ON/W/Z5xsdtFRQQeZ8CcLB1j2ytp/HB7kdEhJp1b7IjZNcD1YYVR84xI2u1lazC+9vENRZpWxYSFZaRGeqTsjAJ4I4BidL4M/C2eUs2hcxlokcAEXntPP2VCwWD44au4AIH7PScck/d1u5mVdtkwsg/CpZyyvZWu5w==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (3)
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms: (13)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       arcfour256
+|       arcfour128
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       arcfour
+|       rijndael-cbc@lysator.liu.se
+|   mac_algorithms: (6)
+|       hmac-md5
+|       hmac-sha1
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.18
+OS details: Linux 2.6.18
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=34286%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=105%GCD=1%ISR=108%TI=Z%CI=Z%TS=A)OPS
+OS:(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST1
+OS:1NW7%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN
+OS:(R=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW7%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=A
+OS:S%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R
+OS:=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F
+OS:=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%
+OS:T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD
+OS:=S)
+
+Uptime guess: 0.143 days (since Tue Aug 10 18:17:58 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.200.34
+Host is up, received echo-reply ttl 59 (0.0021s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 675s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 c3:a5:79:ea:9c:88:01:51:74:f3:87:4f:69:2c:90:f5 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAMntAcs3INnq+uuLo5fdRYZ/qyPhkfUVGazOxpcviFfZV39915IKB4YHYZXP96MJY0KD3++DWukKSBEJlYSC9G85wbuTUGVXf3jyHfBZnIqvBL6S97ekGeM4uZCU0qKvvIlSOLl2ksXWHoNu6hrDkqBHJQGnnWkNMSjQgpXLYckTAAAAFQCsNV16zkfArw8RqEf8dgfSMMhyUwAAAIAQf7xYyV/4XWDXc1w74AS3YxUklU56Lke3bmCWbCKt2eN7KiowBPrchZiOLcj7IbOcNTqzC5LfS6yr/JzAX+61usS5hAs40rJVAHmQS2qDqEh/QraEx+goz3yPjXBM20bXzwblK9Pg0crbnVEY916Uaixlw74LXPQkHSjYANGt3AAAAIA22fhk932TUlB1KoO5pO9/huZ8McFp+PcywrAPnvwMUjcyh6mautpD5rZb8bnymCf5deHLjPdMi5MCjDfqGmVydZrGKpXrQ7kDbK+j3XPzDULTGtv/PaXNZgSfauPDMPB96okrkmZp8KtZemTnwgbnGpl292gdMa9ldZePYaobCQ==
+|   2048 08:46:88:70:fa:af:65:dc:85:7e:4f:2a:e3:c3:a1:e1 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABEQAAAQEA73+0KAwEDuks11WGZ6dK5XGrGcVTzcDL+FWKj7h4xq1OaASQlZctJQZg+egv9jhSmR+9ysv6GwajqlSexgJrFBIXqWGE5ebuFoqtcl6drDTGA7GAGEdYx7FZ4kkwXsDj7bvobE81sItRwp0wWlewcHa5F1ne2aYnfqtiU0cIb2syPdWVNyiPsgBgynXdw1WD5kvC5Oty+RcYXHkyqEOXv1uFt+wukqUAFOmKmdvtwAsAK/9T6wVX3H5K1dTqkEhbGK3ycoZFdPg/4UwoT2NlH5xof+mKttdzkJP/AaOwMp5QfEgtkb6NX8clyBhWbE+WTe5eeqkzcLYvTVZSA4Ed7w==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (96%), Lancom WAP (96%), Lancom LCOS 9.20 (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (91%), Lancom L-54g WAP (LCOS) (89%), Lancom 821+ ADSL modem (LCOS 7.70) (88%), Lenel LNL-2220 access control board (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=41143%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=107%GCD=1%ISR=109%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4NW4%O2=M5B4NW4%O3=M5B4NW4%O4=M5B4NW4%O5=M5B4NW4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4NW4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.200.35
+Host is up, received echo-reply ttl 59 (0.0021s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 671s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 f1:25:ef:f3:5b:8a:02:d0:3d:a8:8d:14:8b:1f:f2:9a (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBALNbubT7E/hGf+GL6LjdShJawma1dlGH5lGnlyXmGQgTqWmHsvSEM1mWOMMIkXQp2jAdJsKNAEDc1qNtHgEOFu3C2+K1sIJhPNucKKGnM8OfBPQH/uaP2Tp69oKvE8f8bC52JhwhBdW+1YJkR/dE1P7GYhpvbmetLhyFuBn2QVOHAAAAFQD2jHm/u6nBF523X8CoiYFVeTNoYQAAAIAkxkixjAamDsNTKaq05Zlzjf4cOlAdfy5B7RJ2FAHxnN5gslp6VPyru3H72DznmlgcKUMCDMOSUMM5SoEKlDixObJn5UUr8F+97gNKazmkmpXOWWgz93Z7Iy7KB4D9X0jM4h9Zo6pTE0AwtdA3t5Fk6xi//Q6eVH/5qRrgz32magAAAIAxpdZmuzwV13Xd+iqE30R885RS+q1mZg3oESL4ANW5/VtaDmob2m0aP1X3dyuKsa4mtU0hBaKeyvsvsEbwcIs2NMeu4y95miG9DRFuArtUyBw565b7Vb8nAJLtIMjHIbVpl46nTz3XiuwlAGfYzioDI2lELJFjhUmkIsPI8Yhy5w==
+|   2048 7a:bf:88:3a:f5:22:f3:53:12:9d:3b:64:4b:e5:99:5b (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABEQAAAQEA1r5RlMCV7ikJNq9q98OiDiPRJaOtkUFGZWZIiauWZDdVBOGKeI98sFmZ/Fhdurvc0a8AZtUYXUupfQiRNh7JfYkWnZAIvqtrisRvbP//CEhJcx12q3QJSkHwMFKN6rf9j0aJ7GQUbXbnM5keifHCSklaWJJLmyGTqCS7y6DATuA7R7AjsFHxXjTJq1URCKITLnD0lig7o8ewDjO4y8+gJeXu6GEDx2P63GpvAR5ydRDo8Gp+TnH0jCUDirP1Pn99XEx0u7XvB1cMUWC8iqdhE5KiNqYrf32pjE7C/6ixJdU8rRRK6jSyAk0RW3bJ6Z4xUAlRVEJmY/elNe3xPyEe4Q==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom LCOS 9.20 (96%), Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (95%), Lancom WAP (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (91%), Lancom L-54g WAP (LCOS) (90%), Lancom 1711 or 1821 broadband router (86%), Lancom 821+ ADSL modem (LCOS 7.70) (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=32924%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=104%GCD=1%ISR=10A%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4NW4%O2=M5B4NW4%O3=M5B4NW4%O4=M5B4NW4%O5=M5B4NW4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4NW4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=249 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.200.36
+Host is up, received echo-reply ttl 59 (0.0021s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 666s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 f7:50:94:33:3e:83:54:43:79:cb:b0:79:a1:0d:11:b2 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAOmCxR3xNz9BOkzCptL53FrgUQl92qcMyFW0vtLRO+eR/BLSLLUmLULgmc+RRd2jOMx7DX82gqf0Po3VQJaqoF6bqqvHqnmkvE588PYockbxzQK0bCsz6fraO/0s02HCb7WfdTJjB0PbJjhAEmqFQLVp9t1duqZs1jSaYwE8jIxfAAAAFQCEivH5ceGfXQr5iWEpeFV66/vsQQAAAIB9G7sOvh0L+K//8wgi7h8bfYxUSvO5X2lYIyLU6QL+wZDcaxUWYt1a4+eoqAF5cdkxqTCBWXtYVT3GwIHAgZDiW+yKVi4pEv4TK17wtG3SQrEXz4oNvoDdgE30YJVg8s7lsoDi39T5YXKx1vmZ1eDyBE24+LqIFaiMPy3N6UphagAAAIBFWu/wN7xl7WK1/x8gDw4Nluc/PtgBzZaeCtPS9oXhO7yvRz1lTg8Px6jKgriFy2ndol2sAGL7ARXzCDEnme7SdwNIhmJKKX+3zJZCxLlGQfkUTj9y568k2uM4aE5XU29pouUvsDXrCADfdx/B7I7A43CfAV6daFu7S6ha0ZSV2A==
+|   2048 62:0b:21:1c:78:32:3f:50:dd:ae:7c:5e:d4:0e:59:06 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABEQAAAQEAwhYKZkTQvHE+cnj/iZ0Oj2oR2O/NxrcMzh3pqk/+/O9hjN4L3W7SNpByMf7rIkAqNyyP0r8ovjLPULgrbyeYxNuvpeH26kNNZ2aoVrYSUN0lIoFGCW4n2Qysh7DVDZK36uVtv4SJ/4Hunhud1hivWbiIJJwt4CmXboMNibwctcqdxnMXQdXhPEc5J8F62iQts4b4KMcsvS+BS70WxNNtLfqpXVDDHPJiN7WDwX1F4v4tLMFq79lqIIstm/Oo+zPeSreNvfQsztHm0CpNBULWli+NUlFu71XWW73gUzaHQ10hcWP7m+FvROtdCMxiCfAfygdsz4mUzEdQ7yv9xHbr9w==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (96%), Lancom WAP (95%), Lancom LCOS 9.20 (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (91%), Lancom L-54g WAP (LCOS) (89%), Lancom 821+ ADSL modem (LCOS 7.70) (88%), Lenel LNL-2220 access control board (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=32010%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=102%GCD=1%ISR=10A%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4NW4%O2=M5B4NW4%O3=M5B4NW4%O4=M5B4NW4%O5=M5B4NW4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4NW4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.200.37
+Host is up, received reset ttl 59 (0.0020s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 665s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=43923%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=FF%GCD=1%ISR=107%TI=I%CI=RD%TS=U)OPS
+OS:(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B6
+OS:8%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF=
+OS:Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=
+OS:)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A%
+OS:A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%
+OS:DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+OS:IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.200.38
+Host is up, received syn-ack ttl 59 (0.0015s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 672s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (98%), Lancom LCOS 8.X|9.X|6.X|7.X (98%), Crestron embedded (89%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (98%), Lancom LCOS 9.20 (96%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (94%), Lancom WAP (94%), Lancom L-54g WAP (LCOS) (90%), Lancom LCOS 8.00 (89%), Crestron CNMSX-AV control and automation system (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=40894%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=103%GCD=1%ISR=10B%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=247 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.35
+Host is up, received echo-reply ttl 59 (0.0020s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 667s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 536 guesses in 643 seconds, average tps: 0.9
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=36200%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=FF%GCD=1%ISR=10E%TI=I%CI=I%TS=U)OPS(
+OS:O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B68
+OS:%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF=Y
+OS:%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+OS:T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A%A
+OS:=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%D
+OS:F=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%
+OS:RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)I
+OS:E(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=255 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.36
+Host is up, received syn-ack ttl 59 (0.0022s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 687s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 11 guesses in 5 seconds, average tps: 2.2
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 73:5a:49:f0:09:eb:32:79:fb:be:06:a9:92:a5:7e:fa (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIaCeKXH0yPPWuvkIi6R2ETA90ur0N4JIUOVjoySJdAv7iAkDnTRye3UxtQ7d2ENhBMooTNiBxfAnAPGo7sIk4B9yupku/xGiopTaSRpU3oKCEds+UV0Yc0ZMiRfWFhw6kilvhJs1I0e8jJp/S2tt5AUctZ8nPjOSGi+aHKqPGx5AAAAFQCT6Pjt43Mh7ly4WN3Mp5vfj5Fj3QAAAIB9bwWW2J7yUUJD50gsa6msKpaFNi44nv+rUYBUi3+dz4hcFFKfv/cp1dIqJZDt0uZhzIUQTlpUtjiqP2RBTntPTSNn45F4GzvVReUQ6oTlLLLBTh1j4JXTN5fVSnLkyS9tNFiOXSzsTyHkaR+xMsengHmhr2bGH7I67pKHZM0K5AAAAIBzaBzqMs7EeKUI2VfijFap+0DkXgsQVaSVlWTR5hR15IUk7flCo6F0LTcihaZVVNnxGhliy2h1B1ikJF5SVWjI7x9CjbY/7sjLtvakbZuT8bXKtrpoIDHz2j+rvzUzasLENLInLm5Bk+seIGWpd2ZcY17AH08CDunt/VRNbkbh6A==
+|   2048 b2:41:29:4f:14:96:22:50:53:16:cd:13:66:a5:4d:a0 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAABEQAAAQEA52YX2NjpDAGYBUOmQrjW0AQJfIvKtnKTcFl/oSOXhNpGBnsjcltcXo4dSzYkTRvKyI4POKTgJ3e4s77xU/XKWVfvqpZQYiqJe92FsETB6ZyevTxbmqe1HWv5r3m1SxkqzifOu4dJiZcZR1oruhdnPlQknLmIAYKbaQWsvzlp+E8hAaqf9xcbNZ9YR7f2x9+gFBYeypkrG798TgTsycsBCsAFyKnlx/qjWagJhT04GtjSIQ+bUC0/jx2cz6Ftef5HZpBDmSATv7k3VxG5DB67DwBaYbUxVEyo9ladwgxuxjoqFgeU7VbmiVaxGtw7vAutupONtxE6Wei/d1Mafsl1aQ==
+|   256 ef:08:00:fe:11:fe:48:9f:70:2b:9f:40:e3:1f:27:42 (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPBJeCzroYYzKchejVih3h3hiywcTtdxDk8ZzqzXv1wgj4HnLijx5xBG54aXKmFohb9dsWC4lZyM9wkxcZTDJ8I=
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (8)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       curve25519-sha256@libssh.org
+|   server_host_key_algorithms: (3)
+|       ecdsa-sha2-nistp256
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-gcm@openssh.com
+|       aes128-gcm@openssh.com
+|       chacha20-poly1305@openssh.com
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (3)
+|       hmac-sha2-512
+|       hmac-sha2-256
+|       hmac-sha1
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (96%), Lancom WAP (96%), Lancom LCOS 9.20 (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (91%), Lancom L-54g WAP (LCOS) (90%), Lancom 821+ ADSL modem (LCOS 7.70) (88%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=40921%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=FF%GCD=1%ISR=10B%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4NW4%O2=M5B4NW4%O3=M5B4NW4%O4=M5B4NW4%O5=M5B4NW4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4NW4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=257 (Good luck!)
+IP ID Sequence Generation: Incremental
+
+Nmap scan report for 172.29.208.38
+Host is up, received syn-ack ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 693s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=38642%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=10A%TI=I%CI=RD%TS=U)OP
+OS:S(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B
+OS:68%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF
+OS:=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y
+OS:%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=N%T=3C%CD=Z)IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.39
+Host is up, received syn-ack ttl 59 (0.0022s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 692s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 2524 guesses in 600 seconds, average tps: 3.6
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|   Accepted Public Keys: 
+|     Quantum DXi V1000 2.2.1 static root publickey accepted
+|     Loadbalancer.org Enterprise VA 7.5.2 static root publickey accepted
+|_    f5 BigIP static root publickey accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (4)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group-exchange-sha256
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (8)
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (99%), Lancom LCOS 8.X|9.X|6.X|7.X (99%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (99%), Lancom WAP (95%), Lancom LCOS 9.20 (94%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (93%), Lancom LCOS 8.00 (89%), Lancom L-54g WAP (LCOS) (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=40264%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=28%GCD=3C91716%ISR=F9%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=250 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.40
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 682s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 2410 guesses in 658 seconds, average tps: 3.9
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=36809%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=102%TI=I%CI=RD%TS=U)OP
+OS:S(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B
+OS:68%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF
+OS:=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y
+OS:%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.41
+Host is up, received reset ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 687s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=43811%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=106%GCD=1%ISR=10B%TI=I%CI=RD%TS=U)OP
+OS:S(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B
+OS:68%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF
+OS:=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y
+OS:%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=N%T=3C%CD=Z)IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.42
+Host is up, received syn-ack ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 682s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (98%), Lancom LCOS 8.X|9.X|6.X|7.X (98%), Crestron embedded (89%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (98%), Lancom LCOS 9.20 (96%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (94%), Lancom WAP (93%), Lancom LCOS 8.00 (89%), Lancom L-54g WAP (LCOS) (89%), Crestron CNMSX-AV control and automation system (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=30775%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=FE%GCD=1%ISR=10E%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=246 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.43
+Host is up, received syn-ack ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 681s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: 
+|     root:<empty> - Valid credentials
+|_  Statistics: Performed 1192 guesses in 623 seconds, average tps: 2.0
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (99%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (96%), Lancom WAP (95%), Lancom LCOS 9.20 (93%), Lancom L-54g WAP (LCOS) (92%), Bay Networks BayStack 450 switch (software version 4.2.0.16) (90%), Lancom 821+ ADSL modem (LCOS 7.70) (89%), Radware LinkProof load balancer (89%), Lancom LCOS 8.00 (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=36853%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=101%GCD=4%ISR=105%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=250 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.44
+Host is up, received syn-ack ttl 59 (0.0022s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 682s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 2751 guesses in 658 seconds, average tps: 4.3
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=33988%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=103%GCD=1%ISR=109%TI=I%CI=RD%TS=U)OP
+OS:S(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B
+OS:68%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF
+OS:=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y
+OS:%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=N%T=3C%CD=Z)IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.45
+Host is up, received syn-ack ttl 59 (0.0022s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 672s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (98%), Lancom LCOS 8.X|9.X|6.X|7.X (98%), Crestron embedded (89%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (98%), Lancom LCOS 9.20 (96%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (94%), Lancom WAP (94%), Lancom LCOS 8.00 (89%), Lancom L-54g WAP (LCOS) (89%), Crestron CNMSX-AV control and automation system (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=31646%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=100%GCD=1%ISR=10F%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=250 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.208.46
+Host is up, received syn-ack ttl 59 (0.0023s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 683s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized|broadband router
+Running (JUST GUESSING): Lancom embedded (98%), Lancom LCOS 8.X|9.X|6.X|7.X (98%), Crestron embedded (89%)
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006 cpe:/o:lancom:lcos:9.20 cpe:/o:lancom:lcos:6 cpe:/o:lancom:lcos:7 cpe:/o:lancom:lcos
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+Aggressive OS guesses: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller (98%), Lancom LCOS 9.20 (96%), Lancom 1721 ADSL modem or L-54ag WAP (LCOS 6 - 7) (94%), Lancom WAP (94%), Lancom L-54g WAP (LCOS) (90%), Lancom LCOS 8.00 (89%), Crestron CNMSX-AV control and automation system (89%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=40670%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9%P=aarch64-unknown-linux-gnu)
+SEQ(SP=105%GCD=1%ISR=10D%TI=I%CI=RD%TS=U)
+OPS(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)
+WIN(W1=B68%W2=B68%W3=B68%W4=B68%W5=B68%W6=B68)
+ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)
+T1(R=Y%DF=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T4(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=3C%CD=Z)
+IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=251 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.212.28
+Host is up, received echo-reply ttl 59 (0.0020s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 656s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 59
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     password
+|     keyboard-interactive
+|_    publickey
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAIUNzjblg3IAW2I9XwONDOEOtXjhIBMZM4KL5HTCmmakr9IRDmCXuaHaUfD57QxWov3KcPbXiBGSXTG/BBZVobr2GUPo4Sec0MYjxRFGOijEQPArNXwzqlNKBF4QdsKfv220QvJJGyfeLHSMT15xhL7U7WRRksA4LEgN3IxQdKfPAAAAFQCU+iUl/vPZ+W+9FwhhbMCNLoSlVQAAAIAmFdMQOaEPqkWGLvNEA9HjyXmkIlerTyFMldP6oimzabroww9HZsqFGY0X7YsxkIK3hDputQM5Rsj9b3mf/mVEAB/8roXNyUCIEJKFjkGMOjlKwervWAK5vc+yRPvIUFoxs09kiPO8xJnxfPmxy7F/xXoFSzWKmeZNANxRntmx5wAAAIBZZ3rLI+szihO7cKdM+6gL44Wlx5GzM4+1+ZF1iD4EmDppgRXSaezUqNoId0RShxOWd548cjJhT/f9uy717SZUCkJEqaeC7ZmD/OLlG3o97buYE77t3WUe2Wf5/uIxeXNRcrub7JiQKAAdjndTzQgttXkqBIgd8cZFic7nH1NL1A==
+|   1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDJYL8bgFrZGnWTHZBN44PDgssEsFwX7X+R01yTujeMAXJqQs9yXFoKNpHzPbSgmZkplZo6275msMLhxRXABH/5tNOjiR6I8VU6dge+bCHMzC2KqwPCPUXveRNVW8i6bZNKV8BCKyMjcsfBJuJt63SXNBaCX/8B6whJK21dvoXWqQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (2)
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-dss
+|       ssh-rsa
+|   encryption_algorithms: (13)
+|       aes256-ctr
+|       aes192-ctr
+|       aes128-ctr
+|       aes256-cbc
+|       aes192-cbc
+|       aes128-cbc
+|       blowfish-ctr
+|       blowfish-cbc
+|       arcfour256
+|       arcfour128
+|       arcfour
+|       3des-ctr
+|       3des-cbc
+|   mac_algorithms: (4)
+|       hmac-sha1
+|       hmac-sha1-96
+|       hmac-md5
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: WAP|VoIP adapter|specialized
+Running: Lancom embedded, Lancom LCOS 8.X
+OS CPE: cpe:/h:lancom:l-305agn cpe:/o:lancom:lcos:8 cpe:/h:lancom:1722_voip cpe:/h:lancom:wlc-4006
+OS details: Lancom L-305agn WAP, 1722 VoIP router, or WLC-4006 WLAN controller
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=36386%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=10B%TI=I%CI=RD%TS=U)OP
+OS:S(O1=M5B4%O2=M5B4%O3=M5B4%O4=M5B4%O5=M5B4%O6=M5B4)WIN(W1=B68%W2=B68%W3=B
+OS:68%W4=B68%W5=B68%W6=B68)ECN(R=Y%DF=Y%T=3C%W=B68%O=M5B4%CC=N%Q=)T1(R=Y%DF
+OS:=Y%T=3C%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q
+OS:=)T3(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T4(R=Y%DF=N%T=3C%W=0%S=A
+OS:%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=N%T=3C%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y
+OS:%DF=N%T=3C%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=N%T=3C%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)U1(R=Y%DF=N%T=3C%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G
+OS:)IE(R=Y%DFI=N%T=3C%CD=Z)IE(R=N)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: Incrementing by 2
+
+Nmap scan report for 172.29.212.30
+Host is up, received echo-reply ttl 63 (0.0011s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 663s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 d1:d3:d5:45:0f:43:5a:59:be:20:66:65:20:26:76:e5 (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAPHzDcOObq25cymicJU7bCu6VPXQNvXjVAobL+3Vo/A3y1wgvQWUSRvEhKsD/E8jPqw+a081MF8fDJEEOOLDFTONlV+eKNRyzORdolZhd89ZVj2qqwJYRRdZBmnH90mwcBt7kybB29u1wZ/iew4lDuYDlDxPMWkousiIQy7Sc4kZAAAAFQCQ0bN5aMbEWoC3LwHnSSK41S/NrwAAAIEAulaUtIE/8njuyHO3eY5tp56/HUTWREue/kQ2tIMT/jNWR6daexbYgPa36TWIxtlYaFOG27Wb1pjD+2S+ChjrCqxB0hoC8RunL/SOenYBAfn7/FOlh+52r4LBQYFAzEdZbvZeU1pGB9CqevpBvoVgOcWClgaIXOqlzgd+EzBgyJYAAACBANf2rYiL/B3nBMia3sWJe81guafAkLupNJ8iC0O47zYOQlAkEmTJlBAv8+xdIVMurMYyMjGPkISa7VneVRgJCSWPPQSYBkSGGgA06/ceac/M1JgQffBSd4Cgpllh2dPy8r+C7cdZAbMwMzr4B0Kdlc6EtRmOXRVVG+xk6KEzcrlu
+|   2048 ed:cc:95:ed:df:85:58:08:16:99:b0:09:4e:36:8e:b3 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDI2J8uUgOSUB1DYFAf7w7rFBrmG9gEn0ff8s4bLBgt7xQ1FBqvR1gWvc9fumDLqx0EQqCdx521GXGJMKpC5ak2v8lrcRzaYxFbfPkPEh0rf8yZxeB82Lp+FFImWoIZ1OrwwqnRXZOM8Dmohws89c11tY+mrT3zU+WcTSCYx8zySg4Xbtd5QsIYZ0SHpWlVTKvRma/UoI2FWqr9eE1sL5cwT3M6V17vLwa8/LiVFKwbZ4sdQ/0BTDvikDe/GMcecwW36Kllf5UE5ZXRrDemvdJIGD6ZppDyNW70+lMTjlKsgTrmuzRckYBdJ9QSYx/XHHNesde7MfOK3YfiHbDsScgx
+|   256 27:b4:e4:9b:a2:8e:f1:17:6b:8a:4b:4c:29:89:d4:0a (ECDSA)
+|_ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBR8D60LqXug1aeHloaYXtdGu4gHTrMK7XaNOBOQqEol8YfFUnhYbgv6VwacGm3+wUxcx49sG9eTxhgSsIh7+lg=
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (7)
+|       ecdh-sha2-nistp256
+|       ecdh-sha2-nistp384
+|       ecdh-sha2-nistp521
+|       diffie-hellman-group-exchange-sha256
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (3)
+|       ssh-rsa
+|       ssh-dss
+|       ecdsa-sha2-nistp256
+|   encryption_algorithms: (13)
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|       arcfour256
+|       arcfour128
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       aes192-cbc
+|       aes256-cbc
+|       arcfour
+|       rijndael-cbc@lysator.liu.se
+|   mac_algorithms: (11)
+|       hmac-md5
+|       hmac-sha1
+|       umac-64@openssh.com
+|       hmac-sha2-256
+|       hmac-sha2-256-96
+|       hmac-sha2-512
+|       hmac-sha2-512-96
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.2 - 3.16
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=37248%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=F1%GCD=1%ISR=10D%TI=Z%CI=I%TS=8)OPS(
+OS:O1=M5B4ST11NW6%O2=M5B4ST11NW6%O3=M5B4NNT11NW6%O4=M5B4ST11NW6%O5=M5B4ST11
+OS:NW6%O6=M5B4ST11)WIN(W1=3890%W2=3890%W3=3890%W4=3890%W5=3890%W6=3890)ECN(
+OS:R=Y%DF=Y%T=40%W=3908%O=M5B4NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Uptime guess: 18.452 days (since Fri Jul 23 10:53:27 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=241 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Nmap scan report for 172.29.240.254
+Host is up, received reset ttl 63 (0.00095s latency).
+Scanned at 2021-08-10 21:32:04 CEST for 670s
+
+PORT   STATE SERVICE REASON
+22/tcp open  ssh     syn-ack ttl 63
+| ssh-auth-methods: 
+|   Supported authentication methods: 
+|     publickey
+|     gssapi-with-mic
+|_    password
+| ssh-brute: 
+|   Accounts: No valid accounts found
+|   Statistics: Performed 0 guesses in 1 seconds, average tps: 0.0
+|_  ERROR: The service seems to have failed or is heavily firewalled...
+| ssh-hostkey: 
+|   1024 ea:a6:f1:fb:f8:0d:4f:3c:7a:44:10:91:49:68:d7:4e (DSA)
+| ssh-dss AAAAB3NzaC1kc3MAAACBAJTSA77TxBjMIblp+1Cx918Hvskd+K6E8RNyCNlPD9L3IxFNuVrg29NY+QLZyvF6CDulFtwhr0fQdML8XblJq9rrgJPOpWoV+DaZtabuXarAKJ7vYQ9Pz+dkWw3Dn2c7mv/ncTUZvUfVuRQziWSKycXSPrQuueUsihBEdqq7/8YbAAAAFQCVmYUlQaGHHA5h7O9FQTChhrqOpQAAAIA6eh8MfjliFNjmFlsFpelPX8ZZGBu6VlPb1+/GuBzTI3Vhfo3pP57TqUxg1I3Vt8hFPR5TQwR15iwqnIiSrVSndf/cMbS2BoPyNVuVPYve/usq7KLhGq8MSazQkAsmydblsGUjAFVfn6V0GJVf6WYYHztDsFzFuCSrpyjNyHUjPAAAAIBVXflLrAjoAgDBoJ6v05gwOevuo/4VTipn/Hna/oXr8848hrQXP16tBjXBoX+ZZwfBy5I8fcp/UdM8k2w6wKeEuwebHL6McSxXdfEGwOl0TA8Yv1IWtZ6yhER1ycQx51eEx3aQ461vz46WevP19gV8KWt0ZA7RlT4X+aV9ySIrJw==
+|   2048 a2:45:b5:23:7f:f3:f4:59:03:3d:07:25:ae:b7:49:9c (RSA)
+|_ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA5SrkZUnRoL09PZ9CxTrRGk3hILPgvVGYsk+ctRzY1qx4TdPdCkWzITFWCDUTQS2GhLnTkDs9faRY0UefBTZ/JztJV8DquLqzX1oOlsTgRHjGAeyAfdZlKo1hYHTWZmSlHMdxGVgEhc6bocrsacMUcZj1hBArVlZReV3/1+wzsUiJJw26zGO+epG3GBa5LIO4AU7oZ3bCYJ+85/XeOUzMeultg/6MS7ARKtSrzjpcrgQ2pWaBU6IzzaRmDrr+u7/JAWQ1mAaCAzBi3raF22FU+DvtAFMwz/0sXgAq6ignskEEACJQj/IO7aok1iHoQ99CAMJ+XtCNSE5w40+48wkMAQ==
+| ssh-publickey-acceptance: 
+|_  Accepted Public Keys: No public keys accepted
+|_ssh-run: Failed to specify credentials and command to run.
+| ssh2-enum-algos: 
+|   kex_algorithms: (3)
+|       diffie-hellman-group-exchange-sha1
+|       diffie-hellman-group14-sha1
+|       diffie-hellman-group1-sha1
+|   server_host_key_algorithms: (2)
+|       ssh-rsa
+|       ssh-dss
+|   encryption_algorithms: (13)
+|       aes128-cbc
+|       3des-cbc
+|       blowfish-cbc
+|       cast128-cbc
+|       arcfour128
+|       arcfour256
+|       arcfour
+|       aes192-cbc
+|       aes256-cbc
+|       rijndael-cbc@lysator.liu.se
+|       aes128-ctr
+|       aes192-ctr
+|       aes256-ctr
+|   mac_algorithms: (6)
+|       hmac-md5
+|       hmac-sha1
+|       hmac-ripemd160
+|       hmac-ripemd160@openssh.com
+|       hmac-sha1-96
+|       hmac-md5-96
+|   compression_algorithms: (2)
+|       none
+|_      zlib@openssh.com
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.30
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=8/10%OT=22%CT=%CU=41030%PV=Y%DS=2%DC=I%G=N%TM=6112D6E9
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=C6%GCD=1%ISR=CD%TI=Z%CI=Z%TS=A)OPS(O
+OS:1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B4ST11N
+OS:W7%O6=M5B4ST11)WIN(W1=16A0%W2=16A0%W3=16A0%W4=16A0%W5=16A0%W6=16A0)ECN(R
+OS:=Y%DF=Y%T=40%W=16D0%O=M5B4NNSNW7%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%
+OS:RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A=S+%F=AS%O=M5B4ST11NW7%RD=0%
+OS:Q=)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%
+OS:A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%
+OS:DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIP
+OS:L=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 32.223 days (since Fri Jul  9 16:23:05 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=198 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Post-scan script results:
+| ssh-hostkey: Possible duplicate hosts
+| Key 1024 27:c5:1d:9f:be:27:3d:50:d7:bf:c1:68:0b:18:97:d7 (DSA) used by:
+|   172.29.110.33
+|   172.29.200.37
+|   172.29.200.38
+|   172.29.208.35
+|   172.29.208.38
+|   172.29.208.39
+|   172.29.208.40
+|   172.29.208.41
+|   172.29.208.42
+|   172.29.208.43
+|   172.29.208.44
+|   172.29.208.45
+|   172.29.208.46
+|   172.29.212.28
+| Key 1024 03:56:e6:52:ee:d2:da:f0:73:b5:df:3d:09:08:54:b7 (RSA) used by:
+|   172.29.110.33
+|   172.29.200.37
+|   172.29.200.38
+|   172.29.208.35
+|   172.29.208.38
+|   172.29.208.39
+|   172.29.208.40
+|   172.29.208.41
+|   172.29.208.42
+|   172.29.208.43
+|   172.29.208.44
+|   172.29.208.45
+|   172.29.208.46
+|_  172.29.212.28
+Read data files from: /usr/bin/../share/nmap
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Aug 10 21:43:37 2021 -- 27 IP addresses (27 hosts up) scanned in 693.88 seconds
