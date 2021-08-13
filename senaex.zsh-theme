@@ -23,6 +23,7 @@ git_info() {
 	fi
 }
 
+
 local git='$(git_info)'
 local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 local conda_info='%B%F{172}$(conda_prompt_info)%b'
