@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Sat Aug 14 23:57:59 2021 as: nmap -A -vv -oX /home/ALEX/dotfiles/KGS/scans/Schul-Server 172.29.160.254 -->
+<nmaprun scanner="nmap" args="nmap -A -vv -oX /home/ALEX/dotfiles/KGS/scans/Schul-Server 172.29.160.254" start="1628978279" startstr="Sat Aug 14 23:57:59 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1628978280"/>
+<taskend task="NSE" time="1628978280"/>
+<taskbegin task="NSE" time="1628978280"/>
+<taskend task="NSE" time="1628978280"/>
+<taskbegin task="NSE" time="1628978280"/>
+<taskend task="NSE" time="1628978280"/>
+<taskbegin task="Ping Scan" time="1628978280"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="172.29.160.254" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1628978280" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1628978280"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1628978280"/>
+<taskbegin task="SYN Stealth Scan" time="1628978280"/>
+<taskend task="SYN Stealth Scan" time="1628978336" extrainfo="1000 total ports"/>
+<taskbegin task="Service scan" time="1628978336"/>
+<taskend task="Service scan" time="1628978400" extrainfo="26 services on 1 host"/>
+<taskbegin task="Traceroute" time="1628978402"/>
+<taskend task="Traceroute" time="1628978402"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1628978402"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1628978402"/>
+<taskbegin task="NSE" time="1628978402"/>
+<taskprogress task="NSE" time="1628978433" percent="99.97" remaining="1" etc="1628978433"/>
+<taskend task="NSE" time="1628978442"/>
+<taskbegin task="NSE" time="1628978442"/>
+<taskend task="NSE" time="1628978443"/>
+<taskbegin task="NSE" time="1628978443"/>
+<taskend task="NSE" time="1628978443"/>
+<host starttime="1628978280" endtime="1628978443"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="172.29.160.254" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="921">
+<extrareasons reason="no-responses" count="921"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="ProFTPD" extrainfo="requires SSL" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd</cpe></service><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  ftp"><elem>ftp</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  ftp"><elem>ftp</elem>
+</script></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.9p1" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 ad:5b:07:b5:34:50:d1:9d:19:e3:4e:2a:97:9b:37:99 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoW7Z3nEtZlpW+n558OawGi3S2J6yKiAnMraCaZhFRBsGHeboMXVu73yhtcrdmGq49+GD6Ure9OwE35/5JiMiim3JnTOhEdvT1+lpAyMO3+JKWXZfA5mpcxQisf0hwk202t+z0GtUgFxnnRHlxXYnqAJcGOo11J4nksTSWigiuDJVziu2glWQ/C3vZxZNNmWQP3PpkUNkTcLA1VUcJsXZlAjAY3mxmQmRnBPGbE/YjMpEgbkvEQ9t3d6LI2IuX8Wmv/g/oCq3YmkfP6u9PBbHIHVB3L88KXxo5y/UF+BDwAT/etQQH/jjsf1UN8cNx1lp9BObfy27GQnEQE4devK4t&#xa;  256 80:ea:4a:a2:7f:d4:ad:bf:30:4c:28:4c:2f:d6:f3:3d (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH+27O5bUEjRqq9SY/vh0UuhQ3R8zvn8IVliAJDaWGIIGQzWp233s+9/W7NXuFpFpY8pegeurMALPdgRn1RXI1k=&#xa;  256 38:cf:3e:97:e9:ae:d5:5b:f6:ec:14:5f:7a:71:ce:ea (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEpdrzhdhBAbP/ttKt8ShUrZnpIHxTG02NvTjq8wSg3k"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDoW7Z3nEtZlpW+n558OawGi3S2J6yKiAnMraCaZhFRBsGHeboMXVu73yhtcrdmGq49+GD6Ure9OwE35/5JiMiim3JnTOhEdvT1+lpAyMO3+JKWXZfA5mpcxQisf0hwk202t+z0GtUgFxnnRHlxXYnqAJcGOo11J4nksTSWigiuDJVziu2glWQ/C3vZxZNNmWQP3PpkUNkTcLA1VUcJsXZlAjAY3mxmQmRnBPGbE/YjMpEgbkvEQ9t3d6LI2IuX8Wmv/g/oCq3YmkfP6u9PBbHIHVB3L88KXxo5y/UF+BDwAT/etQQH/jjsf1UN8cNx1lp9BObfy27GQnEQE4devK4t</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">ad5b07b53450d19d19e34e2a979b3799</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBH+27O5bUEjRqq9SY/vh0UuhQ3R8zvn8IVliAJDaWGIIGQzWp233s+9/W7NXuFpFpY8pegeurMALPdgRn1RXI1k=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">80ea4aa27fd4adbf304c284c2fd6f33d</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEpdrzhdhBAbP/ttKt8ShUrZnpIHxTG02NvTjq8wSg3k</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">38cf3e97e9aed55bf6ec145f7a71ceea</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" product="Exim smtpd" method="probed" conf="10"><cpe>cpe:/a:exim:exim</cpe></service><script id="smtp-commands" output="iserv.ahserv.neumuenster.de Hello nmap.scanme.org [172.29.173.14], SIZE 52428800, 8BITMIME, PIPELINING, CHUNKING, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="NLnet Labs NSD" method="probed" conf="10"><cpe>cpe:/a:nlnetlabs:nsd</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.14.2" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script><script id="http-title" output="Did not follow redirect to https://172.29.160.254/"><elem key="redirect_url">https://172.29.160.254/</elem>
+</script></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="kerberos-sec" product="Heimdal Kerberos" extrainfo="server time: 2021-08-14 21:59:02Z" method="probed" conf="10"><cpe>cpe:/a:heimdal:kerberos</cpe></service></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" hostname="iserv.ahserv.neumuenster.de" servicefp="SF-Port110-TCP:V=7.91%I=7%D=8/14%Time=61183CA6%P=aarch64-unknown-linux-gnu%r(NULL,93,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;7132025858031040584\.1628978336@iserv\.ahserv\.neumuenster\.de&gt;\r\n&quot;)%r(GenericLines,C9,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;7132025858031040584\.1628978336@iserv\.ahserv\.neumuenster\.de&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;)%r(HTTPOptions,CA,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;17815164007219896387\.1628978347@iserv\.ahserv\.neumuenster\.de&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;);" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;7132025858031040584.1628978336@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  HTTPOptions: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;17815164007219896387.1628978347@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  NULL: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;7132025858031040584.1628978336@iserv.ahserv.neumuenster.de&gt;"><elem key="GenericLines">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;7132025858031040584.1628978336@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="HTTPOptions">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;17815164007219896387.1628978347@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="NULL">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;7132025858031040584.1628978336@iserv.ahserv.neumuenster.de&gt;</elem>
+</script><script id="pop3-capabilities" output="STLS AUTH-RESP-CODE IMPLEMENTATION(Cyrus POP3 3) EXPIRE(NEVER) LOGIN-DELAY(0) TOP APOP RESP-CODES UIDL PIPELINING"/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: SCHULE" hostname="ISERV" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" version="3.0.8" hostname="iserv.ahserv.neumuenster.de" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:3.0.8</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="imap-capabilities" output="ESEARCH METADATA ACL LIST-METADATA STARTTLS BINARY SORT=DISPLAY ATOMIC QUOTA IDLEA0001 THREAD=REFERENCES COMPRESS=DEFLATE ENABLE XLIST Completed URLAUTH SEARCH=FUZZY X-QUOTA=X-ANNOTATION-STORAGE OK SPECIAL-USE NAMESPACE CONDSTORE NO QRESYNC CATENATE THREAD=REFS X-QUOTA=MESSAGE LOGINDISABLED UNSELECT RIGHTS=kxten URLAUTH=BINARY X-REPLICATION THREAD=ORDEREDSUBJECT CHILDREN CREATE-SPECIAL-USE MULTIAPPEND MOVE X-QUOTA=STORAGE ID SCAN SORT=MODSEQ SORT=UID LIST-STATUS XMOVE WITHIN LIST-MYRIGHTS X-QUOTA=X-NUM-FOLDERS LIST-EXTENDED LITERAL+ ANNOTATE-EXPERIMENT-1 IMAP4rev1 UIDPLUS DIGEST=SHA1 SORT MAILBOX-REFERRALS RENAME ANNOTATEMORE"/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ldap" extrainfo="Anonymous bind OK" method="probed" conf="10"/><script id="ssl-cert" output="Subject: commonName=ahserv.neumuenster.de&#xa;Issuer: commonName=ahserv.neumuenster.de&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-07-02T19:56:07&#xa;Not valid after:  2040-06-27T19:56:07&#xa;MD5:   8692 32c7 7620 5083 78a6 7044 5c80 a8ca&#xa;SHA-1: 41c7 4a9e 86f0 3b76 e6c1 3fad 0d85 5279 04d3 6099&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">B60FE3A7C84216C1FC80AC09ABB6FB06A48961216A9367BF40131E3E72703AE4D36954C2662A042234824BEFDF753198A1C599EB418E6D0C4461060B855131301899F9DADC23DCC70475974BF7390BB31934BF85E3FD2412EE0687F8BA429B705BD268407CE5210350D4DEDB76075CBE1151595E171C4DAC9529DFAFAA7C2DE7782E2B123A19A38CC8BEBDBF2226EB8D7A2305D63DFD80ED95468D976656936E045AA35985460651C1EC205D73F6EA461E13A62DD87182D7E92D448858F9487029361F6322E4DCC06235EB6D8D99580DA8D557DBF961E1DE8416F4E9F06A4C47E5416411DFFCFE723A3BDF6917949F4DD0D276551DDC797ACB52A1FF789E4A921901D588343F70F3F6D832F45A7ACE5C729E400492AA1B6633C87A5FEA3E64B12962CF29125C03FAB9D3993427BEEC30B8EFB0A0DFCB815315B7F8E05E51A5F1215077C717FC63D6C37BEA65A85ED251700E5D8EF9768113049A8C9BBF1792F932515BCA522179C9065BC9670BBA2B5C9DBD47401BA05C72CE9B5A8116EE9EE067BBAE7C4DA3607AE659B0345211279A2FB5B2E7EF2F72925E30490A65944C2E431D56A74B6A43BEA3E3E2FC0ACD3121164E0DF27010DECB7C823F236335DF47B3D008B921C4B6DF1262538256A3BD02FB3F49F5DEBF244317098757C8C8913153AFA8C7F6D4E9183D5462AF8104AA53889019ADD0D9953C54E420A2AA714B09</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-07-02T19:56:07</elem>
+<elem key="notAfter">2040-06-27T19:56:07</elem>
+</table>
+<elem key="md5">869232c77620508378a670445c80a8ca</elem>
+<elem key="sha1">41c74a9e86f03b76e6c13fad0d85527904d36099</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.14.2" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: POST OPTIONS HEAD GET"><table key="Supported Methods">
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+<elem>HEAD</elem>
+<elem>GET</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.2"><elem>nginx/1.14.2</elem>
+</script><script id="http-title" output="Redirecting to IServ ..."><elem key="title">Redirecting to IServ ...</elem>
+</script><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="tls-nextprotoneg" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="4.9.5-Debian" extrainfo="workgroup: SCHULE" hostname="ISERV" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" servicefp="SF-Port465-TCP:V=7.91%T=SSL%I=7%D=8/14%Time=61183CAC%P=aarch64-unknown-linux-gnu%r(NULL,59,&quot;220\x20iserv\.ahserv\.neumuenster\.de\x20ESMTP\x20Exim\x20\(IServ\)\x204\.92\x20Sat,\x2014\x20Aug\x202021\x2023:59:02\x20\+0200\r\n&quot;)%r(Hello,85,&quot;220\x20iserv\.ahserv\.neumuenster\.de\x20ESMTP\x20Exim\x20\(IServ\)\x204\.92\x20Sat,\x2014\x20Aug\x202021\x2023:59:02\x20\+0200\r\n501\x20Syntactically\x20invalid\x20EHLO\x20argument\(s\)\r\n&quot;)%r(Help,AE,&quot;220\x20iserv\.ahserv\.neumuenster\.de\x20ESMTP\x20Exim\x20\(IServ\)\x204\.92\x20Sat,\x2014\x20Aug\x202021\x2023:59:15\x20\+0200\r\n214-Commands\x20supported:\r\n214\x20AUTH\x20HELO\x20EHLO\x20MAIL\x20RCPT\x20DATA\x20BDAT\x20NOOP\x20QUIT\x20RSET\x20HELP\r\n&quot;)%r(GenericLines,8D,&quot;220\x20iserv\.ahserv\.neumuenster\.de\x20ESMTP\x20Exim\x20\(IServ\)\x204\.92\x20Sat,\x2014\x20Aug\x202021\x2023:59:23\x20\+0200\r\n500\x20unrecognized\x20command\r\n500\x20unrecognized\x20command\r\n&quot;)%r(GetRequest,8D,&quot;220\x20iserv\.ahserv\.neumuenster\.de\x20ESMTP\x20Exim\x20\(IServ\)\x204\.92\x20Sat,\x2014\x20Aug\x202021\x2023:59:28\x20\+0200\r\n500\x20unrecognized\x20command\r\n500\x20unrecognized\x20command\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:23 +0200&#xa;    unrecognized command&#xa;    unrecognized command&#xa;  GetRequest: &#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:28 +0200&#xa;    unrecognized command&#xa;    unrecognized command&#xa;  Hello: &#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:02 +0200&#xa;    Syntactically invalid EHLO argument(s)&#xa;  Help: &#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:15 +0200&#xa;    214-Commands supported:&#xa;    AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP&#xa;  NULL: &#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:02 +0200"><elem key="GenericLines">&#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:23 +0200&#xa;    unrecognized command&#xa;    unrecognized command</elem>
+<elem key="GetRequest">&#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:28 +0200&#xa;    unrecognized command&#xa;    unrecognized command</elem>
+<elem key="Hello">&#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:02 +0200&#xa;    Syntactically invalid EHLO argument(s)</elem>
+<elem key="Help">&#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:15 +0200&#xa;    214-Commands supported:&#xa;    AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP</elem>
+<elem key="NULL">&#xa;    220 iserv.ahserv.neumuenster.de ESMTP Exim (IServ) 4.92 Sat, 14 Aug 2021 23:59:02 +0200</elem>
+</script><script id="smtp-commands" output="iserv.ahserv.neumuenster.de Hello nmap.scanme.org [172.29.173.14], SIZE 52428800, 8BITMIME, PIPELINING, AUTH PLAIN LOGIN, CHUNKING, HELP, &#xa; Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" product="Exim smtpd" method="probed" conf="10"><cpe>cpe:/a:exim:exim</cpe></service><script id="smtp-commands" output="iserv.ahserv.neumuenster.de Hello nmap.scanme.org [172.29.173.14], SIZE 52428800, 8BITMIME, PIPELINING, CHUNKING, STARTTLS, HELP, &#xa; Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP "/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="631"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ipp" product="CUPS" version="2.2" method="probed" conf="10"><cpe>cpe:/a:apple:cups:2.2</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS POST PUT&#xa;  Potentially risky methods: PUT"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+<elem>POST</elem>
+<elem>PUT</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>PUT</elem>
+</table>
+</script><script id="http-server-header" output="CUPS/2.2 IPP/2.1"><elem>CUPS/2.2 IPP/2.1</elem>
+</script><script id="http-title" output="Verboten - CUPS v2.2.10"><elem key="title">Verboten - CUPS v2.2.10</elem>
+</script></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ldap" extrainfo="Anonymous bind OK" tunnel="ssl" method="probed" conf="10"/><script id="ssl-cert" output="Subject: commonName=ahserv.neumuenster.de&#xa;Issuer: commonName=ahserv.neumuenster.de&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-07-02T19:56:07&#xa;Not valid after:  2040-06-27T19:56:07&#xa;MD5:   8692 32c7 7620 5083 78a6 7044 5c80 a8ca&#xa;SHA-1: 41c7 4a9e 86f0 3b76 e6c1 3fad 0d85 5279 04d3 6099&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">B60FE3A7C84216C1FC80AC09ABB6FB06A48961216A9367BF40131E3E72703AE4D36954C2662A042234824BEFDF753198A1C599EB418E6D0C4461060B855131301899F9DADC23DCC70475974BF7390BB31934BF85E3FD2412EE0687F8BA429B705BD268407CE5210350D4DEDB76075CBE1151595E171C4DAC9529DFAFAA7C2DE7782E2B123A19A38CC8BEBDBF2226EB8D7A2305D63DFD80ED95468D976656936E045AA35985460651C1EC205D73F6EA461E13A62DD87182D7E92D448858F9487029361F6322E4DCC06235EB6D8D99580DA8D557DBF961E1DE8416F4E9F06A4C47E5416411DFFCFE723A3BDF6917949F4DD0D276551DDC797ACB52A1FF789E4A921901D588343F70F3F6D832F45A7ACE5C729E400492AA1B6633C87A5FEA3E64B12962CF29125C03FAB9D3993427BEEC30B8EFB0A0DFCB815315B7F8E05E51A5F1215077C717FC63D6C37BEA65A85ED251700E5D8EF9768113049A8C9BBF1792F932515BCA522179C9065BC9670BBA2B5C9DBD47401BA05C72CE9B5A8116EE9EE067BBAE7C4DA3607AE659B0345211279A2FB5B2E7EF2F72925E30490A65944C2E431D56A74B6A43BEA3E3E2FC0ACD3121164E0DF27010DECB7C823F236335DF47B3D008B921C4B6DF1262538256A3BD02FB3F49F5DEBF244317098757C8C8913153AFA8C7F6D4E9183D5462AF8104AA53889019ADD0D9953C54E420A2AA714B09</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-07-02T19:56:07</elem>
+<elem key="notAfter">2040-06-27T19:56:07</elem>
+</table>
+<elem key="md5">869232c77620508378a670445c80a8ca</elem>
+<elem key="sha1">41c74a9e86f03b76e6c13fad0d85527904d36099</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" product="Cyrus imapd" version="3.0.8" hostname="iserv.ahserv.neumuenster.de" ostype="Linux" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:cmu:cyrus_imap_server:3.0.8</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="imap-capabilities" output="ESEARCH METADATA ACL LIST-METADATA BINARY SORT=DISPLAY SEARCH=FUZZY ATOMIC QUOTA X-QUOTA=STORAGE THREAD=REFERENCES IDLEA0001 ENABLE XLIST Completed URLAUTH X-QUOTA=X-ANNOTATION-STORAGE ANNOTATE-EXPERIMENT-1 OK SPECIAL-USE NAMESPACE CONDSTORE NO COMPRESS=DEFLATE CATENATE THREAD=REFS X-QUOTA=MESSAGE QRESYNC UNSELECT RIGHTS=kxten URLAUTH=BINARY X-REPLICATION THREAD=ORDEREDSUBJECT CHILDREN CREATE-SPECIAL-USE MULTIAPPEND MOVE AUTH=PLAIN ID SCAN SORT=MODSEQ SORT=UID LIST-STATUS XMOVE WITHIN LIST-MYRIGHTS X-QUOTA=X-NUM-FOLDERS LIST-EXTENDED LITERAL+ SASL-IR IMAP4rev1 UIDPLUS DIGEST=SHA1 SORT MAILBOX-REFERRALS RENAME ANNOTATEMORE"/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" hostname="iserv.ahserv.neumuenster.de" servicefp="SF-Port995-TCP:V=7.91%T=SSL%I=7%D=8/14%Time=61183CAC%P=aarch64-unknown-linux-gnu%r(NULL,94,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;10714802546944496959\.1628978342@iserv\.ahserv\.neumuenster\.de&gt;\r\n&quot;)%r(GenericLines,CA,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;10714802546944496959\.1628978342@iserv\.ahserv\.neumuenster\.de&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;)%r(HTTPOptions,CA,&quot;\+OK\x20iserv\.ahserv\.neumuenster\.de\x20Cyrus\x20POP3\x203\.0\.8-Debian-3\.0\.8-6\+deb10u5\x20server\x20ready\x20&lt;10429759246068147096\.1628978353@iserv\.ahserv\.neumuenster\.de&gt;\r\n-ERR\x20Unrecognized\x20command\r\n-ERR\x20Unrecognized\x20command\r\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10714802546944496959.1628978342@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  HTTPOptions: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10429759246068147096.1628978353@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command&#xa;  NULL: &#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10714802546944496959.1628978342@iserv.ahserv.neumuenster.de&gt;"><elem key="GenericLines">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10714802546944496959.1628978342@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="HTTPOptions">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10429759246068147096.1628978353@iserv.ahserv.neumuenster.de&gt;&#xa;    -ERR Unrecognized command&#xa;    -ERR Unrecognized command</elem>
+<elem key="NULL">&#xa;    +OK iserv.ahserv.neumuenster.de Cyrus POP3 3.0.8-Debian-3.0.8-6+deb10u5 server ready &lt;10714802546944496959.1628978342@iserv.ahserv.neumuenster.de&gt;</elem>
+</script><script id="pop3-capabilities" output="APOP AUTH-RESP-CODE IMPLEMENTATION(Cyrus POP3 3) USER EXPIRE(NEVER) SASL(PLAIN) TOP LOGIN-DELAY(0) RESP-CODES UIDL PIPELINING"/><script id="ssl-cert" output="Subject: commonName=*.neumuenster.de&#xa;Subject Alternative Name: DNS:*.neumuenster.de, DNS:neumuenster.de&#xa;Issuer: commonName=Thawte TLS RSA CA G1/organizationName=DigiCert Inc/countryName=US/organizationalUnitName=www.digicert.com&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2021-01-26T00:00:00&#xa;Not valid after:  2022-02-26T23:59:59&#xa;MD5:   dc65 dea7 0c4b a411 6f47 0e0e 113d 866d&#xa;SHA-1: 1ea4 e0fb d480 8b23 9f6b e5cf 1348 db1b f8ab 27a3&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">*.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">Thawte TLS RSA CA G1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">DigiCert Inc</elem>
+<elem key="organizationalUnitName">www.digicert.com</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">CB66C14F536A4F0E161B67FC0DF9FF867B0A087F9FC6E8C57D99B2946A5D908C26309F7FC79D27CDE698756992AADE6A8CADB3605D9490D3CD254C54E10ABAA30B3C5E1E82A228A77539EB92B0C73CF13CEC7666864B33141610E57176A08C161585E859061323F89B542A861A21F57C3819CB8A0FD2267269EEE963EAC61D73B612F8A1A3572E50DED7B7A8E3BF2C627C4093505BCED2F6193E0410132AC0B491E2A45F9ED8B24A77B9EB9208AD17ECD15997CD826594864019B2B1234F667EC894DA933982A70561ABF1CBEAFD3FCC7400C64504138DBD3D1EAC1DBEFBAAD2551D847D5DAA33D91B3983E6F5E136B17F3B5891604905D87718CEEECCAB7757</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A5:8C:FE:32:CC:EB:0F:2C:D4:19:C6:08:B8:00:24:88:5D:C3:C5:B7&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">18:01:FA:D3:6A:7F:F2:9D:22:11:94:47:32:D4:7C:71:FF:94:C6:11</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:*.neumuenster.de, DNS:neumuenster.de</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">&#xa;Full Name:&#xa;  URI:http://cdp.thawte.com/ThawteTLSRSACAG1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1&#xa;  CPS: http://www.digicert.com/CPS&#xa;</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">OCSP - URI:http://status.thawte.com&#xa;CA Issuers - URI:http://cacerts.thawte.com/ThawteTLSRSACAG1.crt&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:&#xa;                BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84&#xa;    Timestamp : Jan 26 09:02:33.164 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:56:B9:A0:7B:42:17:D7:8A:32:A2:A1:C0:&#xa;                C7:CB:D9:CD:FF:66:63:B1:56:E8:06:08:BC:F7:2D:66:&#xa;                4A:B3:84:DD:02:20:11:41:1A:E8:C1:F4:0F:AD:5C:6A:&#xa;                08:23:8E:C6:2E:69:DD:67:89:27:86:12:C3:A4:ED:2A:&#xa;                85:84:02:22:90:9F&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 22:45:45:07:59:55:24:56:96:3F:A1:2F:F1:F7:6D:86:&#xa;                E0:23:26:63:AD:C0:4B:7F:5D:C6:83:5C:6E:E2:0F:02&#xa;    Timestamp : Jan 26 09:02:33.231 2021 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:DC:CA:D5:9B:B8:8E:9E:07:0E:90:0F:&#xa;                87:FB:FD:61:34:D6:26:EF:6C:97:61:51:6E:94:12:68:&#xa;                E0:27:19:AE:42:02:20:3A:6B:30:B5:22:63:07:5F:08:&#xa;                77:37:81:C8:CD:AC:E7:9F:17:5C:D3:71:93:AC:A6:81:&#xa;                69:2A:BB:12:DB:B8:84</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-26T00:00:00</elem>
+<elem key="notAfter">2022-02-26T23:59:59</elem>
+</table>
+<elem key="md5">dc65dea70c4ba4116f470e0e113d866d</elem>
+<elem key="sha1">1ea4e0fbd4808b239f6be5cf1348db1bf8ab27a3</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFpjCCBI6gAwIBAgIQD3tZFNuGaUrHTSJzGtmi/jANBgkqhkiG9w0BAQsFADBe&#xa;MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3&#xa;d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRUaGF3dGUgVExTIFJTQSBDQSBHMTAe&#xa;Fw0yMTAxMjYwMDAwMDBaFw0yMjAyMjYyMzU5NTlaMBsxGTAXBgNVBAMMECoubmV1&#xa;bXVlbnN0ZXIuZGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDLZsFP&#xa;U2pPDhYbZ/wN+f+GewoIf5/G6MV9mbKUal2QjCYwn3/HnSfN5ph1aZKq3mqMrbNg&#xa;XZSQ080lTFThCrqjCzxeHoKiKKd1OeuSsMc88TzsdmaGSzMUFhDlcXagjBYVhehZ&#xa;BhMj+JtUKoYaIfV8OBnLig/SJnJp7ulj6sYdc7YS+KGjVy5Q3te3qOO/LGJ8QJNQ&#xa;W87S9hk+BBATKsC0keKkX57Yskp3ueuSCK0X7NFZl82CZZSGQBmysSNPZn7IlNqT&#xa;OYKnBWGr8cvq/T/MdADGRQQTjb09Hqwdvvuq0lUdhH1dqjPZGzmD5vXhNrF/O1iR&#xa;YEkF2HcYzu7Mq3dXAgMBAAGjggKhMIICnTAfBgNVHSMEGDAWgBSljP4yzOsPLNQZ&#xa;xgi4ACSIXcPFtzAdBgNVHQ4EFgQUGAH602p/8p0iEZRHMtR8cf+UxhEwKwYDVR0R&#xa;BCQwIoIQKi5uZXVtdWVuc3Rlci5kZYIObmV1bXVlbnN0ZXIuZGUwDgYDVR0PAQH/&#xa;BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA7BgNVHR8ENDAy&#xa;MDCgLqAshipodHRwOi8vY2RwLnRoYXd0ZS5jb20vVGhhd3RlVExTUlNBQ0FHMS5j&#xa;cmwwPgYDVR0gBDcwNTAzBgZngQwBAgEwKTAnBggrBgEFBQcCARYbaHR0cDovL3d3&#xa;dy5kaWdpY2VydC5jb20vQ1BTMHAGCCsGAQUFBwEBBGQwYjAkBggrBgEFBQcwAYYY&#xa;aHR0cDovL3N0YXR1cy50aGF3dGUuY29tMDoGCCsGAQUFBzAChi5odHRwOi8vY2Fj&#xa;ZXJ0cy50aGF3dGUuY29tL1RoYXd0ZVRMU1JTQUNBRzEuY3J0MAkGA1UdEwQCMAAw&#xa;ggEDBgorBgEEAdZ5AgQCBIH0BIHxAO8AdQApeb7wnjk5IfBWc59jpXflvld9nGAK&#xa;+PlNXSZcJV3HhAAAAXc97iTMAAAEAwBGMEQCIFa5oHtCF9eKMqKhwMfL2c3/ZmOx&#xa;VugGCLz3LWZKs4TdAiARQRrowfQPrVxqCCOOxi5p3WeJJ4YSw6TtKoWEAiKQnwB2&#xa;ACJFRQdZVSRWlj+hL/H3bYbgIyZjrcBLf13Gg1xu4g8CAAABdz3uJQ8AAAQDAEcw&#xa;RQIhANzK1Zu4jp4HDpAPh/v9YTTWJu9sl2FRbpQSaOAnGa5CAiA6azC1ImMHXwh3&#xa;N4HIzaznnxdc03GTrKaBaSq7Etu4hDANBgkqhkiG9w0BAQsFAAOCAQEAxAcHS/Sd&#xa;v6In+UtZe4gpW2lvQflY8oJ0gpviuWpfgHs2YuJVz3QdlrjiIBPsKS6pAHrPFwTE&#xa;/MWGZeF9fVopkSxR8WO7RM8SVOEh/mtiuuj7h+BbzX/Ftgcuz9s3V8L4BmDQr5l4&#xa;Euu4zmP3FnjyJLnEzSY3FrH64a0XPVAGfjaH2WZQ6RyMM1iLJOmggjoiOBYtLiGC&#xa;yaMFeLFpneaLN5UAw+exL1Ay68yDKMqT8F/dZADVIVf+0Hw1N1u+SNzaoSv5wZWc&#xa;BqohRDgDCZVDfM0vkslU/RQgpiFelQub7HlUUDuUkQRhZKeCzYe7U/jJWTZ6SI9M&#xa;5H3S18wAAeUY+Q==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="3128"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http-proxy" product="Squid http proxy" version="4.6" method="probed" conf="10"><cpe>cpe:/a:squid-cache:squid:4.6</cpe></service><script id="http-open-proxy" output="Proxy might be redirecting requests"/><script id="http-server-header" output="squid/4.6"><elem>squid/4.6</elem>
+</script><script id="http-title" output="FEHLER: Die angeforderte URL konnte nicht gefunden werden"><elem key="title">FEHLER: Die angeforderte URL konnte nicht gefunden werden</elem>
+</script></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ldap" extrainfo="Anonymous bind OK" method="probed" conf="10"/><script id="ssl-cert" output="Subject: commonName=ahserv.neumuenster.de&#xa;Issuer: commonName=ahserv.neumuenster.de&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-07-02T19:56:07&#xa;Not valid after:  2040-06-27T19:56:07&#xa;MD5:   8692 32c7 7620 5083 78a6 7044 5c80 a8ca&#xa;SHA-1: 41c7 4a9e 86f0 3b76 e6c1 3fad 0d85 5279 04d3 6099&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">B60FE3A7C84216C1FC80AC09ABB6FB06A48961216A9367BF40131E3E72703AE4D36954C2662A042234824BEFDF753198A1C599EB418E6D0C4461060B855131301899F9DADC23DCC70475974BF7390BB31934BF85E3FD2412EE0687F8BA429B705BD268407CE5210350D4DEDB76075CBE1151595E171C4DAC9529DFAFAA7C2DE7782E2B123A19A38CC8BEBDBF2226EB8D7A2305D63DFD80ED95468D976656936E045AA35985460651C1EC205D73F6EA461E13A62DD87182D7E92D448858F9487029361F6322E4DCC06235EB6D8D99580DA8D557DBF961E1DE8416F4E9F06A4C47E5416411DFFCFE723A3BDF6917949F4DD0D276551DDC797ACB52A1FF789E4A921901D588343F70F3F6D832F45A7ACE5C729E400492AA1B6633C87A5FEA3E64B12962CF29125C03FAB9D3993427BEEC30B8EFB0A0DFCB815315B7F8E05E51A5F1215077C717FC63D6C37BEA65A85ED251700E5D8EF9768113049A8C9BBF1792F932515BCA522179C9065BC9670BBA2B5C9DBD47401BA05C72CE9B5A8116EE9EE067BBAE7C4DA3607AE659B0345211279A2FB5B2E7EF2F72925E30490A65944C2E431D56A74B6A43BEA3E3E2FC0ACD3121164E0DF27010DECB7C823F236335DF47B3D008B921C4B6DF1262538256A3BD02FB3F49F5DEBF244317098757C8C8913153AFA8C7F6D4E9183D5462AF8104AA53889019ADD0D9953C54E420A2AA714B09</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-07-02T19:56:07</elem>
+<elem key="notAfter">2040-06-27T19:56:07</elem>
+</table>
+<elem key="md5">869232c77620508378a670445c80a8ca</elem>
+<elem key="sha1">41c74a9e86f03b76e6c13fad0d85527904d36099</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ldap" extrainfo="Anonymous bind OK" tunnel="ssl" method="probed" conf="10"/><script id="ssl-cert" output="Subject: commonName=ahserv.neumuenster.de&#xa;Issuer: commonName=ahserv.neumuenster.de&#xa;Public Key type: rsa&#xa;Public Key bits: 4096&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2020-07-02T19:56:07&#xa;Not valid after:  2040-06-27T19:56:07&#xa;MD5:   8692 32c7 7620 5083 78a6 7044 5c80 a8ca&#xa;SHA-1: 41c7 4a9e 86f0 3b76 e6c1 3fad 0d85 5279 04d3 6099&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">ahserv.neumuenster.de</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">B60FE3A7C84216C1FC80AC09ABB6FB06A48961216A9367BF40131E3E72703AE4D36954C2662A042234824BEFDF753198A1C599EB418E6D0C4461060B855131301899F9DADC23DCC70475974BF7390BB31934BF85E3FD2412EE0687F8BA429B705BD268407CE5210350D4DEDB76075CBE1151595E171C4DAC9529DFAFAA7C2DE7782E2B123A19A38CC8BEBDBF2226EB8D7A2305D63DFD80ED95468D976656936E045AA35985460651C1EC205D73F6EA461E13A62DD87182D7E92D448858F9487029361F6322E4DCC06235EB6D8D99580DA8D557DBF961E1DE8416F4E9F06A4C47E5416411DFFCFE723A3BDF6917949F4DD0D276551DDC797ACB52A1FF789E4A921901D588343F70F3F6D832F45A7ACE5C729E400492AA1B6633C87A5FEA3E64B12962CF29125C03FAB9D3993427BEEC30B8EFB0A0DFCB815315B7F8E05E51A5F1215077C717FC63D6C37BEA65A85ED251700E5D8EF9768113049A8C9BBF1792F932515BCA522179C9065BC9670BBA2B5C9DBD47401BA05C72CE9B5A8116EE9EE067BBAE7C4DA3607AE659B0345211279A2FB5B2E7EF2F72925E30490A65944C2E431D56A74B6A43BEA3E3E2FC0ACD3121164E0DF27010DECB7C823F236335DF47B3D008B921C4B6DF1262538256A3BD02FB3F49F5DEBF244317098757C8C8913153AFA8C7F6D4E9183D5462AF8104AA53889019ADD0D9953C54E420A2AA714B09</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Non Repudiation</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2020-07-02T19:56:07</elem>
+<elem key="notAfter">2040-06-27T19:56:07</elem>
+</table>
+<elem key="md5">869232c77620508378a670445c80a8ca</elem>
+<elem key="sha1">41c74a9e86f03b76e6c13fad0d85527904d36099</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFCjCCAvKgAwIBAgIUDpjXnwN2T2bRp4IDrnSh24w33SMwDQYJKoZIhvcNAQEL&#xa;BQAwIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5zdGVyLmRlMB4XDTIwMDcwMjE5&#xa;NTYwN1oXDTQwMDYyNzE5NTYwN1owIDEeMBwGA1UEAwwVYWhzZXJ2Lm5ldW11ZW5z&#xa;dGVyLmRlMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAtg/jp8hCFsH8&#xa;gKwJq7b7BqSJYSFqk2e/QBMePnJwOuTTaVTCZioEIjSCS+/fdTGYocWZ60GObQxE&#xa;YQYLhVExMBiZ+drcI9zHBHWXS/c5C7MZNL+F4/0kEu4Gh/i6QptwW9JoQHzlIQNQ&#xa;1N7bdgdcvhFRWV4XHE2slSnfr6p8Led4LisSOhmjjMi+vb8iJuuNeiMF1j39gO2V&#xa;Ro2XZlaTbgRao1mFRgZRwewgXXP26kYeE6Yt2HGC1+ktRIhY+UhwKTYfYyLk3MBi&#xa;NettjZlYDajVV9v5YeHehBb06fBqTEflQWQR3/z+cjo732kXlJ9N0NJ2VR3ceXrL&#xa;UqH/eJ5KkhkB1Yg0P3Dz9tgy9Fp6zlxynkAEkqobZjPIel/qPmSxKWLPKRJcA/q5&#xa;05k0J77sMLjvsKDfy4FTFbf44F5RpfEhUHfHF/xj1sN76mWoXtJRcA5djvl2gRME&#xa;moybvxeS+TJRW8pSIXnJBlvJZwu6K1ydvUdAG6Bccs6bWoEW7p7gZ7uufE2jYHrm&#xa;WbA0UhEnmi+1sufvL3KSXjBJCmWUTC5DHVanS2pDvqPj4vwKzTEhFk4N8nAQ3st8&#xa;gj8jYzXfR7PQCLkhxLbfEmJTglajvQL7P0n13r8kQxcJh1fIyJExU6+ox/bU6Rg9&#xa;VGKvgQSqU4iQGa3Q2ZU8VOQgoqpxSwkCAwEAAaM8MDowDAYDVR0TAQH/BAIwADAL&#xa;BgNVHQ8EBAMCBsAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA0GCSqG&#xa;SIb3DQEBCwUAA4ICAQBatGf3g8DMC/vvq82qFrdBfponVVZ7P1UC0fGHFTTOTv32&#xa;nx+HK0uyEsUM2LCIiKFYoXauzSJfcA7q+TWSjfWILrnr6ijlNzR+HLyiPiU+5+jP&#xa;e9vtBnkRUdXfk2CxNOzpbOlXfY+1kvZ5hBEANZ3FLVHN6kn/DwIzWLuLC8sykLb/&#xa;LB2/EWxAOCziXj403k7GcDuoRWU8CRPQTbt0B4dw9y5QZ8y+yJAYyJpTJdMyliGw&#xa;NwJ+DjtEb05y89vECW7wf2uQiLHYBx6+LOti+pvCwnnpUtIb0U3hXf0hwYLqajHI&#xa;yXtMgfK50lZLzg52FxYbPYdjw1YwoxzVOL9i2+XDdcHt6L3nPIVpsdwqXtl1JDte&#xa;U/23P/6hupCfW2oQwdNvm6b3CHvOhOg8fOh0oTfH3/x4mh8Uo1jEGX3BBBqFwtqx&#xa;BcskzeSvKw8ufSZAcsnpR7KI5shLjJUzMUgSMmkZslhfPyAm88jpJdx9IcE6ydA2&#xa;3HTuNsrvd/mT6tLA6Gk1tZ5DLI9Xj6MFSESMBzd23fF4zwSF0h6xjOCNtlfcg/AV&#xa;8LJm5n6WrhQSTknPKt29HmjiUT2E/yyStGAPcZz/R2N4f+VjEZcXBobhjFDUGZUg&#xa;Y0znv9Gk5huKFBLHe9BEgCCHgR4SgrqXG1Um6nk0M3nOsgzwHMe3oF6EwvsfVA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="5666"><state state="closed" reason="reset" reason_ttl="63"/><service name="nrpe" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49153"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49155"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49156"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49157"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49158"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49159"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49160"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49161"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49163"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49165"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49167"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49175"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49176"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49400"><state state="closed" reason="reset" reason_ttl="63"/><service name="compaqdiag" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49999"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50000"><state state="closed" reason="reset" reason_ttl="63"/><service name="ibm-db2" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50001"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50002"><state state="closed" reason="reset" reason_ttl="63"/><service name="iiimsf" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50003"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50006"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50300"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50389"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50500"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50636"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="50800"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51103"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="51493"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52673"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52822"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52848"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="52869"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54045"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="54328"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55055"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55056"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55555"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="55600"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="56737"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="56738"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="57294"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="57797"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="58080"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="60020"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="60443"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="61532"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="61900"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="62078"><state state="closed" reason="reset" reason_ttl="63"/><service name="iphone-sync" method="table" conf="3"/></port>
+<port protocol="tcp" portid="63331"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="64623"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="64680"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65000"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65129"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="65389"><state state="closed" reason="reset" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="5666"/>
+<osmatch name="Linux 4.15 - 5.6" accuracy="100" line="67241">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="5.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:5</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.91%E=4%D=8/15%OT=21%CT=5666%CU=%PV=Y%DS=2%DC=T%G=N%TM=61183D0B%&#xa;OS:P=aarch64-unknown-linux-gnu)SEQ(SP=103%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A&#xa;OS:)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B&#xa;OS:4ST11NW7%O6=M5B4ST11)WIN(W1=FE88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88&#xa;OS:)ECN(R=Y%DF=Y%TG=40%W=FAF0%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%TG=40%S=O%A=&#xa;OS:S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%TG=40%W=0%S=A%A=Z%F=R%O=%RD=0%&#xa;OS:Q=)T5(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%TG=40%W=0%&#xa;OS:S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%TG=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1&#xa;OS:(R=N)IE(R=Y%DFI=N%TG=40%CD=S)&#xa;"/>
+</os>
+<uptime seconds="530143" lastboot="Sun Aug  8 20:45:00 2021"/>
+<distance value="2"/>
+<tcpsequence index="259" difficulty="Good luck!" values="441DFAAF,266CAB22,CC6F06C0,9FCE9CE2,4A630C7F,5F3E05E2"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="1F98B039,1F98B09D,1F98B101,1F98B165,1F98B1C9,1F98B22E"/>
+<hostscript><script id="clock-skew" output="mean: -39m59s, deviation: 1h09m15s, median: 0s"><elem key="stddev">4155</elem>
+<elem key="median">0</elem>
+<elem key="mean">-2399</elem>
+<elem key="count">3</elem>
+</script><script id="nbstat" output="NetBIOS name: ISERV, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 20:90:2d:b7:1a:7f (unknown)&#xa;Names:&#xa;  ISERV&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ISERV&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ISERV&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  SCHULE&lt;1b&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  SCHULE&lt;1c&gt;           Flags: &lt;group&gt;&lt;active&gt;&#xa;  SCHULE&lt;00&gt;           Flags: &lt;group&gt;&lt;active&gt;&#xa;  __SAMBA__&lt;00&gt;        Flags: &lt;group&gt;&lt;active&gt;&lt;permanent&gt;&#xa;  __SAMBA__&lt;20&gt;        Flags: &lt;group&gt;&lt;active&gt;&lt;permanent&gt;&#xa;Statistics:&#xa;  20 90 2d b7 1a 7f 00 00 0a 40 ca 00 55 9a 00 00 c4&#xa;  c4 38 b7 2d 00 00 7f 1a b7 2d c7 e3 7f 1a 00 00 00&#xa;  00 00 00 00 00 00 00 00 00 00 00 00 00 00"/><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 25862/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 28314/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 64013/udp): CLEAN (Timeout)&#xa;  Check 4 (port 41817/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.9.5-Debian)&#xa;  Computer name: iserv&#xa;  NetBIOS computer name: ISERV\x00&#xa;  Domain name: ad.ahserv.neumuenster.de&#xa;  FQDN: iserv.ad.ahserv.neumuenster.de&#xa;  System time: 2021-08-15T00:00:05+02:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.9.5-Debian</elem>
+<elem key="server">ISERV\x00</elem>
+<elem key="date">2021-08-15T00:00:05+02:00</elem>
+<elem key="fqdn">iserv.ad.ahserv.neumuenster.de</elem>
+<elem key="domain_dns">ad.ahserv.neumuenster.de</elem>
+<elem key="workgroup">SCHULE\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: required"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">required</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled and required"><table key="2.02">
+<elem>Message signing enabled and required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2021-08-14T22:00:05&#xa;  start_date: N/A"><elem key="date">2021-08-14T22:00:05</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><trace port="50002" proto="tcp">
+<hop ttl="1" ipaddr="172.29.172.1" rtt="0.67"/>
+<hop ttl="2" ipaddr="172.29.160.254" rtt="1.78"/>
+</trace>
+<times srtt="1595" rttvar="111" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1628978443"/>
+<taskend task="NSE" time="1628978443"/>
+<taskbegin task="NSE" time="1628978443"/>
+<taskend task="NSE" time="1628978443"/>
+<taskbegin task="NSE" time="1628978443"/>
+<taskend task="NSE" time="1628978443"/>
+<runstats><finished time="1628978443" timestr="Sun Aug 15 00:00:43 2021" summary="Nmap done at Sun Aug 15 00:00:43 2021; 1 IP address (1 host up) scanned in 164.68 seconds" elapsed="164.68" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
