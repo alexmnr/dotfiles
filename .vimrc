@@ -8,7 +8,7 @@ Plug 'ap/vim-css-color'
 call plug#end()
 
 " Keybindings
-map H 0
+map H ^^
 map L $
 nnoremap <SPACE> <Nop>
 let mapleader=" "
