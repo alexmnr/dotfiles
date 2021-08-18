@@ -28,7 +28,7 @@ alias ran="ranger"
 alias sran="sudo ranger"
 alias vi="sudo vim"
 alias ipconfig="curl ifconfig.me"
-
+#alias conda="/home/ALEX/anaconda/bin/conda"
 ###################Commands################
 #neofetch
 
