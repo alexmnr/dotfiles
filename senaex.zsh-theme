@@ -14,7 +14,7 @@ elif [ $(echo $HOST) = "Kali-LP" ]; then
     git_color=208
 else
     user_color=197
-    line_color=129
+    line_color=202
     dir_color=205
     conda_color=176
     git_color=208
