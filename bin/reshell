@@ -1,12 +1,16 @@
 #!/bin/bash
 sudo systemctl start sshd.service
 
+PORT=$(cat $HOME/bin/ftp-shell.d/login | grep -o "P: .*" | grep -Eo "[0-9]{1,5}")
+USER=$(cat $HOME/bin/ftp-shell.d/login | grep -Eo "U: .*" | cut -f 2 -d ' ')
+PASS=$(cat $HOME/bin/ftp-shell.d/login | grep -Eo "PS: .*" | cut -f 2 -d ' ')
+
 sshpass -p "Idkpuh-2021" scp -P 35878 reshell@surfactant.ddns.net:/home/reshell/ftp-shell/connections $HOME/bin/ftp-shell.d
-echo "I: $(curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') P: 22" >> $HOME/bin/ftp-shell.d/connections
+echo "I: $(curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') P: $PORT" >> $HOME/bin/ftp-shell.d/connections
 sshpass -p "Idkpuh-2021" scp -P 35878 $HOME/bin/ftp-shell.d/connections reshell@surfactant.ddns.net:/home/reshell/ftp-shell/
 
 sleep 5
-ssh localhost -p 42069
+sshpass -p "$PASS" ssh $USER@localhost -p 42069
 
 grep -vE "$(curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}')" $HOME/bin/ftp-shell.d/connections > $HOME/bin/ftp-shell.d/tmp.txt
 rm $HOME/bin/ftp-shell.d/connections 
