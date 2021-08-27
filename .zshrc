@@ -1,9 +1,12 @@
 ###################Path####################
 typeset -U path
 path+=(/usr/sbin)
-path+=(/home/senaex/bin)
+path+=($HOME/bin)
+path+=($ALEX/anaconda/bin)
+path+=($HOME/anaconda/condabin)
 
 export ZSH="$HOME/.oh-my-zsh"
+export ALEX="/home/ALEX"
 
 ###################Oh my zsh###############
 ZSH_THEME="senaex"
