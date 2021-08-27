@@ -3,8 +3,7 @@ typeset -U path
 path+=(/usr/sbin)
 path+=(/home/senaex/bin)
 
-export ZSH="/home/senaex/.oh-my-zsh"
-export DRONEAI_LIBRARY="/home/senaex/ALEX/DroneAI/Firmware/Flightcontroller/librarys/"
+export ZSH="$HOME/.oh-my-zsh"
 
 ###################Oh my zsh###############
 ZSH_THEME="senaex"
