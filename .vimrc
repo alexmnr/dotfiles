@@ -18,6 +18,7 @@ map <C-Q> :q <CR>
 map <C-w> :w <CR>
 map <C-s> :source % <CR>
 map <leader>7 :noh <CR>
+map U :redo <CR>
 cmap w!! w !sudo tee > /dev/null %
 
 " Colors

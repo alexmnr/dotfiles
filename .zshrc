@@ -20,7 +20,6 @@ plugins=(
 ZSH_DISABLE_COMPFIX=true
 
 source $ZSH/oh-my-zsh.sh
-
 ###################Aliases#################
 alias rc="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
