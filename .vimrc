@@ -16,6 +16,7 @@ let mapleader=" "
 map <C-q> :wq <CR>
 map <C-Q> :q <CR>
 map <C-w> :w <CR>
+map <C-u> :redo <CR>
 map <C-s> :source % <CR>
 map <leader>7 :noh <CR>
 map U :redo <CR>
