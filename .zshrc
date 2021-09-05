@@ -1,9 +1,14 @@
 ###################Path####################
 typeset -U path
 path+=(/usr/sbin)
-path+=($HOME/bin)
-path+=($ALEX/anaconda/bin)
-path+=($HOME/anaconda/condabin)
+
+if [ -d /home/ALEX/anaconda ]; then
+    path+=($HOME/bin)
+fi
+
+if [ -d /home/ALEX/anaconda ]; then
+    path+=($ALEX/anaconda/bin)
+fi
 
 export ZSH="$HOME/.oh-my-zsh"
 export ALEX="/home/ALEX"
@@ -35,19 +40,3 @@ function cl {
     }
 ###################Commands################
 #neofetch
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/ALEX/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/ALEX/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/home/ALEX/anaconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/ALEX/anaconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
