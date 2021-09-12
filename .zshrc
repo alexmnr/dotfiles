@@ -34,6 +34,7 @@ alias ran="ranger"
 alias sran="sudo ranger"
 alias vi="sudo vim"
 alias ipconfig="curl ifconfig.me"
+alias gis="git status"
 
 function cl {
     cd "$@" && ls 
