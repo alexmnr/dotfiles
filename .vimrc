@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -11,13 +10,10 @@ call plug#end()
 map H ^^
 map L $
 nnoremap <SPACE> <Nop>
-let mapleader=" "
-map <C-q> :wq <CR>
-map <C-Q> :q <CR>
-map <C-w> :w <CR>
+let mapleader="m"
 map <C-u> :redo <CR>
 map <C-s> :source % <CR>
-map <leader>7 :noh <CR>
+map <leader>n :noh <CR>
 map U :redo <CR>
 cmap w!! w !sudo tee > /dev/null %
 
@@ -32,7 +28,8 @@ set clipboard=unnamedplus
 set shiftwidth=4
 set tabstop=4 softtabstop=4
 set expandtab
-
+let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
 " Settings 
 set encoding=UTF-8
 set nocompatible
