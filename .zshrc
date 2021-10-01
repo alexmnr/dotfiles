@@ -39,7 +39,7 @@ alias la="ls -al"
 alias ran="ranger"
 alias sran="sudo ranger"
 alias vi="sudo vim"
-alias ipconfig="curl ifconfig.me"
+alias ipconfig="curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias gis="git status"
 
 function cl {
