@@ -15,6 +15,8 @@ map <C-u> :redo <CR>
 map <C-s> :source % <CR>
 map <leader>n :noh <CR>
 map U :redo <CR>
+map K 5k
+map J 5j
 cmap w!! w !sudo tee > /dev/null %
 
 " Colors

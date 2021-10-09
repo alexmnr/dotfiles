@@ -10,11 +10,6 @@ if [ -d /home/ALEX/anaconda ]; then
     path+=(/home/ALEX/anaconda/bin)
 fi
 
-if [ -d /home/ALEX/STM32 ]; then
-    path+=(/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin)
-    path+=(/home/ALEX/STM32/etc/Jlink)
-fi
-
 export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="$HOME/.oh-my-zsh"
 export ALEX="/home/ALEX"
