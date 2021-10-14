@@ -10,6 +10,10 @@ if [ -d /home/ALEX/anaconda ]; then
     path+=(/home/ALEX/anaconda/bin)
 fi
 
+if [ -d /home/ALEX/STM32 ]; then
+    path+=(~/.platformio/penv/bin)
+fi
+
 export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="$HOME/.oh-my-zsh"
 export ALEX="/home/ALEX"
