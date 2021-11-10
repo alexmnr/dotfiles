@@ -34,7 +34,7 @@ source $ZSH/oh-my-zsh.sh
 alias rc="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
 alias src="exec zsh"
-alias la="ls -al"
+alias la="ls -alh"
 alias ran="ranger"
 alias sran="sudo ranger"
 alias vi="sudo vim"
