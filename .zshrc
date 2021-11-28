@@ -19,7 +19,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ALEX="/home/ALEX"
 
 ###################Oh my zsh###############
-ZSH_THEME="senaex"
+ZSH_THEME="lennart"
 
 plugins=(
 	git
