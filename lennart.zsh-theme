@@ -1,24 +1,33 @@
 prompt_symbol=Ω
 
-if [ $(echo $HOST) = "Arch-PC" ]; then
-    user_color=039
-    line_color=049
-    dir_color=051
-    conda_color=176
-    git_color=208
-elif [ $(echo $HOST) = "Arch-LP" ]; then
-    user_color=039
-    line_color=049
-    dir_color=051
-    conda_color=176
-    git_color=208
+if [ $(echo $HOST) = "rappi" ]; then
+     user_color=197
+     line_color=202
+     dir_color=205
+     conda_color=176
+     git_color=208
+elif [ $(echo $HOST) = "rapster" ]; then
+     user_color=120
+     line_color=041
+     dir_color=085
+     conda_color=176
+     git_color=036
 else
-    user_color=197
-    line_color=202
-    dir_color=205
-    conda_color=176
-    git_color=208
+     user_color=039
+     line_color=049
+     dir_color=051
+     conda_color=176
+     git_color=208
 fi
+
+if [ $(echo $USER) = "root" ]; then
+     user_color=161
+     line_color=124
+     dir_color=166
+     conda_color=129
+     git_color=125
+fi
+
 
 username() {
    echo "%F{$user_color}%B%n $prompt_symbol %m%b"
