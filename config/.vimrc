@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'joom/vim-commentary'
 
 call plug#end()
 
@@ -17,7 +18,7 @@ map <leader>n :noh <CR>
 map U :redo <CR>
 map K 5k
 map J 5j
-cmap w!! w !sudo tee > /dev/null %
+cnoremap w!! w !sudo tee > /dev/null %
 
 " Colors
 colorscheme delek

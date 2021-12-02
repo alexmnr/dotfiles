@@ -15,7 +15,7 @@ if [ -d /home/ALEX/STM32 ]; then
 fi
 
 export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/usr/local/zsh/oh-my-zsh"
 export ALEX="/home/ALEX"
 
 ###################Oh my zsh###############

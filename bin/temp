@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-temp=$(sensors | grep -o "+.*")
-
-echo $temp
