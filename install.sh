@@ -43,6 +43,7 @@ ln -s $DIR/.vimrc ~
 ln -s $DIR/.zshrc ~
 ln -s $DIR/bin ~ 
 sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
 echo "---------------------------done!------------------------------"
 
 echo -e "\nreloading..."
