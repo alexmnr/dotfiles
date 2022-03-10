@@ -8,6 +8,9 @@ export ZSH="/usr/local/zsh/oh-my-zsh"
 sudo mkdir /usr/local/zsh
 sudo chown ${USER} /usr/local/zsh
 sudo chmod a+xrw /usr/local/zsh
+
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
+echo "---------------------------done!------------------------------"
 echo -e "\nlinking dotfiles..."
 
 DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
@@ -15,12 +18,8 @@ DIR=$DIR/config
 mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin &>/dev/null
 ln -s $DIR/.vimrc ~
 ln -s $DIR/.zshrc ~
-ln -s $DIR/bin ~ 
 sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
 sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-echo "---------------------------done!------------------------------"
-
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 echo "---------------------------done!------------------------------"
 echo -e "\nChecking Folder structur..."
 if [[ -d $HOME/tmp ]]; then
