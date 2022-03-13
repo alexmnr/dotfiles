@@ -15,7 +15,7 @@ echo -e "\nlinking dotfiles..."
 
 DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 DIR=$DIR/config
-mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin &>/dev/null
+mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
 ln -s $DIR/.vimrc ~
 ln -s $DIR/.zshrc ~
 sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
