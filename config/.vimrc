@@ -19,7 +19,8 @@ map <leader>n :noh <CR>
 map U :redo <CR>
 map K 5k
 map J 5j
-cnoremap w!! w !sudo tee > /dev/null %
+" cnoremap w!! w !sudo tee > /dev/null %
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 
 " Colors
 colorscheme delek
