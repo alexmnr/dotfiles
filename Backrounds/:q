@@ -21,7 +21,7 @@ map K 5k
 map J 5j
 " cnoremap w!! w !sudo tee > /dev/null %
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-" command Wq :execute ':silent w !sudo tee % > /dev/null <bar> :q' | :edit!
+command Wq :execute ':silent w !sudo tee % > /dev/null :q' 
 
 " Colors
 colorscheme delek

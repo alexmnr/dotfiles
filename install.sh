@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\nInstalling necessary packages..."
-sudo apt update && sudo apt install make git wget zsh curl ranger vim neofetch
-sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger vim neofetch
+sudo apt update && sudo apt install make git wget zsh curl ranger vim neofetch fd
+sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger vim neofetch fd
 echo "---------------------------done!------------------------------"
 echo -e "\nInstalling oh-my-zsh..."
 export ZSH="/usr/local/zsh/oh-my-zsh"
@@ -40,6 +40,9 @@ echo -e "\nInstalling plugins and gits..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # Syntax Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# fzf fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 echo -e "\nreloading..."
 exec zsh
