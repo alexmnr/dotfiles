@@ -1,0 +1,35 @@
+DP-0 HDMI-0 Window-Maximized 1920x1080=true
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPVAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
+StatusBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=Senaex.profile
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[KonsoleWindow]
+ShowMenuBarByDefault=false
+
+[MainWindow]
+DP-0 HDMI-0 Height 1920x1080=494
+DP-0 HDMI-0 Width 1920x1080=960
+DP-0 HDMI-0 Window-Maximized 1920x1080=true
+DP-0 HDMI-0 XPosition 1920x1080=2098
+DP-0 HDMI-0 YPosition 1920x1080=503
+DP-0 Height 1920x1080=664
+DP-0 Width 1920x1080=1280
+HDMI-0 DP-0 Window-Maximized 1920x1080=true
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAfsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAAAA/////wAAANMBAAADAAAHgAAAA9wAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAAAAAAD/////AAAAAAAAAAAAAAAcAHMAZQBzAHMAaQBvAG4AVABvAG8AbABiAGEAcgAAAAAA/////wAAAAAAAAAA
+StatusBar=Disabled
+ToolBarsMovable=Disabled
+
+[Notification Messages]
+CloseAllTabs=true
+
+[Shortcut Schemes]
+Current Scheme=Senaex
+
+[UiSettings]
+ColorScheme=Default
