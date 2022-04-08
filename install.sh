@@ -11,16 +11,6 @@ sudo chmod a+xrw /usr/local/zsh
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 echo "---------------------------done!------------------------------"
-echo -e "\nlinking dotfiles..."
-
-DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-DIR=$DIR/config
-mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
-ln -s $DIR/.vimrc ~
-ln -s $DIR/.zshrc ~
-sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-echo "---------------------------done!------------------------------"
 echo -e "\nChecking Folder structur..."
 if [[ -d $HOME/tmp ]]; then
     echo "tmp exists"
@@ -34,6 +24,18 @@ else
     echo "creating .old"
     mkdir ~/.old
 fi
+echo "---------------------------done!------------------------------"
+echo -e "\nlinking dotfiles..."
+
+DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+DIR=$DIR/config
+mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
+ln -s $DIR/.vimrc ~
+ln -s $DIR/.zshrc ~
+ln -s $DIR/../Backrounds ~/Pictures
+ln -s $DIR/../Icons ~/Pictures
+sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
 echo "---------------------------done!------------------------------"
 echo -e "\nInstalling plugins and gits..."
 # autossugestions

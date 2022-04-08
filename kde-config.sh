@@ -37,9 +37,9 @@ echo "  2: ubuntu"
 
 read OS
 
-if [ OS == "1" ]; then
+if [ $OS == "1" ]; then
     ./install-dependencies-arch.sh
-elif [ OS == "2" ]; then
+elif [ $OS == "2" ]; then
     ./install-dependencies-ubuntu.sh
 fi
 ./build-applet.sh
