@@ -18,6 +18,12 @@ elif [ $(echo $HOST) = "Arch-LP" ]; then
     dir_color=051
     conda_color=176
     git_color=208
+elif [ $(echo $HOST) = "Arch-USB" ]; then
+    user_color=039
+    line_color=049
+    dir_color=051
+    conda_color=176
+    git_color=208
 else
     user_color=197
     line_color=202

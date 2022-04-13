@@ -43,6 +43,7 @@ elif [ $OS == "2" ]; then
     ./install-dependencies-ubuntu.sh
 fi
 ./build-applet.sh
+./install-applet.sh
 
 # Konsole
 echo "Configurating Konsole"
