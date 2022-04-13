@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\nInstalling necessary packages..."
-sudo apt update && sudo apt install make git wget zsh curl ranger vim neofetch fd
-sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger vim neofetch fd
+sudo apt update && sudo apt install make git wget zsh curl ranger vim-gtk3 neofetch fd-find
+sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger gvim neofetch fd
 echo "---------------------------done!------------------------------"
 echo -e "\nInstalling oh-my-zsh..."
 export ZSH="/usr/local/zsh/oh-my-zsh"
