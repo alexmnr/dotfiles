@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\nInstalling necessary packages..."
-sudo apt update && sudo apt install make git wget zsh curl ranger vim neofetch
-sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger vim neofetch
+sudo apt update && sudo apt install make git wget zsh curl ranger vim-gtk3 neofetch fd-find
+sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger gvim neofetch fd
 echo "---------------------------done!------------------------------"
 echo -e "\nInstalling oh-my-zsh..."
 export ZSH="/usr/local/zsh/oh-my-zsh"
@@ -10,16 +10,6 @@ sudo chown ${USER} /usr/local/zsh
 sudo chmod a+xrw /usr/local/zsh
 
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
-echo "---------------------------done!------------------------------"
-echo -e "\nlinking dotfiles..."
-
-DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-DIR=$DIR/config
-mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin &>/dev/null
-ln -s $DIR/.vimrc ~
-ln -s $DIR/.zshrc ~
-sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
 echo "---------------------------done!------------------------------"
 echo -e "\nChecking Folder structur..."
 if [[ -d $HOME/tmp ]]; then
@@ -35,11 +25,26 @@ else
     mkdir ~/.old
 fi
 echo "---------------------------done!------------------------------"
+echo -e "\nlinking dotfiles..."
+
+DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+DIR=$DIR/config
+mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
+ln -s $DIR/.vimrc ~
+ln -s $DIR/.zshrc ~
+ln -s $DIR/../Backrounds ~/Pictures
+ln -s $DIR/../Icons ~/Pictures
+sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+echo "---------------------------done!------------------------------"
 echo -e "\nInstalling plugins and gits..."
 # autossugestions
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # Syntax Highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# fzf fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 echo -e "\nreloading..."
 exec zsh
