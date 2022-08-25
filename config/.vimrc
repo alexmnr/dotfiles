@@ -24,7 +24,7 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " command Wq :execute ':silent w !sudo tee % > /dev/null <bar> :q' | :edit!
 
 " Colors
-colorscheme delek
+colorscheme dalek
 let g:airline_theme='simple'
 
 " Settings essential

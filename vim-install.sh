@@ -1,4 +1,9 @@
 #!/bin/bash
+# install dalek theme
+mkdir ~/.vim/colors
+DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+DIR=$DIR/config
+ln -s $DIR/dalek.vim ~/.vim/colors
 # Vim Plug
 echo "Installing Plug"
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
