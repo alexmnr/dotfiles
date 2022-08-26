@@ -1,0 +1,6 @@
+"current_name";"default_name"
+"proxifiedScripts/linux";"10_linux"
+"06_linux_xen";"20_linux_xen"
+"proxifiedScripts/os-prober";"30_os-prober"
+"proxifiedScripts/uefi-firmware";"30_uefi-firmware"
+"01_grub-customizer_menu_color_helper";"6_grub-customizer_menu_color_helper"

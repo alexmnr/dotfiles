@@ -18,6 +18,9 @@ export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="/usr/local/zsh/oh-my-zsh"
 export ALEX="/home/ALEX"
 
+export EDITOR='vim'
+export VISUAL='vim'
+
 ###################Oh my zsh###############
 ZSH_THEME="senaex"
 
