@@ -1,5 +1,0 @@
-#!/bin/sh
-#THIS IS A GRUB PROXY SCRIPT
-'/etc/grub.d/proxifiedScripts/os-prober' | /etc/grub.d/bin/grubcfg_proxy "+*
-+'Windows Boot Manager (on /dev/nvme0n1p3)'~5bdab5b977ae4832a41ee83d95c878a3~ as 'Windows 11'
-"

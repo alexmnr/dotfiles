@@ -1,5 +1,0 @@
-#!/bin/sh
-#THIS IS A GRUB PROXY SCRIPT
-'/etc/grub.d/proxifiedScripts/uefi-firmware' | /etc/grub.d/bin/grubcfg_proxy "+*
-+'UEFI Firmware Settings'~4e15a6547b9250de59821b594ecf5dee~ as 'Boot-Menu'
-"
