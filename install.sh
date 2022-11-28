@@ -24,6 +24,12 @@ else
     echo "creating .old"
     mkdir ~/.old
 fi
+if [[ -d $HOME/.rc ]]; then
+    echo ".rc exists"
+else
+    echo "creating .rc"
+    mkdir ~/.rc
+fi
 echo "---------------------------done!------------------------------"
 echo -e "\nlinking dotfiles..."
 
