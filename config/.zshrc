@@ -70,4 +70,6 @@ export FZF_ALT_C_COMMAND="fd --type d . --hidden"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
 # Conda Setup
-~/.rc/conda-setup.sh
+if [ -f ~/.rc/conda-setup.sh ]; then
+    ~/.rc/conda-setup.sh
+fi
