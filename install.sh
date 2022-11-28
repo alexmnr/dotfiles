@@ -9,7 +9,7 @@ sudo mkdir /usr/local/zsh
 sudo chown ${USER} /usr/local/zsh
 sudo chmod a+xrw /usr/local/zsh
 
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
+exit | bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 echo "---------------------------done!------------------------------"
 echo -e "\nChecking Folder structur..."
 if [[ -d $HOME/tmp ]]; then
@@ -50,7 +50,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-/usr/lo
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # fzf fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+~/.fzf/install --key-bindings --no-completion --no-update-rc --no-zsh
 
 echo -e "\nreloading..."
 exec zsh

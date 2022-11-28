@@ -47,6 +47,9 @@ alias gis="git status"
 function cl {
     cd "$@" && ls 
     }
+function gic {
+    git add --all && git commit -m $@
+    }
 ###################Commands################
 #neofetch
 
