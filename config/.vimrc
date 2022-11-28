@@ -6,6 +6,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'joom/vim-commentary'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'terryma/vim-multiple-cursors'
+Plug 'sheerun/vim-polyglot'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
 
@@ -20,9 +22,12 @@ map <leader>n :noh <CR>
 map U :redo <CR>
 map K 5k
 map J 5j
-" cnoremap w!! w !sudo tee > /dev/null %
 command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
-" command Wq :execute ':silent w !sudo tee % > /dev/null <bar> :q' | :edit!
+" Moving lines
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Colors
 colorscheme dalek
