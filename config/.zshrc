@@ -73,3 +73,9 @@ export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 if [ -f ~/.rc/conda-setup.sh ]; then
     ~/.rc/conda-setup.sh
 fi
+if [ -f /opt/ros/humble/setup.zsh ]; then
+    source /opt/ros/humble/setup.zsh &> /dev/null
+fi
+if [ -f /home/ALEX/3dev/ros/install/setup.zsh ]; then
+    source /home/ALEX/3dev/ros/install/setup.zsh &> /dev/null
+fi
