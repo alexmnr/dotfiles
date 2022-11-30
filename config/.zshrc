@@ -70,7 +70,9 @@ export FZF_ALT_C_COMMAND="fd --type d . --hidden"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
 # load aditional configs
-for f in ~/.rc/*
-do
-    zsh $f
-done
+if [ -n "$(ls -A your/dir 2>/dev/null)" ]; then
+    for f in ~/.rc/*
+    do
+        zsh $f
+    done
+fi
