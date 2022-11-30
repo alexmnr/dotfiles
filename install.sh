@@ -11,6 +11,8 @@ sudo chmod a+xrw /usr/local/zsh
 
 exit | bash -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" 
 echo "---------------------------done!------------------------------"
+DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+DIR=$DIR/config
 echo -e "\nChecking Folder structur..."
 if [[ -d $HOME/tmp ]]; then
     echo "tmp exists"
@@ -30,11 +32,15 @@ else
     echo "creating .rc"
     mkdir ~/.rc
 fi
+if [[ -d $HOME/.rc-temp ]]; then
+    echo ".rc-temp exists"
+else
+    echo "linking .rc-temp"
+    ln -s $DIR/.rc-temp ~/.rc-temp
+fi
 echo "---------------------------done!------------------------------"
 echo -e "\nlinking dotfiles..."
 
-DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-DIR=$DIR/config
 mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
 ln -s $DIR/.vimrc ~
 ln -s $DIR/.zshrc ~

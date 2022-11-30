@@ -69,13 +69,8 @@ export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
 export FZF_ALT_C_COMMAND="fd --type d . --hidden"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
-# Conda Setup
-if [ -f ~/.rc/conda-setup.sh ]; then
-    ~/.rc/conda-setup.sh
-fi
-if [ -f /opt/ros/humble/setup.zsh ]; then
-    source /opt/ros/humble/setup.zsh &> /dev/null
-fi
-if [ -f /home/ALEX/3dev/ros/install/setup.zsh ]; then
-    source /home/ALEX/3dev/ros/install/setup.zsh &> /dev/null
-fi
+# load aditional configs
+for f in ~/.rc/*
+do
+    zsh $f
+done
