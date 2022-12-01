@@ -13,6 +13,14 @@ fi
 if [ -d /home/ALEX/STM32 ]; then
     path+=(~/.platformio/penv/bin)
 fi
+if [ -d /home/ALEX/3dev/docker ]; then
+    path+=(/home/ALEX/3dev/docker)
+fi
+
+if [ -d /root/3dev/docker ]; then
+    path+=(/root/3dev/docker)
+fi
+
 
 export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="/usr/local/zsh/oh-my-zsh"
