@@ -28,6 +28,8 @@ plugins=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+    sudo
+    dirhistory
 )
 
 ZSH_DISABLE_COMPFIX=true
@@ -70,7 +72,7 @@ export FZF_ALT_C_COMMAND="fd --type d . --hidden"
 export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
 # load aditional configs
-if [ -n "$(ls -A your/dir 2>/dev/null)" ]; then
+if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
     for f in ~/.rc/*
     do
         zsh $f
