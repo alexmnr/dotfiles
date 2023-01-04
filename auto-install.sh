@@ -1,72 +1,12 @@
 #!/bin/bash
 #### getting Input
-echo -e "What options should be installed?\n"
 
-read -p "zsh (y, n) [y]: " zsh
-if [ -z $zsh ]; then
-    zsh=1
-elif [ $zsh == "y" ]; then
-    zsh=1
-elif [ $zsh == "n" ]; then
-    zsh=0
-else
-    zsh=1
-fi
-
-read -p "fzf (y, n) [y]: " fzf
-if [ -z $fzf ]; then
-    fzf=1
-elif [ $fzf == "y" ]; then
-    fzf=1
-elif [ $fzf == "n" ]; then
-    fzf=0
-else
-    fzf=1
-fi
-
-read -p "vim (y, n) [y]: " vim
-if [ -z $vim ]; then
-    vim=1
-elif [ $vim == "y" ]; then
-    vim=1
-elif [ $vim == "n" ]; then
-    vim=0
-else
-    vim=1
-fi
-
-read -p "git credentials (Alex) (bitte nicht anklicken lennart danke!) (y, n) [n]: " git
-if [ -z $git ]; then
-    git=0
-elif [ $git == "y" ]; then
-    git=1
-elif [ $git == "n" ]; then
-    git=0
-else
-    git=0
-fi
-
-read -p "kde konsole config (y, n) [n]: " kdek
-if [ -z $kdek ]; then
-    kdek=0
-elif [ $kdek == "y" ]; then
-    kdek=1
-elif [ $kdek == "n" ]; then
-    kdek=0
-else
-    kdek=0
-fi
-
-read -p "kde themes and design (y, n) [n]: " kde
-if [ -z $kde ]; then
-    kde=0
-elif [ $kde == "y" ]; then
-    kde=1
-elif [ $kde == "n" ]; then
-    kde=0
-else
-    kde=0
-fi
+zsh=1
+vim=1
+fzf=1
+kdek=0
+kde=0
+git=0
 
 echo -e "\nInstalling necessary packages..."
 sudo apt update && sudo apt install make git wget zsh curl ranger vim-gtk3 neofetch fd-find

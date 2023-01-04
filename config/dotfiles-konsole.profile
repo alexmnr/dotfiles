@@ -10,8 +10,11 @@ UseCustomCursorColor=true
 
 [General]
 Environment=TERM=xterm-256color,COLORTERM=truecolor
-Name=Senaex
+Name=dotfiles-konsole
 Parent=FALLBACK/
+
+[Keyboard]
+KeyBindings=dotfiles-konsole-shortcuts
 
 [Scrolling]
 HistorySize=5000
