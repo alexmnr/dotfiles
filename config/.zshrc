@@ -1,6 +1,7 @@
 ###################Path####################
 typeset -U path
 path+=(/usr/sbin)
+path+=(/usr/local/bin)
 
 if [ -d /home/ALEX/anaconda ]; then
     path+=($HOME/bin)

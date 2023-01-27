@@ -73,14 +73,8 @@ sudo apt update && sudo apt install make git wget zsh curl ranger vim-gtk3 neofe
 sudo pacman -Syy && sudo pacman -S --needed make git wget zsh curl ranger gvim neofetch fd
 echo "---------------------------done!------------------------------"
 
-echo -e "\nlinking dotfiles..."
 DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 DIR=$DIR/config
-mv -t ~/.old ~/.zshrc ~/.vimrc ~/.vim ~/.oh-my-zsh/themes/senaex.zsh-theme ~/bin 
-ln -s $DIR/.zshrc ~
-sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
-echo "---------------------------done!------------------------------"
 
 if [ $zsh == 1 ]; then
     #### Installing Oh my zsh
@@ -101,12 +95,22 @@ if [ $zsh == 1 ]; then
     # Syntax Highlighting
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-/usr/local/zsh/oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     echo "---------------------------done!------------------------------"
+
+    echo -e "\nlinking dotfiles..."
+    rm -rf ~/.zshrc ~/.oh-my-zsh/themes/lennart.zsh-theme ~/.oh-my-zsh/themes/senaex.zsh-theme ~/.rc-temp ~/.rc
+    mkdir ~/.rc
+    ln -s $DIR/.zshrc ~
+    ln -s $DIR/.rc-temp ~
+    sudo ln -s $DIR/senaex.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+    sudo ln -s $DIR/lennart.zsh-theme /usr/local/zsh/oh-my-zsh/themes
+    echo "---------------------------done!------------------------------"
 fi
 
 if [ $fzf == 1 ]; then
     echo -e "\nInstalling fzf..."
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --key-bindings --no-completion --no-update-rc --no-zsh
+    ln -s ~/.rc-temp/fzf-setup.sh ~/.rc
     echo "---------------------------done!------------------------------"
 fi
 
