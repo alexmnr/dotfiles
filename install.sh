@@ -144,7 +144,6 @@ if [ $zsh == 1 ]; then
     #### Installing Oh my zsh
     echo -e "\nInstalling oh-my-zsh..."
     echo -e "\n!!! you need to type 'exit' after the oh-my-zsh-installation! Press any button to start..."
-    # read  
     export ZSH="/usr/local/zsh/oh-my-zsh"
     sudo mkdir /usr/local/zsh
     sudo chown ${USER} /usr/local/zsh
@@ -170,27 +169,28 @@ if [ $zsh == 1 ]; then
     echo "---------------------------done!------------------------------"
 fi
 
-# if [ $fzf == 1 ]; then
-#     echo -e "\nInstalling fzf..."
-#     rm -rf ~/.fzf*
-#     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-#     ~/.fzf/install --key-bindings --no-completion --no-update-rc 
-#     ln -s ~/.rc-temp/fzf-setup.sh ~/.rc
-#     echo "---------------------------done!------------------------------"
-# fi
+if [ $fzf == 1 ]; then
+    echo -e "\nInstalling fzf..."
+    rm -rf ~/.fzf*
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install --key-bindings --no-completion --no-update-rc 
+    ln -s ~/.rc-temp/fzf-setup.sh ~/.rc
+    echo "---------------------------done!------------------------------"
+fi
 
-# if [ $vim == 1 ]; then
-#     echo -e "\nInstalling vim and plugins..."
-#     mkdir ~/.vim
-#     ln -s $DIR/.vimrc ~
-#     mkdir ~/.vim/colors
-#     ln -s $DIR/dalek.vim ~/.vim/colors
-#     # Vim Plug
-#     curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-#     # Plug Install
-#     vim -c :PlugInstall -c :q -c :q
-#     echo "---------------------------done!------------------------------"
-# fi
+if [ $vim == 1 ]; then
+    echo -e "\nInstalling vim and plugins..."
+    rm -rf ~/.vim ~/.vimrc 
+    mkdir ~/.vim
+    ln -s $DIR/.vimrc ~
+    mkdir ~/.vim/colors
+    ln -s $DIR/dalek.vim ~/.vim/colors
+    # Vim Plug
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    # Plug Install
+    vim -c :PlugInstall -c :q -c :q
+    echo "---------------------------done!------------------------------"
+fi
 
 # if [ $git == 1 ]; then
 #     echo -e "\nLinking git credentials..."
