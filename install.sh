@@ -108,6 +108,7 @@ fi
 
 if [ $fzf == 1 ]; then
     echo -e "\nInstalling fzf..."
+    rm -rf ~/.fzf*
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --key-bindings --no-completion --no-update-rc 
     ln -s ~/.rc-temp/fzf-setup.sh ~/.rc
