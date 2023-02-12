@@ -192,75 +192,75 @@ if [ $vim == 1 ]; then
     echo "---------------------------done!------------------------------"
 fi
 
-# if [ $git == 1 ]; then
-#     echo -e "\nLinking git credentials..."
-#     git config --global credential.helper store
-#     git config --global user.name "Senaxius"
-#     git config --global user.email "alexander.minor004@gmail.com"
-#     echo "---------------------------done!------------------------------"
-# fi
+if [ $git == 1 ]; then
+    echo -e "\nLinking git credentials..."
+    git config --global credential.helper store
+    git config --global user.name "Senaxius"
+    git config --global user.email "alexander.minor004@gmail.com"
+    echo "---------------------------done!------------------------------"
+fi
 
-# if [ $kde == 1 ]; then
-#     echo -e "\nConfiguring KDE Themes and Design..."
-#     ln -s $DIR/../Backrounds ~/Pictures
-#     ln -s $DIR/../Icons ~/Pictures
-#     mkdir ~/tmp &>/dev/null
+if [ $kde == 1 ]; then
+    echo -e "\nConfiguring KDE Themes and Design..."
+    ln -s $DIR/../Backrounds ~/Pictures
+    ln -s $DIR/../Icons ~/Pictures
+    mkdir ~/tmp &>/dev/null
 
-#     # Fluent icons
-#     echo "Installing Fluent-icons"
-#     cd ~/tmp
-#     git clone https://github.com/vinceliuice/Fluent-icon-theme.git
-#     cd ~/tmp/Fluent-icon-theme  
-#     ./install.sh
+    # Fluent icons
+    echo "Installing Fluent-icons"
+    cd ~/tmp
+    git clone https://github.com/vinceliuice/Fluent-icon-theme.git
+    cd ~/tmp/Fluent-icon-theme  
+    ./install.sh
 
-#     # Layan
-#     echo "Installing Layan-Theme"
-#     cd ~/tmp
-#     git clone https://github.com/vinceliuice/Layan-kde.git
-#     cd ~/tmp/Layan-kde
-#     ./install.sh
+    # Layan
+    echo "Installing Layan-Theme"
+    cd ~/tmp
+    git clone https://github.com/vinceliuice/Layan-kde.git
+    cd ~/tmp/Layan-kde
+    ./install.sh
 
-#     # We10XOS
-#     echo "Installing We10XOS-Theme"
-#     cd ~/tmp
-#     git clone https://github.com/yeyushengfan258/We10XOS-kde.git
-#     cd ~/tmp/We10XOS-kde
-#     ./install.sh
+    # We10XOS
+    echo "Installing We10XOS-Theme"
+    cd ~/tmp
+    git clone https://github.com/yeyushengfan258/We10XOS-kde.git
+    cd ~/tmp/We10XOS-kde
+    ./install.sh
 
-#     # virtual desktop bar
-#     echo "Installing virtual-desktop bar"
-#     cd ~/tmp
-#     git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
-#     cd virtual-desktop-bar/scripts 
+    # virtual desktop bar
+    echo "Installing virtual-desktop bar"
+    cd ~/tmp
+    git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
+    cd virtual-desktop-bar/scripts 
 
-#     echo "Which OS is this script running on?"
-#     echo "  1: Arch"
-#     echo "  2: ubuntu"
+    echo "Which OS is this script running on?"
+    echo "  1: Arch"
+    echo "  2: ubuntu"
 
-#     read OS
+    read OS
 
-#     if [ $OS == "1" ]; then
-#         ./install-dependencies-arch.sh
-#     elif [ $OS == "2" ]; then
-#         ./install-dependencies-ubuntu.sh
-#     fi
-#     ./build-applet.sh
-#     ./install-applet.sh
+    if [ $OS == "1" ]; then
+        ./install-dependencies-arch.sh
+    elif [ $OS == "2" ]; then
+        ./install-dependencies-ubuntu.sh
+    fi
+    ./build-applet.sh
+    ./install-applet.sh
 
-#     echo "Configurating KDE"
-#     cp $DIR/Carl.colors ~/.local/share/color-schemes
-#     cp $DIR/plasmarc ~/.config
-#     echo "---------------------------done!------------------------------"
-# fi
+    echo "Configurating KDE"
+    cp $DIR/Carl.colors ~/.local/share/color-schemes
+    cp $DIR/plasmarc ~/.config
+    echo "---------------------------done!------------------------------"
+fi
 
-# if [ $kdek == 1 ]; then
-#     echo -e "\nConfiguring KDE Konsole..."
-#     cp $DIR/dark.colorscheme ~/.local/share/konsole
-#     cp $DIR/dotfiles-konsole.profile ~/.local/share/konsole
-#     mkdir ~/.local/share/konsole/shortcuts &>/dev/null
-#     cp $DIR/dotfiles-konsole-shortcuts ~/.local/share/konsole/shortcuts
-#     echo "---------------------------done!------------------------------"
-# fi
+if [ $kdek == 1 ]; then
+    echo -e "\nConfiguring KDE Konsole..."
+    cp $DIR/dark.colorscheme ~/.local/share/konsole
+    cp $DIR/dotfiles-konsole.profile ~/.local/share/konsole
+    mkdir ~/.local/share/konsole/shortcuts &>/dev/null
+    cp $DIR/dotfiles-konsole-shortcuts ~/.local/share/konsole/shortcuts
+    echo "---------------------------done!------------------------------"
+fi
 
 echo -e "\nreloading..."
 exec zsh
