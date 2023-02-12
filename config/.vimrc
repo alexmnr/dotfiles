@@ -55,8 +55,6 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 
-set timeoutlen=0 
-set ttimeoutlen=5 
 " Searching
 set hlsearch
 set incsearch
