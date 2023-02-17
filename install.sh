@@ -143,6 +143,8 @@ DIR=$DIR/config
 if [ $zsh == 1 ]; then
     #### Installing Oh my zsh
     echo -e "\nInstalling oh-my-zsh..."
+    sudo apt install zsh
+    sudo pacman -S zsh
     echo -e "\n!!! you need to type 'exit' after the oh-my-zsh-installation! Press any button to start..."
     export ZSH="/usr/local/zsh/oh-my-zsh"
     sudo mkdir /usr/local/zsh
