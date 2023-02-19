@@ -182,6 +182,8 @@ fi
 
 if [ $vim == 1 ]; then
     echo -e "\nInstalling vim and plugins..."
+    sudo apt install vim-gtk3
+    sudo pacman -S gvim
     rm -rf ~/.vim ~/.vimrc 
     mkdir ~/.vim
     ln -s $DIR/.vimrc ~
@@ -196,6 +198,8 @@ fi
 
 if [ $git == 1 ]; then
     echo -e "\nLinking git credentials..."
+    sudo apt install git
+    sudo pacman -S git
     git config --global credential.helper store
     git config --global user.name "Senaxius"
     git config --global user.email "alexander.minor004@gmail.com"
@@ -213,20 +217,6 @@ if [ $kde == 1 ]; then
     cd ~/tmp
     git clone https://github.com/vinceliuice/Fluent-icon-theme.git
     cd ~/tmp/Fluent-icon-theme  
-    ./install.sh
-
-    # Layan
-    echo "Installing Layan-Theme"
-    cd ~/tmp
-    git clone https://github.com/vinceliuice/Layan-kde.git
-    cd ~/tmp/Layan-kde
-    ./install.sh
-
-    # We10XOS
-    echo "Installing We10XOS-Theme"
-    cd ~/tmp
-    git clone https://github.com/yeyushengfan258/We10XOS-kde.git
-    cd ~/tmp/We10XOS-kde
     ./install.sh
 
     # virtual desktop bar
@@ -250,7 +240,6 @@ if [ $kde == 1 ]; then
     ./install-applet.sh
 
     echo "Configurating KDE"
-    cp $DIR/Carl.colors ~/.local/share/color-schemes
     cp $DIR/plasmarc ~/.config
     echo "---------------------------done!------------------------------"
 fi
