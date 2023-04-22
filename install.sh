@@ -219,28 +219,31 @@ if [ $kde == 1 ]; then
     cd ~/tmp/Fluent-icon-theme  
     ./install.sh
 
-    # virtual desktop bar
-    echo "Installing virtual-desktop bar"
-    cd ~/tmp
-    git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
-    cd virtual-desktop-bar/scripts 
+    # # virtual desktop bar
+    # echo "Installing virtual-desktop bar"
+    # cd ~/tmp
+    # git clone https://github.com/wsdfhjxc/virtual-desktop-bar.git
+    # cd virtual-desktop-bar/scripts 
 
-    echo "Which OS is this script running on?"
-    echo "  1: Arch"
-    echo "  2: ubuntu"
+    # echo "Which OS is this script running on?"
+    # echo "  1: Arch"
+    # echo "  2: ubuntu"
 
-    read OS
+    # read OS
 
-    if [ $OS == "1" ]; then
-        ./install-dependencies-arch.sh
-    elif [ $OS == "2" ]; then
-        ./install-dependencies-ubuntu.sh
-    fi
-    ./build-applet.sh
-    ./install-applet.sh
+    # if [ $OS == "1" ]; then
+    #     ./install-dependencies-arch.sh
+    # elif [ $OS == "2" ]; then
+    #     ./install-dependencies-ubuntu.sh
+    # fi
+    # ./build-applet.sh
+    # ./install-applet.sh
 
     echo "Configurating KDE"
     cp $DIR/plasmarc ~/.config
+    echo "---------------------------done!------------------------------"
+    echo "Configurating Shortcuts"
+    cp $DIR/kglobalshortcutsrc ~/.config
     echo "---------------------------done!------------------------------"
 fi
 

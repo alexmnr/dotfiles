@@ -14,8 +14,8 @@ fi
 if [ -d /home/ALEX/STM32 ]; then
     path+=(~/.platformio/penv/bin)
 fi
-if [ -d /home/ALEX/3dev/docker ]; then
-    path+=(/home/ALEX/3dev/docker)
+if [ -d /home/ALEX/anytrack/docker ]; then
+    path+=(/home/ALEX/anytrack/docker)
 fi
 
 if [ -d /root/3dev/docker ]; then
