@@ -1,11 +1,11 @@
 prompt_symbol=⩓
 
 if [ $(echo $HOST) = "Arch-PC" ]; then
-     user_color=039
-     line_color=049
-     dir_color=051
-     conda_color=176
-     git_color=208
+    user_color=039
+    line_color=049
+    dir_color=051
+    conda_color=176
+    git_color=208
 elif [ $(echo $HOST) = "uranus" ]; then
     user_color=220
     line_color=202
