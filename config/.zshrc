@@ -2,6 +2,7 @@
 typeset -U path
 path+=(/usr/sbin)
 path+=(/usr/local/bin)
+path+=(/usr/local/texlive/2023/bin/x86_64-linux)
 
 if [ -d /home/ALEX/anaconda ]; then
     path+=($HOME/bin)
@@ -56,7 +57,7 @@ alias ipconfig="curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]
 alias gis="git status"
 
 function cl {
-    cd "$@" && ls 
+    cd "$@" && ls
     }
 function gic {
     git add --all && git commit -m $@
@@ -69,3 +70,6 @@ if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
         source $f
     done
 fi
+
+# start TMUX
+# [[ $TERM != "screen"]] && exec tmux new-session -A -s main
