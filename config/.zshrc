@@ -28,8 +28,8 @@ export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="/usr/local/zsh/oh-my-zsh"
 export ALEX="/home/ALEX"
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 ###################Oh my zsh###############
 ZSH_THEME="senaex"
@@ -70,6 +70,3 @@ if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
         source $f
     done
 fi
-
-# start TMUX
-# [[ $TERM != "screen"]] && exec tmux new-session -A -s main
