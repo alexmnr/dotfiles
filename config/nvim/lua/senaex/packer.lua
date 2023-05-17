@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs' -- create auto brackets
   use 'tamton-aquib/staline.nvim' -- status bar
   use 'mbbill/undotree' -- well its in the name...
-  use {'phaazon/hop.nvim', branch = 'v2', config = function() require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' } end } -- quickly hop to places
+  use {'phaazon/hop.nvim', branch = 'v2'} -- quickly hop to places
   use {"akinsho/toggleterm.nvim", tag = '*'} -- integrated terminal
   use 'nvim-tree/nvim-web-devicons' -- some icons
   use 'ryanoasis/vim-devicons' -- more icons
