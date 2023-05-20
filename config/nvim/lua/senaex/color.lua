@@ -6,6 +6,7 @@ vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none'})
 vim.api.nvim_set_hl(0, 'NormalNC', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NormalSB', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'LineNr', { bg = '#111111'})
+vim.api.nvim_set_hl(0, 'Comment', { bg = '#000000', fg = '#8c8c8c'})
 
 ---------- Telescope ----------
 vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = '#000000'})
@@ -18,6 +19,7 @@ vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NvimTreeBorder', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NvimTreeCursorColumn', { bg = '#000000'})
+
 
 ---------- Statusline ----------
 require('staline').setup {

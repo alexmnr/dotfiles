@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs' -- create auto brackets
   use 'tamton-aquib/staline.nvim' -- status bar
   use 'mbbill/undotree' -- well its in the name...
-  use {'phaazon/hop.nvim', branch = 'v2', config = function() require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' } end } -- quickly hop to places
+  use {'phaazon/hop.nvim', branch = 'v2'} -- quickly hop to places
   use {"akinsho/toggleterm.nvim", tag = '*'} -- integrated terminal
   use 'nvim-tree/nvim-web-devicons' -- some icons
   use 'ryanoasis/vim-devicons' -- more icons
@@ -30,14 +30,10 @@ return require('packer').startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   ---- LSP
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v1.x',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
-	  }
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
   }
 
 end)
+
