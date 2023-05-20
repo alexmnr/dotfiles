@@ -30,14 +30,10 @@ return require('packer').startup(function(use)
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
   ---- LSP
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v1.x',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
-	  }
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
   }
 
 end)
+

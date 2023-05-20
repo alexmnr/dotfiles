@@ -20,6 +20,7 @@ vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NvimTreeBorder', { bg = '#000000'})
 vim.api.nvim_set_hl(0, 'NvimTreeCursorColumn', { bg = '#000000'})
 
+
 ---------- Statusline ----------
 require('staline').setup {
     mode_colors = {
