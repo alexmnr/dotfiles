@@ -45,3 +45,11 @@ end, {remap=true})
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', {})
 ------------ Terminal -------------
 vim.keymap.set('t', '<ESC>', '<C-\\><C-n>', {})
+------------- Delete --------------
+vim.cmd([[
+  nnoremap c "_c
+  vnoremap c "_c
+  nnoremap C "_C
+  vnoremap C "_C
+]]) 
+

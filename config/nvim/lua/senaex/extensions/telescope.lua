@@ -18,11 +18,6 @@ require("telescope").setup {
           vim.cmd(string.format("silent lcd %s", dir))
         end
       },
-			i = {
-				["<c-k>"] = actions.move_selection_previous,
-				["<c-j>"] = actions.move_selection_next,
-				["<c-l>"] = actions.select_default,
-			}
 		}
 	},
 	extensions = {
@@ -34,7 +29,6 @@ require("telescope").setup {
       hijack_netrw = true,
       cwd_to_path = true,
     },
-    
   }
 }
 require("telescope").load_extension "file_browser"

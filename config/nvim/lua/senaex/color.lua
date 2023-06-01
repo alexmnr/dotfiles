@@ -1,24 +1,27 @@
 vim.opt.background = "dark" -- set this to dark or light
 vim.cmd("colorscheme oxocarbon")
-vim.api.nvim_set_hl(0, 'Normal', { bg = 'none'})
-vim.api.nvim_set_hl(0, 'NormalFloat', { bg = 'none'})
-vim.api.nvim_set_hl(0, 'FloatBorder', { bg = 'none'})
-vim.api.nvim_set_hl(0, 'NormalNC', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'NormalSB', { bg = '#000000'})
+-- vim.cmd("colorscheme tokyonight-night")
+-- vim.cmd("colorscheme leaf")
+background = '#000000'
+vim.api.nvim_set_hl(0, 'Normal', { bg = background})
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = background})
+vim.api.nvim_set_hl(0, 'FloatBorder', { bg = background})
+vim.api.nvim_set_hl(0, 'NormalNC', { bg = background})
+vim.api.nvim_set_hl(0, 'NormalSB', { bg = background})
 vim.api.nvim_set_hl(0, 'LineNr', { bg = '#111111'})
-vim.api.nvim_set_hl(0, 'Comment', { bg = '#000000', fg = '#8c8c8c'})
+vim.api.nvim_set_hl(0, 'Comment', { bg = background, fg = '#8c8c8c'})
 
----------- Telescope ----------
-vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'TelescopePreview', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'TelescopePreviewLine', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#000000'})
+-- ---------- Telescope ----------
+vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = background})
+vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { bg = background})
+vim.api.nvim_set_hl(0, 'TelescopePreview', { bg = background})
+vim.api.nvim_set_hl(0, 'TelescopePreviewLine', { bg = background})
+vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = background})
+vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = background})
 ---------- NvimTree ----------
-vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'NvimTreeBorder', { bg = '#000000'})
-vim.api.nvim_set_hl(0, 'NvimTreeCursorColumn', { bg = '#000000'})
+vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = background})
+vim.api.nvim_set_hl(0, 'NvimTreeBorder', { bg = background})
+vim.api.nvim_set_hl(0, 'NvimTreeCursorColumn', { bg = background})
 
 
 ---------- Statusline ----------
