@@ -31,16 +31,6 @@ vim.keymap.set('n', 'cL', "c$", {})
 vim.keymap.set('n', 'cH', "c^", {})
 vim.keymap.set('n', 'yL', "y$", {})
 vim.keymap.set('n', 'yH', "y^", {})
--------------- hop --------------
-local hop = require('hop')
-local directions = require('hop.hint').HintDirection
-vim.keymap.set('n', '<leader>w', ':HopWord<CR>', {})
--- vim.keymap.set('n', '<leader>hl', ':HopLine<CR>', {})
--- vim.keymap.set('n', '<leader>ha', ':HopAnywhere<CR>', {})
--- vim.keymap.set('n', '<leader>hw', ':HopPattern<CR>', {})
-vim.keymap.set('', 'f', function()
-  hop.hint_char1({ direction = directions.AFTER_CURSOR, current_line_only = true })
-end, {remap=true})
 ----------- Filebrowser -----------
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', {})
 ------------ Terminal -------------

@@ -18,7 +18,9 @@ fi
 if [ -d /home/ALEX/anytrack/docker ]; then
     path+=(/home/ALEX/anytrack/docker)
 fi
-
+if [ -d /opt/arduino-cli ]; then
+    path+=(/opt/arduino-cli/bin)
+fi
 if [ -d /root/3dev/docker ]; then
     path+=(/root/3dev/docker)
 fi

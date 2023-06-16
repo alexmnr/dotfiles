@@ -11,6 +11,8 @@ return require('packer').startup(function(use)
   --- Design
   use 'nyoom-engineering/oxocarbon.nvim'
   use 'folke/tokyonight.nvim'
+  use "EdenEast/nightfox.nvim"
+  use "hachy/eva01.vim"
   use "daschw/leaf.nvim"
   use 'tamton-aquib/staline.nvim' -- status bar
   use 'nvim-tree/nvim-web-devicons' -- some icons
@@ -25,14 +27,10 @@ return require('packer').startup(function(use)
   use 'smolck/command-completion.nvim' -- better autocompletion in command mode
   ---- COC
   use {'neoclide/coc.nvim', branch = 'release'}
-  ---- Dashboard
-  use {
-    'goolord/alpha-nvim',
-    requires = { 'nvim-tree/nvim-web-devicons' },
-    config = function ()
-      require'alpha'.setup(require'alpha.themes.startify'.config)
-    end
-  }
-
+  ---- Testing
+  use 'rcarriga/nvim-notify'
+  --- Tabs
+  use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+  use 'romgrk/barbar.nvim'
 end)
 

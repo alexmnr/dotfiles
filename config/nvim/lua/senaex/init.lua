@@ -4,6 +4,7 @@ require("senaex.color")
 require("senaex.plugins")
 ------------ Options ------------
 vim.api.nvim_set_option("clipboard","unnamedplus")
+vim.opt.termguicolors = true
 
 vim.cmd([[
   syntax on
