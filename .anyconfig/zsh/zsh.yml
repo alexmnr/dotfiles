@@ -1,0 +1,5 @@
+install:
+  pkg:
+    - zsh
+  cmd:
+    - Changing default shell | sudo chsh -s /bin/zsh {user}

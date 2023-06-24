@@ -18,6 +18,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-web-devicons' -- some icons
   --- Highlighting
   use {'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}} -- syntax-highlighter
+  use 'norcalli/nvim-colorizer.lua'
   --- Tools
   use 'lambdalisue/suda.vim' -- write with sudo rights
   use 'joom/vim-commentary' -- auto comments with gc

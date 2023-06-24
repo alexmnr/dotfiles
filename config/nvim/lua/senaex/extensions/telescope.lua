@@ -4,7 +4,8 @@ local fb_actions = require "telescope._extensions.file_browser.actions"
 local actions = require "telescope.actions"
 require("telescope").setup {
 	defaults = {
-    file_ignore_patterns = { ".conda", ".git", "build", "__pycache__" },
+    -- file_ignore_patterns = { ".conda", ".git", "build", "__pycache__", "go.mod", "go.sum" },
+    file_ignore_patterns = { ".conda", ".git", "build", "__pycache__"},
 		mappings = {
 			n = {
 				["<k>"] = actions.move_selection_previous,
