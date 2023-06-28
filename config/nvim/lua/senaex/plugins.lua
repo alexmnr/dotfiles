@@ -6,7 +6,7 @@ require 'senaex.extensions.auto-save'
 require 'senaex.extensions.command-completion'
 require 'senaex.extensions.barbar'
 require 'senaex.extensions.staline'
--- require 'senaex.extensions.stabline'
+-- require 'senaex.extensions.outline'
 
 --- Simple:
 require("nvim-autopairs").setup()

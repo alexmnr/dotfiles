@@ -176,7 +176,7 @@ if [ $fzf == 1 ]; then
     rm -rf ~/.fzf*
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --key-bindings --no-completion --no-update-rc 
-    ln -s ~/.rc-temp/fzf-setup.sh ~/.rc
+    ln -s ~/.rc-temp/fzf.sh ~/.rc
     echo "---------------------------done!------------------------------"
 fi
 

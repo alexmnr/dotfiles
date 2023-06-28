@@ -1,0 +1,10 @@
+dependencies:
+  pkg:
+    - git 
+install:
+  cmd:
+    - rm -rf {home}/.fzf {home}/.fzf.zsh
+    - clone fzf repo | git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    - Installing fzf | ~/.fzf/install --key-bindings --no-completion --no-update-rc
+  ln:
+    - "{home}/.rc-temp/fzf.sh > {home}/.rc"

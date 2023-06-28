@@ -33,5 +33,6 @@ return require('packer').startup(function(use)
   --- Tabs
   use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
   use 'romgrk/barbar.nvim'
+  --- Outline
 end)
 
