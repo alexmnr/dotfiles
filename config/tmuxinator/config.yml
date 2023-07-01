@@ -1,0 +1,11 @@
+# /home/senaex/.config/tmuxinator/anytrack.yml
+
+name: config
+root: ~
+
+windows:
+  - tmux: vim ~/.tmux.conf
+  - mux: cd ~/.config/tmuxinator && vim .
+  - kitty: cd ~/.config/kitty && vim kitty.conf
+  - nvim: cd ~/.config/nvim/lua/senaex && vim .
+  - dotfiles: cd /home/ALEX/dotfiles
