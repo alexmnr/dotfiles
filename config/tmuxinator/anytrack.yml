@@ -1,0 +1,15 @@
+# /home/senaex/.config/tmuxinator/anytrack.yml
+
+name: anytrack
+root: /home/ALEX/anytrack
+
+windows:
+  - vim: 
+      layout: d392,211x52,0,0[211x36,0,0,5,211x15,0,37,6]
+      panes:
+        - rosco run /home/ALEX/anytrack/ros/src/anytrack/anytrack
+        - rosco run /home/ALEX/anytrack/ros/src/anytrack/anytrack
+  - manager: rosco run /home/ALEX/anytrack/config/param
+  - simulation: rosco run /home/ALEX/anytrack/ros/src/simulation
+  - calib: rosco run 
+  - fox: rosco run
