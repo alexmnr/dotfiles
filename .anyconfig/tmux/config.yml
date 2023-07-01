@@ -1,0 +1,7 @@
+dependencies:
+  task:
+    - tmux
+install:
+  ln:
+    - Linking .tmux.conf | {repo}/config/.tmux.conf > {home}
+

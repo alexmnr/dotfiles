@@ -5,3 +5,5 @@ dependencies:
 install:
   yay:
     - tmuxinator
+  ln:
+    - Linking workspaces | {repo}/config/tmuxinator > {home}/.config
