@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   use "daschw/leaf.nvim"
   use 'tamton-aquib/staline.nvim' -- status bar
   use 'nvim-tree/nvim-web-devicons' -- some icons
+  use 'echasnovski/mini.indentscope' -- indent lines
   --- Highlighting
   use {'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}} -- syntax-highlighter
   use 'norcalli/nvim-colorizer.lua'
@@ -33,6 +34,7 @@ return require('packer').startup(function(use)
   --- Tabs
   use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
   use 'romgrk/barbar.nvim'
-  --- Outline
+  --- Terminal
+  use 'akinsho/toggleterm.nvim'
 end)
 

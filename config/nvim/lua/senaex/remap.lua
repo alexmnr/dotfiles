@@ -41,5 +41,6 @@ vim.cmd([[
   vnoremap c "_c
   nnoremap C "_C
   vnoremap C "_C
-]]) 
+]])
+-- ------------- Unused --------------
 

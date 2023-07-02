@@ -22,7 +22,7 @@ map('n', '<leader>p', '<Cmd>BufferPin<CR>', opts)
 -- Close buffer
 map('n', '<leader>d', '<Cmd>BufferClose<CR>', opts)
 -- Magic buffer-picking mode
-map('n', '<leader>t', '<Cmd>BufferPick<CR>', opts)
+map('n', '<leader>s', '<Cmd>BufferPick<CR>', opts)
 -- Sort automatically by...
 -- map('n', '<leader>tb', '<Cmd>BufferOrderByBufferNumber<CR>', opts)
 -- map('n', '<leader>td', '<Cmd>BufferOrderByDirectory<CR>', opts)

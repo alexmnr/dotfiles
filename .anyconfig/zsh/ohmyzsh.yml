@@ -1,8 +1,7 @@
 dependencies:
-  pkg:
-    - git 
+  task:
+    - zsh
 install:
-  # oh-my-zsh
   cmd:
     - Downloading installer | curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o /tmp/install.sh
     - chmod +x /tmp/install.sh
@@ -12,15 +11,3 @@ install:
     - Installing oh-my-zsh | /tmp/install.sh --unattended
     - Installing autosuggestions | git clone https://github.com/zsh-users/zsh-autosuggestions /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-autosuggestions
     - Installing highlighting | git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  # zshrc
-  mkdir:
-    - "{home}/.old"
-  cmd:
-    - Moving old files to ~/.old | mv {home}/.zshrc {home}/.rc {home}/.rc-temp -t {home}/.old
-  mkdir:
-    - "{home}/.rc"
-  ln:
-    - Linking .zshrc | {repo}/config/.zshrc > {home}
-    - Linking AddIn-Folder | {repo}/config/.rc-temp > {home}
-    - Linking theme senaex | {repo}/config/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
-    - Linking theme lennart | {repo}/config/lennart.zsh-theme > /usr/local/zsh/oh-my-zsh/themes

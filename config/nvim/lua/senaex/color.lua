@@ -15,4 +15,6 @@ vim.cmd("colorscheme carbonfox")
 -- vim.api.nvim_set_hl(0, 'NormalSB', { bg = background})
 -- vim.api.nvim_set_hl(0, 'LineNr', { bg = '#111111'})
 -- vim.api.nvim_set_hl(0, 'Comment', { bg = background, fg = '#8c8c8c'})
+vim.api.nvim_set_hl(0, 'VertSplit', { bg = '#000000', fg = '#252525'})
+-- vim.api.nvim_set_hl(0, 'Statusline', { bg = '#000000', fg = '#252525'})
 

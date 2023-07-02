@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/senaex/.local/share/nvim/site/pack/packer/start/leaf.nvim",
     url = "https://github.com/daschw/leaf.nvim"
   },
+  ["mini.indentscope"] = {
+    loaded = true,
+    path = "/home/senaex/.local/share/nvim/site/pack/packer/start/mini.indentscope",
+    url = "https://github.com/echasnovski/mini.indentscope"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/senaex/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/senaex/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/senaex/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
