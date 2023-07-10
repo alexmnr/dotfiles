@@ -1,11 +1,6 @@
 {
-  "Lua.diagnostics.globals": ["vim"],
-  "languageserver":{
-    "arduino":{ 
-      "command":"/opt/arduino-language-server/arduino-language-server",
-      "rootPatterns":["*.ino"],
-      "filetypes":["arduino"],
-      "args":["-cli", "/opt/arduino-cli/bin/arduino-cli", "-clangd", "/opt/clangd/bin/clangd", "-cli-config", "/home/senaex/.arduino15/arduino-cli.yaml"]
-    }
-  }
+  "Lua.diagnostics.globals": [
+    "vim"
+  ],
+  "snippets.ultisnips.pythonPrompt": false,
 }

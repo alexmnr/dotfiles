@@ -1,6 +1,6 @@
 ------------ telescop ------------
 local builtin = require('telescope.builtin')
-local fb_actions = require "telescope._extensions.file_browser.actions"
+-- local fb_actions = require "telescope._extensions.file_browser.actions"
 local actions = require "telescope.actions"
 require("telescope").setup {
 	defaults = {
@@ -35,7 +35,6 @@ require("telescope").setup {
 require("telescope").load_extension "file_browser"
 
 ---------- Keybindings -----------
-local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fa', "<cmd>Telescop find_files search_dirs=/home/ALEX<CR>", {})
 vim.keymap.set('n', '<leader>fh', "<cmd>Telescop find_files search_dirs=~<CR>", {})
@@ -43,3 +42,5 @@ vim.keymap.set('n', '<leader>fr', "<cmd>Telescop find_files search_dirs=/<CR>", 
 vim.keymap.set('n', '<c-f>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>ft', builtin.live_grep, {})
+----------- Filebrowser -----------
+vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', {})

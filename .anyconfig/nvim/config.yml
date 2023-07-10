@@ -1,0 +1,11 @@
+install:
+  pkg:
+    - git
+    - gcc
+    - nodejs
+    - icu
+    - npm
+  mkdir:
+    - "{home}/.config"
+  ln:
+    - Linking nvim folder | {repo}/config/nvim > {home}/.config/

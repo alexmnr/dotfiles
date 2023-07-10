@@ -3,6 +3,8 @@ dependencies:
     - yay
   user:
     - noroot
+  os:
+    - arch
 install:
   pkg:
     - git

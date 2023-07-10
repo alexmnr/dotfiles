@@ -1,0 +1,8 @@
+dependencies:
+  task:
+    - zsh/config
+install:
+  pkg:
+    - zoxide
+  ln:
+    - "{home}/.rc-temp/zoxide.sh > {home}/.rc"

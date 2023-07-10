@@ -1,0 +1,6 @@
+dependencies:
+  task:
+    - kitty/kitty 
+install:
+  ln:
+    - Linking kitty config | {repo}/config/kitty > {home}/.config

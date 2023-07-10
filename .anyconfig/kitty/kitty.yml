@@ -1,9 +1,6 @@
 dependencies:
-  task:
-    - yay
   noCommand:
-    - tmux
+    - kitty 
 install:
   pkg:
-    - tmux
-
+    - kitty

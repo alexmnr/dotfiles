@@ -1,9 +1,11 @@
 dependencies:
   task:
     - yay
-    - tmux
+    - tmux/tmux
+  noCommand:
+    - tmuxinator
 install:
   yay:
     - tmuxinator
   ln:
-    - Linking workspaces | {repo}/config/tmuxinator > {home}/.config
+    - Linking workspaces | {repo}/config/tmuxinator > {home}/.config/

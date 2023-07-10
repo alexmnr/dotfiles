@@ -1,0 +1,7 @@
+dependencies:
+  task:
+    - tmux/tmuxinator
+    - zsh/config
+install:
+  ln:
+    - Linking mux add-in | {home}/.rc-temp/mux.sh > {home}/.rc/

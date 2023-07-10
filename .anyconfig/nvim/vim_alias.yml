@@ -1,0 +1,8 @@
+dependencies:
+  task:
+    - nvim/nvim
+    - nvim/config
+    - zsh/config
+install:
+  ln:
+    - "{home}/.rc-temp/nvim.sh > {home}/.rc"

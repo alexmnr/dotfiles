@@ -1,8 +1,10 @@
 dependencies:
   task:
-    - tmux
+    - tmux/tmux
+    - tmux/tmuxinator
+    - zsh/config
 install:
   ln:
     - Linking .tmux.conf | {repo}/config/.tmux.conf > {home}
     - Linking .tmux | {repo}/config/.tmux > {home}
-
+    - Linking tmux add-in | {home}/.rc-temp/tmux.sh > {home}/.rc/

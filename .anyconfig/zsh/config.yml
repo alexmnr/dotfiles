@@ -1,11 +1,8 @@
 dependencies:
   task:
-    zsh
+    - zsh/zsh
+    - zsh/ohmyzsh
 install:
-  mkdir:
-    - "{home}/.old"
-  cmd:
-    - Moving old files to ~/.old | mv {home}/.zshrc {home}/.rc {home}/.rc-temp -t {home}/.old
   mkdir:
     - "{home}/.rc"
   ln:

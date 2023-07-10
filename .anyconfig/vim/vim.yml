@@ -1,0 +1,5 @@
+install:
+  pacman:
+    - gvim
+  apt:
+    - vim-gtk3

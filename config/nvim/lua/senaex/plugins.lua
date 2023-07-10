@@ -1,17 +1,54 @@
-require 'senaex.extensions.telescope'
-require 'senaex.extensions.treesitter'
-require 'senaex.extensions.hop'
-require 'senaex.extensions.coc'
-require 'senaex.extensions.auto-save'
-require 'senaex.extensions.command-completion'
-require 'senaex.extensions.barbar'
-require 'senaex.extensions.staline'
-require 'senaex.extensions.terminal'
-require 'senaex.extensions.indentscope'
+local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
+  })
+end
+vim.opt.rtp:prepend(lazypath)
 
---- Simple:
-require("nvim-autopairs").setup()
-require("colorizer").setup()
+local plugins = {
+  --- General
+  'nvim-lua/plenary.nvim', -- useful lua functions used by lots of plugins
+  --- Navigation
+  'nvim-telescope/telescope.nvim', -- fuzzy finder
+  'nvim-telescope/telescope-file-browser.nvim', -- file browser
+  'nvim-tree/nvim-tree.lua', -- file browser
+  {'phaazon/hop.nvim', branch = 'v2'}, -- quickly hop to place
+  --- Design
+  'nyoom-engineering/oxocarbon.nvim',
+  'folke/tokyonight.nvim',
+  'EdenEast/nightfox.nvim',
+  'hachy/eva01.vim',
+  'daschw/leaf.nvim',
+  'tamton-aquib/staline.nvim', -- status bar
+  'nvim-tree/nvim-web-devicons', -- some icons
+  'echasnovski/mini.indentscope', -- indent lines
+  --- Highlighting
+  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate'},
+  'norcalli/nvim-colorizer.lua',
+  --- Tools
+  'lambdalisue/suda.vim', -- write with sudo rights
+  'joom/vim-commentary', -- auto comments with gc
+  'windwp/nvim-autopairs', -- create auto brackets
+  'mbbill/undotree', -- well its in the name...
+  'Pocco81/auto-save.nvim', -- auto save
+  'smolck/command-completion.nvim', -- better autocompletion in command mode
+  ---- COC
+  {'neoclide/coc.nvim', branch = 'release'},
+  {'neoclide/coc.nvim', branch = 'release'},
+  ---- Testing
+  'rcarriga/nvim-notify',
+  --- Tabs
+  'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+  'romgrk/barbar.nvim',
+  --- Terminal
+  'akinsho/toggleterm.nvim',
+}
+local opts = {}
 
---- Notification
-vim.notify = require("notify")
+require('lazy').setup(plugins, opts)

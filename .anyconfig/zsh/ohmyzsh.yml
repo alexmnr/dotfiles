@@ -1,13 +1,17 @@
 dependencies:
   task:
-    - zsh
+    - zsh/zsh
+  noDir:
+    - /usr/local/zsh/oh-my-zsh
 install:
+  pkg:
+    - git
+  mkdir:
+    - "{home}/.tmp"
   cmd:
-    - Downloading installer | curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o /tmp/install.sh
-    - chmod +x /tmp/install.sh
-  env:
-    - ZSH = /usr/local/zsh/oh-my-zsh
+    - Downloading installer | curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o {home}/.tmp/install.sh
+    - chmod +x {home}/.tmp/install.sh
+    - sudo git clone https://github.com/ohmyzsh/ohmyzsh.git /usr/local/zsh/oh-my-zsh
   cmd:
-    - Installing oh-my-zsh | /tmp/install.sh --unattended
-    - Installing autosuggestions | git clone https://github.com/zsh-users/zsh-autosuggestions /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-autosuggestions
-    - Installing highlighting | git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+    - Installing autosuggestions | sudo git clone https://github.com/zsh-users/zsh-autosuggestions /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-autosuggestions
+    - Installing highlighting | sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/zsh/oh-my-zsh/custom/plugins/zsh-syntax-highlighting

@@ -31,8 +31,6 @@ vim.keymap.set('n', 'cL', "c$", {})
 vim.keymap.set('n', 'cH', "c^", {})
 vim.keymap.set('n', 'yL', "y$", {})
 vim.keymap.set('n', 'yH', "y^", {})
------------ Filebrowser -----------
-vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', {})
 ------------ Terminal -------------
 vim.keymap.set('t', '<ESC>', '<C-\\><C-n>', {})
 ------------- Delete --------------

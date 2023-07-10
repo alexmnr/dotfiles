@@ -2,34 +2,13 @@
 typeset -U path
 path+=(/usr/sbin)
 path+=(/usr/local/bin)
-path+=(/usr/local/texlive/2023/bin/x86_64-linux)
+# path+=(/usr/local/texlive/2023/bin/x86_64-linux)
 
-if [ -d /home/ALEX/anaconda ]; then
+if [ -d $HOME/bin ]; then
     path+=($HOME/bin)
 fi
 
-if [ -d /home/ALEX/anaconda ]; then
-    path+=(/home/ALEX/anaconda/bin)
-fi
-
-if [ -d /home/ALEX/STM32 ]; then
-    path+=(~/.platformio/penv/bin)
-fi
-if [ -d /home/ALEX/anytrack/docker ]; then
-    path+=(/home/ALEX/anytrack/docker)
-fi
-if [ -d /opt/arduino-cli ]; then
-    path+=(/opt/arduino-cli/bin)
-fi
-if [ -d /root/3dev/docker ]; then
-    path+=(/root/3dev/docker)
-fi
-
-
-export STM="/home/ALEX/STM32/etc/gcc-arm-none-eabi/bin"
 export ZSH="/usr/local/zsh/oh-my-zsh"
-export ALEX="/home/ALEX"
-
 export EDITOR='nvim'
 export VISUAL='nvim'
 
@@ -37,11 +16,8 @@ export VISUAL='nvim'
 ZSH_THEME="senaex"
 
 plugins=(
-	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-    sudo
-    dirhistory
 )
 
 ZSH_DISABLE_COMPFIX=true
@@ -52,23 +28,18 @@ alias rc="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
 alias src="exec zsh"
 alias la="ls -alh"
-alias ran="ranger"
-alias sran="sudo ranger"
-alias vi="sudo vim"
+alias vi="sudo nvim"
 alias ipconfig="curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias gis="git status"
 
-function cl {
-    cd "$@" && ls
-    }
 function gic {
-    git add --all && git commit -m $@
-    }
+  git add --all && git commit -m $@
+}
 
 # load aditional configs
 if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
-    for f in ~/.rc/*
-    do
-        source $f
-    done
+  for f in ~/.rc/*
+  do
+    source $f
+  done
 fi

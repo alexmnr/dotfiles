@@ -1,7 +1,8 @@
 require("senaex.remap")
-require("senaex.packer")
-require("senaex.color")
+-- require("senaex.packer")
 require("senaex.plugins")
+require("senaex.color")
+require("senaex.extensions")
 ------------ Options ------------
 vim.api.nvim_set_option("clipboard","unnamedplus")
 vim.opt.termguicolors = true
