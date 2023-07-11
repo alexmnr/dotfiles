@@ -1,8 +1,0 @@
-dependencies:
-  task:
-    - grub/grub 
-  os:
-    - arch
-install:
-  cp:
-    - "{repo}/grub/themes/Xenlism-Arch > /boot/grub/themes/"
