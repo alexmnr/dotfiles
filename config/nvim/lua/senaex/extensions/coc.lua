@@ -13,7 +13,6 @@ vim.g.coc_global_extensions = {
     "coc-pairs",
     "coc-highlight",
     "coc-emmet",
-    "coc-spell-checker",
 }
 
 -- Always show the signcolumn, otherwise it would shift the text each time

@@ -48,6 +48,8 @@ local plugins = {
   'romgrk/barbar.nvim',
   --- Terminal
   'akinsho/toggleterm.nvim',
+  --- Markdown
+  {'iamcco/markdown-preview.nvim', build = function() vim.fn["mkdp#util#install"]() end},
 }
 local opts = {}
 
