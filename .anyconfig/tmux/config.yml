@@ -4,7 +4,12 @@ dependencies:
     - tmux/tmuxinator
     - zsh/config
 install:
+  backup:
+    - "{home}/.tmux"
+  mkdir:
+    - "{home}/.tmux"
+  cmd:
+    - git clone https://github.com/tmux-plugins/tpm {home}/.tmux/plugins/tpm
   ln:
     - Linking .tmux.conf | {repo}/config/.tmux.conf > {home}
-    - Linking .tmux | {repo}/config/.tmux > {home}
     - Linking tmux add-in | {home}/.rc-temp/tmux.sh > {home}/.rc/
