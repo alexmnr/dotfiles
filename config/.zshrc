@@ -2,7 +2,6 @@
 typeset -U path
 path+=(/usr/sbin)
 path+=(/usr/local/bin)
-# path+=(/usr/local/texlive/2023/bin/x86_64-linux)
 
 if [ -d $HOME/bin ]; then
     path+=($HOME/bin)

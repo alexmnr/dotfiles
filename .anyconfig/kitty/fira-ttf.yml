@@ -1,0 +1,8 @@
+dependencies:
+  task:
+    - kitty/config
+  os:
+    - arch
+install:
+  pacman:
+    - ttf-firacode-nerd
