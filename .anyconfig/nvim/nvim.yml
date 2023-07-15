@@ -1,3 +1,29 @@
+dependencies:
+  os:
+    - arch
+  noCommand:
+    - nvim
 install:
   pkg:
     - neovim
+
+dependencies:
+  os:
+    - debian
+  noCommand:
+    - nvim
+install:
+  mkdir:
+    - "{home}/tmp"
+  backup:
+    - "{home}/tmp/neovim"
+  mkdir:
+    - "{home}/tmp/neovim"
+  pkg:
+    - cmake
+    - make
+    - gettext
+  cmd:
+    - Cloning neovim | git clone https://github.com/neovim/neovim.git {home}/tmp/neovim
+    - Switching to stable version | cd {home}/tmp/neovim && git checkout stable 
+    - Building neovim (this might take a while...) | cd {home}/tmp/neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install
