@@ -12,6 +12,7 @@
     "coc-highlight": ">=2.0.4",
     "coc-toml": ">=1.2.5",
     "coc-pyright": ">=1.1.316",
-    "coc-emmet": ">=1.1.6"
+    "coc-emmet": ">=1.1.6",
+    "coc-marketplace": ">=1.9.0"
   }
 }

@@ -1,13 +1,14 @@
 -- Extensions
 vim.g.coc_global_extensions = {
+    "coc-marketplace",
     "coc-clangd",
     "coc-go",
     "coc-java",
     "coc-json",
     "coc-lua",
-    "coc-snippets",
-    "coc-toml",
-    "coc-yaml",
+    -- "coc-snippets",
+    -- "coc-toml",
+    -- "coc-yaml",
     "coc-pyright",
     "coc-prettier",
     "coc-pairs",
