@@ -1,0 +1,4 @@
+install:
+  pkg:
+    - docker
+    - docker-compose
