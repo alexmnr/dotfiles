@@ -1,0 +1,20 @@
+dependencies:
+  noCommand:
+    - node 
+  os:
+    - arch
+install:
+  pacman:
+    - nodejs
+    - npm
+
+dependencies:
+  noCommand:
+    - node 
+  os:
+    - debian
+install:
+  cmd:
+    - Adding nodejs repo to source | curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+  apt:
+    - Installing nodejs | nodejs

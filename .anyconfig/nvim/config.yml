@@ -1,10 +1,27 @@
+dependencies:
+  task:
+    - tools/nodejs
+  os:
+    - arch
 install:
   pkg:
     - git
     - gcc
-    - nodejs
     - icu
-    - npm
+  mkdir:
+    - "{home}/.config"
+  ln:
+    - Linking nvim folder | {repo}/config/nvim > {home}/.config/
+
+dependencies:
+  task:
+    - tools/nodejs
+  os:
+    - debian
+install:
+  pkg:
+    - git
+    - gcc
   mkdir:
     - "{home}/.config"
   ln:
