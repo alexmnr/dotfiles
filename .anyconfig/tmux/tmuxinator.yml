@@ -1,4 +1,6 @@
 dependencies:
+  os: 
+    - arch
   task:
     - yay
     - tmux/tmux
