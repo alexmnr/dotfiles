@@ -1,7 +1,6 @@
 dependencies:
   task:
     - tmux/tmux
-    - tmux/tmuxinator
     - zsh/config
 install:
   backup:
