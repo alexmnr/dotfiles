@@ -36,7 +36,13 @@ local plugins = {
   'joom/vim-commentary', -- auto comments with gc
   'windwp/nvim-autopairs', -- create auto brackets
   'mbbill/undotree', -- well its in the name...
-  'Pocco81/auto-save.nvim', -- auto save
+  {
+    "okuuva/auto-save.nvim",
+    event = { "InsertLeave", "TextChanged" }, -- optional for lazy loading on trigger events
+    opts = {
+      enabled = false
+    },
+  },
   'smolck/command-completion.nvim', -- better autocompletion in command mode
   ---- COC
   {'neoclide/coc.nvim', branch = 'release'},
