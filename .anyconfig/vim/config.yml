@@ -7,6 +7,7 @@ install:
   backup:
     - "{home}/.vimrc"
   mkdir:
+    - "{home}/.vim"
     - "{home}/.vim/colors"
   ln:
     - Linking .vimrc | {repo}/config/.vimrc > {home}/
