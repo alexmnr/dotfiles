@@ -1,5 +1,1 @@
-
-KGS/~$KGS.xlsx
-.vim/view/**
-.vim/undodir/**
-KGS/loot/Filewave/~$KGS-Notebooks.xlsx
+config/nvim/lazy-lock.json
