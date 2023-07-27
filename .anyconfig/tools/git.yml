@@ -3,4 +3,4 @@ install:
     - git config --global credential.helper store
     - git config --global user.name "Senaxius"
     - git config --global user.email "alexander.minor004@gmail.com"
-    - git config pull.rebase false
+    - git config --global pull.rebase false
