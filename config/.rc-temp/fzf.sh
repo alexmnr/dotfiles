@@ -18,6 +18,62 @@ function cs {
   done
 }
 
+function dd {
+  dirs= echo $(pushd) | tr " " "\n"
+  out=$(echo "$dirs" | fzf)
+}
+
+function c {
+  # create file
+  if [ ! -f $HOME/.config/cdirs ]; then
+    touch $HOME/.config/cdirs
+  fi
+  # add to file
+  if [ "$#" -eq 1 ]; then
+    if [ $1 = "edit" ]; then
+      $EDITOR $HOME/.config/cdirs
+      return
+    fi
+    if [ $1 = "." ]; then
+      dir="$(pwd)"
+      # add local pwd to file
+      if grep -Fxq "$dir" $HOME/.config/cdirs
+      then
+        return
+      else
+        echo "$dir" >> $HOME/.config/cdirs
+        return
+      fi
+    fi
+    if [ -d "$1" ]; then
+      dir="$1"
+      # add local pwd to file
+      if grep -Fxq "$dir" $HOME/.config/cdirs
+      then
+        return
+      else
+        echo "$dir" >> $HOME/.config/cdirs
+        return
+      fi
+    else
+      echo "This is not a dir: $1"
+      return
+    fi
+  fi
+  # if empty
+  if [ ! -s $HOME/.config/cdirs ]; then
+    echo "No directories in cache"
+    return
+  fi
+
+  dir=$(cat $HOME/.config/cdirs)
+  out=$(echo "$dir" | fzf)
+  if [[ -z "$out" ]]; then
+    return
+  fi
+  cd $out
+}
+
 # alias cs="cd ./$(fd . | fzf)"
 
 # export CONFIGURATION="--search-path $HOME/.config/nvim --search-path /home/ALEX"

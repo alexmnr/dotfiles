@@ -1,7 +1,6 @@
 # /home/senaex/.config/tmuxinator/anyconfig.yml
-
 name: anyconfig
-root: /home/ALEX/anyconfig-dev
+root: /opt/anyconfig
 
 windows:
   - main:
@@ -10,11 +9,6 @@ windows:
         - cd go && vim main.go
         - cd go && clear
   - dotfiles: cd /home/ALEX/dotfiles/.anyconfig && clear
-  # - testing:
-  #     layout: d392,211x52,0,0[211x36,0,0,5,211x15,0,37,6]
-  #     panes:
-  #       - cd testing && clear
-  #       - cd testing && clear
   - docker: cd docker && clear
   - old:
       layout: d392,211x52,0,0[211x36,0,0,5,211x15,0,37,6]

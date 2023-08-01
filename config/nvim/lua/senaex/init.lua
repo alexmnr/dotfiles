@@ -7,6 +7,18 @@ require("senaex.extensions")
 vim.api.nvim_set_option("clipboard","unnamedplus")
 vim.opt.termguicolors = true
 
+-- Neovide
+vim.g.neovide_scale_factor = 0.85
+local change_scale_factor = function(delta)
+  vim.g.neovide_scale_factor = vim.g.neovide_scale_factor * delta
+end
+vim.keymap.set("n", "<C-=>", function()
+  change_scale_factor(1.25)
+end)
+vim.keymap.set("n", "<C-->", function()
+  change_scale_factor(1/1.25)
+end)
+
 vim.cmd([[
   syntax on
   set number relativenumber
@@ -24,4 +36,4 @@ vim.cmd([[
   set showmatch
 
   set undofile
-]]) 
+]])
