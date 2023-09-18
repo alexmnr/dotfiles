@@ -1,0 +1,10 @@
+# /home/senaex/.config/tmuxinator/anyshell.yml
+
+name: anyshell
+root: /opt/anyshell/
+
+windows:
+  - editor: cd go && vim main.go
+  - server: clear
+  - anyconfig: cd /opt/anyconfig/go && vim main.go
+  - anyshell-old: cd /home/ALEX/anyshell/src && vim main.cpp

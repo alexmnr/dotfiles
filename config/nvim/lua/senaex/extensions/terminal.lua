@@ -2,7 +2,8 @@ require("toggleterm").setup{
   float_opts = {
     border = "curved",
     winblend = 3,
-  }
+  },
+  direction = "float",
 }
 -- local term = require("toggleterm")
 -- vim.keymap.set('n', '<leader>tt', function()

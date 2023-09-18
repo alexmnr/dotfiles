@@ -29,6 +29,7 @@ alias src="exec zsh"
 alias la="ls -alh"
 alias vi="sudo nvim"
 alias ipconfig="curl -s ifconfig.me | grep -o -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+alias localip="ip -o -4  address show  | awk ' NR==2 { gsub(/\/.*/, \"\", \$4); print \$4 } '"
 alias gis="git status"
 
 function gic {
