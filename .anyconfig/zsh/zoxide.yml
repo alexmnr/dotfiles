@@ -1,6 +1,8 @@
 dependencies:
   task:
     - zsh/config
+  os:
+    - arch
 install:
   pkg:
     - zoxide

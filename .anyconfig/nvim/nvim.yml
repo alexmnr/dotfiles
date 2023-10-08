@@ -13,6 +13,8 @@ dependencies:
   noCommand:
     - nvim
 install:
+  pkg:
+    - unzip
   mkdir:
     - "{home}/tmp"
   backup:
