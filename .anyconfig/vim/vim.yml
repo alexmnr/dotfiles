@@ -1,3 +1,6 @@
+dependencies:
+  noCommand:
+    - vim 
 install:
   pacman:
     - gvim
