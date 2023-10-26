@@ -21,6 +21,8 @@ install:
     - "{home}/tmp/neovim"
   mkdir:
     - "{home}/tmp/neovim"
+  cmd:
+    - "DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata"
   pkg:
     - cmake
     - make
