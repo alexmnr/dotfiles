@@ -3,4 +3,12 @@
     "vim"
   ],
   "snippets.ultisnips.pythonPrompt": false,
+  "languageserver":{
+    "arduino":{ 
+      "command":"/usr/bin/arduino-language-server",
+      "rootPatterns":["*.ino"],
+      "filetypes":["arduino"],
+      "args":["-cli", "/usr/bin/arduino-cli", "-clangd", "/usr/bin/clangd", "-cli-config", "/home/senaex/.arduino15/arduino-cli.yaml"]
+    }
+  }
 }
