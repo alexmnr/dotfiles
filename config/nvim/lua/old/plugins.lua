@@ -17,6 +17,10 @@ local plugins = {
   --- Navigation
   'nvim-telescope/telescope.nvim', -- fuzzy finder
   'nvim-telescope/telescope-file-browser.nvim', -- file browser
+  {
+    "stevearc/dressing.nvim",
+    event = "VeryLazy",
+  },
   'nvim-tree/nvim-tree.lua', -- file browser
   {'phaazon/hop.nvim', branch = 'v2'}, -- quickly hop to place
   --- Design
@@ -44,8 +48,8 @@ local plugins = {
     },
   },
   'smolck/command-completion.nvim', -- better autocompletion in command mode
+  ---- LSP
   ---- COC
-  {'neoclide/coc.nvim', branch = 'release'},
   {'neoclide/coc.nvim', branch = 'release'},
   ---- Testing
   'rcarriga/nvim-notify',
