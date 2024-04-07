@@ -13,7 +13,7 @@ fi
 if [ -d $HOME/Robot-Arm/ros/moveit_ws/install/ ]; then
   source $HOME/Robot-Arm/ros/moveit_ws/install/setup.zsh
 fi
-if [ -d $HOME/anytrack//install/ ]; then
+if [ -d $HOME/anytrack/install/ ]; then
   source $HOME/anytrack/install/setup.zsh
 fi
 
