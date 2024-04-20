@@ -29,7 +29,7 @@ return {
       ensure_installed = {
         "lua_ls",  -- Lua language server
         "pyright", -- Python language server
-        "cland",   -- c++/c language server
+        "clangd",  -- c++/c language server
         "gopls",   -- golang language server
       },
       -- auto-install configured servers (with lspconfig)
