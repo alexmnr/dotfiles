@@ -1,0 +1,10 @@
+# /home/senaex/.config/tmuxinator/anytrack.yml
+
+name: robot
+root: /home/ALEX/Robot-Arm/docker/
+
+windows:
+  - base: ./rosco run /home/ros/Robot-Arm/ros
+  - ressources: ./rosco run /home/ros/Robot-Arm/ressources
+  - build: ./rosco run /home/ros/Robot-Arm/ros
+  - foxlove: ./rosco run
