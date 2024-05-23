@@ -12,6 +12,9 @@ opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
 opt.wrap = false -- disable line wrapping
+vim.wo.wrap = false
+vim.wo.linebreak = false
+vim.wo.list = false -- extra option I set in addition to the ones in your question
 
 -- search settings
 opt.ignorecase = true -- ignore case when searching
