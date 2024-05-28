@@ -1,4 +1,4 @@
-prompt_symbol=⩓
+prompt_symbol=-
 
 if [ $(echo $HOST) = "Arch-PC" ]; then
     user_color=039
