@@ -3,4 +3,4 @@ dependencies:
     - kitty/kitty 
 install:
   ln:
-    - Linking kitty config | {repo}/config/kitty > {home}/.config/kitty
+    - Linking kitty config | {repo}/config/kitty > {home}/.config/

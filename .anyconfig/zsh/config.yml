@@ -9,4 +9,3 @@ install:
     - Linking .zshrc | {repo}/config/.zshrc > {home}
     - Linking AddIn-Folder | {repo}/config/.rc-temp > {home}
     - Linking theme senaex | {repo}/config/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
-    - Linking theme lennart | {repo}/config/lennart.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
