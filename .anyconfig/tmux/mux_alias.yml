@@ -1,4 +1,6 @@
 dependencies:
+  os: 
+    - arch
   task:
     - tmux/tmuxinator
     - zsh/config
