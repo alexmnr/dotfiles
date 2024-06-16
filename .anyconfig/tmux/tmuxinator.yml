@@ -2,7 +2,7 @@ dependencies:
   os: 
     - arch
   task:
-    - yay
+    - /arch/yay
     - tmux/tmux
   noCommand:
     - tmuxinator
@@ -11,3 +11,5 @@ install:
     - tmuxinator
   ln:
     - Linking workspaces | {repo}/config/tmuxinator > {home}/.config/
+  ln:
+    - Linking mux add-in | {home}/.rc-temp/mux.sh > {home}/.rc/
