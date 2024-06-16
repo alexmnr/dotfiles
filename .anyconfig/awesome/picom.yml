@@ -1,0 +1,10 @@
+dependencies:
+  user:
+    - noroot
+  os:
+    - arch
+install:
+  yay:
+    - picom-ftlabs-git
+  ln:
+    - Linking picom config | {repo}/config/picom > {home}/.config/

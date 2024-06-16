@@ -1,0 +1,3 @@
+install:
+  ln:
+    - Linking awesome folder | {repo}/config/awesome > {home}/.config/

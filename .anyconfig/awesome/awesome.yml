@@ -1,0 +1,10 @@
+dependencies:
+  os: 
+    - arch
+  task:
+    - /arch/yay
+  noCommand:
+    - awesome
+install:
+  yay:
+    - awesome-git
