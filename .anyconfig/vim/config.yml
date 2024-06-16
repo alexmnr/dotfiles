@@ -11,6 +11,6 @@ install:
     - "{home}/.vim/colors"
   ln:
     - Linking .vimrc | {repo}/config/.vimrc > {home}/
-    - Linking dalek colorscheme | {repo}/config/dalek.vim > {home}/.vim/colors/
+    - Linking dalek colorscheme | {repo}/config/vim/dalek.vim > {home}/.vim/colors/
   cmd:
     - vim -c :PlugInstall -c :q -c :q

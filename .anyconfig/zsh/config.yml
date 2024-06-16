@@ -3,9 +3,13 @@ dependencies:
     - zsh/zsh
     - zsh/ohmyzsh
 install:
+  backup:
+    - "{home}/.rc-temp"
+    - "{home}/.zshrc"
+    - "/usr/local/zsh/oh-my-zsh/themes/senaex.zsh-theme"
   mkdir:
     - "{home}/.rc"
   ln:
-    - Linking .zshrc | {repo}/config/.zshrc > {home}
-    - Linking AddIn-Folder | {repo}/config/.rc-temp > {home}
-    - Linking theme senaex | {repo}/config/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
+    - Linking .zshrc | {repo}/config/zsh/.zshrc > {home}
+    - Linking AddIn-Folder | {repo}/config/zsh/.rc-temp > {home}
+    - Linking theme senaex | {repo}/config/zsh/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
