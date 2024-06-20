@@ -1,6 +1,4 @@
 dependencies:
-  task:
-    - tools/nodejs
   os:
     - arch
 install:
@@ -14,8 +12,6 @@ install:
     - Linking nvim folder | {repo}/config/nvim > {home}/.config/
 
 dependencies:
-  task:
-    - tools/nodejs
   os:
     - debian
 install:
