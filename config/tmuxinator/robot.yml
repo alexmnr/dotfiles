@@ -1,10 +1,18 @@
 # /home/senaex/.config/tmuxinator/anytrack.yml
 
 name: robot
-root: /home/ALEX/Robot-Arm/docker/
+root: /home/senaex/Robot-Arm/docker/
 
 windows:
-  - base: ./rosco run /home/ros/Robot-Arm/ros
-  - ressources: ./rosco run /home/ros/Robot-Arm/ressources
-  - build: ./rosco run /home/ros/Robot-Arm/ros
-  - foxlove: ./rosco run
+  - main: ./rosco run /home/ros/Robot-Arm/ros/arctos_ws/src
+  - build: ./rosco run /home/ros/Robot-Arm/ros/arctos_ws
+  - vision: 
+      layout: 496e,189x51,0,0{94x51,0,0,8,94x51,95,0,9}
+      panes:
+        - ./rosco run /home/ros/Robot-Arm/ros/arctos_ws
+        - ./rosco run /home/ros/Robot-Arm/ros/arctos_ws
+  - moveit: 
+      layout: 496e,189x51,0,0{94x51,0,0,8,94x51,95,0,9}
+      panes:
+        - ./rosco run /home/ros/Robot-Arm/ros/arctos_ws
+        - ./rosco run /home/ros/Robot-Arm/ros/arctos_ws
