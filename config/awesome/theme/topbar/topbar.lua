@@ -14,6 +14,7 @@ local batteryarc_widget = require("theme.topbar.batteryarc")
 local fancy_taglist = require("theme.topbar.fancy_taglist")
 local taglist_buttons = require("theme.topbar.taglist")
 local tasklist_buttons = require("theme.topbar.tasklist")
+local systray = require("theme.topbar.systray")
 
 --Fancy taglist widget
 awful.screen.connect_for_each_screen(function(s)
@@ -69,6 +70,8 @@ mywibox:setup {
     {
       -- Right widgets
       layout = wibox.layout.fixed.horizontal,
+			systray,
+      separator,
       batteryarc_widget({
         show_current_level = true,
         arc_thickness = 3,
