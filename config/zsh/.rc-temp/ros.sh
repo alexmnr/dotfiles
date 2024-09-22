@@ -1,6 +1,9 @@
 if [ -d /opt/ros/humble/ ]; then
   source /opt/ros/humble/setup.zsh &> /dev/null
 fi
+if [ -d /opt/ros/jazzy/ ]; then
+  source /opt/ros/jazzy/setup.zsh &> /dev/null
+fi
 if [ -d $HOME/Robot-Arm/ros/arctos_ws/install/ ]; then
   source $HOME/Robot-Arm/ros/arctos_ws/install/local_setup.zsh
 fi
@@ -11,5 +14,5 @@ fi
 # export BUILD_ARGS="--symlink-install ${CLANG_BASE} --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 # alias cb="colcon build ${BUILD_ARGS}"
 
-eval "$(register-python-argcomplete3 ros2)"
-eval "$(register-python-argcomplete3 colcon)"
+eval "$(register-python-argcomplete ros2)"
+eval "$(register-python-argcomplete colcon)"
