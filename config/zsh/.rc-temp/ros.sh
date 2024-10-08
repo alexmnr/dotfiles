@@ -11,5 +11,11 @@ fi
 # export BUILD_ARGS="--symlink-install ${CLANG_BASE} --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 # alias cb="colcon build ${BUILD_ARGS}"
 
-eval "$(register-python-argcomplete3 ros2)"
-eval "$(register-python-argcomplete3 colcon)"
+if command -v register-python-argcomplete3 &> /dev/null; then
+  eval "$(register-python-argcomplete3 ros2)"
+  eval "$(register-python-argcomplete3 colcon)"
+fi
+if command -v register-python-argcomplete &> /dev/null; then
+  eval "$(register-python-argcomplete ros2)"
+  eval "$(register-python-argcomplete colcon)"
+fi
