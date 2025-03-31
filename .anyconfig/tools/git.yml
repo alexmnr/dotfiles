@@ -1,6 +1,5 @@
 install:
   cmd:
-    - git config --global credential.helper store
     - git config --global user.name "alexmnr"
     - git config --global user.email "alexander@minor.pw"
     - git config --global pull.rebase false
