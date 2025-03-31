@@ -11,5 +11,6 @@ install:
   cmd:
     - git clone https://github.com/tmux-plugins/tpm {home}/.tmux/plugins/tpm
   ln:
-    - Linking .tmux.conf | {repo}/config/tmux/.tmux.conf > {home}
-    - Linking tmux add-in | {home}/.rc-temp/tmux.sh > {home}/.rc/
+    - Linking .tmux.conf | {repo}/tmux/.tmux.conf > {home}
+  cp:
+    - Copy tmux add-in | {home}/.rc-temp/tmux.sh > {home}/.rc/

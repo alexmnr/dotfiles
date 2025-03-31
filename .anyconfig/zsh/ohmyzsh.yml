@@ -8,6 +8,8 @@ install:
     - git
   mkdir:
     - "{home}/.tmp"
+  backup:
+    - "/usr/local/zsh/oh-my-zsh/themes/senaex.zsh-theme"
   cmd:
     - Downloading installer | curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o {home}/.tmp/install.sh
     - chmod +x {home}/.tmp/install.sh

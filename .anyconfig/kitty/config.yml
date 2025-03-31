@@ -2,5 +2,7 @@ dependencies:
   task:
     - kitty/kitty 
 install:
+  backup:
+    - "{home}/.config/kitty"
   ln:
-    - Linking kitty config | {repo}/config/kitty > {home}/.config/
+    - Linking kitty config | {repo}/kitty > {home}/.config

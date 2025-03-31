@@ -10,6 +10,6 @@ install:
   yay:
     - tmuxinator
   ln:
-    - Linking workspaces | {repo}/config/tmuxinator > {home}/.config/
-  ln:
-    - Linking mux add-in | {home}/.rc-temp/mux.sh > {home}/.rc/
+    - Linking workspaces | {repo}/tmuxinator > {home}/.config/
+  cp:
+    - Copying mux add-in | {home}/.rc-temp/mux.sh > {home}/.rc/

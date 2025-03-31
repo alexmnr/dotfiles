@@ -4,5 +4,7 @@ dependencies:
     - nvim/config
     - zsh/config
 install:
-  ln:
+  backup:
+    - "{home}/.rc/nvim.sh"
+  cp:
     - "{home}/.rc-temp/nvim.sh > {home}/.rc"

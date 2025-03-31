@@ -6,10 +6,14 @@ install:
     - git
     - gcc
     - icu
+    - ripgrep
+    - npm
   mkdir:
     - "{home}/.config"
+  backup:
+    - "{home}/.config/nvim"
   ln:
-    - Linking nvim folder | {repo}/config/nvim > {home}/.config/
+    - Linking nvim folder | {repo}/nvim > {home}/.config/
 
 dependencies:
   os:
@@ -18,7 +22,11 @@ install:
   pkg:
     - git
     - gcc
+    - ripgrep
+    - npm
   mkdir:
     - "{home}/.config"
+  backup:
+    - "{home}/.config/nvim/"
   ln:
-    - Linking nvim folder | {repo}/config/nvim > {home}/.config/
+    - Linking nvim folder | {repo}/nvim > {home}/.config/

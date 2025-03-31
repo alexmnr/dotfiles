@@ -10,6 +10,6 @@ install:
   mkdir:
     - "{home}/.rc"
   ln:
-    - Linking .zshrc | {repo}/config/zsh/.zshrc > {home}
-    - Linking AddIn-Folder | {repo}/config/zsh/.rc-temp > {home}
-    - Linking theme senaex | {repo}/config/zsh/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
+    - Linking .zshrc | {repo}/zsh/.zshrc > {home}
+    - Linking AddIn-Folder | {repo}/zsh/.rc-temp > {home}
+    - Linking theme senaex | {repo}/zsh/senaex.zsh-theme > /usr/local/zsh/oh-my-zsh/themes
