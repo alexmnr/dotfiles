@@ -1,0 +1,10 @@
+dependencies:
+  task:
+    - gnome/gnome 
+install:
+  pkg:
+    - gnome-tweaks
+    - flatpak
+    - gnome-shell-extensions
+    - gnome-shell-extensions-common
+    - gnome-shell-extensions-manager
