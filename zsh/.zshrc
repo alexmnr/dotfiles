@@ -6,6 +6,14 @@ path+=(/usr/local/bin)
 if [ -d $HOME/bin ]; then
     path+=($HOME/bin)
 fi
+if [ -d $HOME/.local/bin ]; then
+    path+=($HOME/.local/bin)
+fi
+if [ -d $HOME/.platformio/penv/bin ]; then
+    path+=($HOME/.platformio/penv/bin)
+fi
+
+
 
 export ZSH="/usr/local/zsh/oh-my-zsh"
 export EDITOR='nvim'
