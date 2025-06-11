@@ -9,7 +9,7 @@ return {
 	},
 	config = function()
 		local builtin = require("telescope.builtin")
-		-- local fb_actions = require "telescope._extensions.file_browser.actions"
+		local fb_actions = require "telescope._extensions.file_browser.actions"
 		local actions = require("telescope.actions")
 		require("telescope").setup({
 			defaults = {
@@ -37,7 +37,12 @@ return {
 					prompt_path = true,
 					dir_icon = "",
 					hijack_netrw = true,
-					cwd_to_path = true,
+					cwd_to_path = false,
+          mappings = {
+            ["i"] = {
+              ["<C-d>"] = fb_actions.change_cwd,
+            },
+          }
 				},
 			},
 		})
