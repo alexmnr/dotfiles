@@ -1,6 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	branch = "0.1.x",
+	-- branch = "0.1.x",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -45,10 +45,9 @@ return {
 
 		---------- Keybindings -----------
 		vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-		vim.keymap.set("n", "<leader>fa", "<cmd>Telescop find_files search_dirs=/home/ALEX<CR>", {})
 		vim.keymap.set("n", "<leader>fh", "<cmd>Telescop find_files search_dirs=~<CR>", {})
 		vim.keymap.set("n", "<leader>fr", "<cmd>Telescop find_files search_dirs=/<CR>", {})
-		vim.keymap.set("n", "<c-f>", builtin.find_files, {})
+		vim.keymap.set("n", "<leader>fd", "<cmd>Telescop lsp_document_symbols<CR>", {})
 		vim.keymap.set("n", "<leader>fg", builtin.git_files, {})
 		vim.keymap.set("n", "<leader>ft", builtin.live_grep, {})
 		----------- Filebrowser -----------
