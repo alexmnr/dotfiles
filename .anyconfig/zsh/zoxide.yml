@@ -1,6 +1,6 @@
 dependencies:
   task:
-    - zsh 
+    - zsh/zsh
     - zsh/config 
   noCommand:
     - zoxide 
@@ -8,6 +8,7 @@ dependencies:
     - noroot
   os:
     - debian
+
 install:
   apt:
     - zoxide
