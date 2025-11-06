@@ -4,8 +4,6 @@ dependencies:
     - zsh/config 
   noCommand:
     - zoxide 
-  user:
-    - noroot
   os:
     - debian
 

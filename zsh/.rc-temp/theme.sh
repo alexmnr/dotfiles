@@ -1,0 +1,6 @@
+export PROMPT_SYMBOL='-'
+export USER_COLOR=220
+export LINE_COLOR=202
+export DIR_COLOR=220
+export GIT_COLOR=039
+export PYTHON_ENV_COLOR=039

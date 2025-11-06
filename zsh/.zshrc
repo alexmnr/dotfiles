@@ -25,6 +25,7 @@ ZSH_THEME="senaex"
 plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+  virtualenv
 )
 
 ZSH_DISABLE_COMPFIX=true
