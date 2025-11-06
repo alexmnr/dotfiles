@@ -66,12 +66,14 @@ vim.lsp.config("gopls", {
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+vim.lsp.enable("gopls")
 
 -- configure python server
 vim.lsp.config("pyright", {
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
+vim.lsp.enable("pyright")
 
 -- configure c++ server
 vim.lsp.config("clangd", {
@@ -82,6 +84,38 @@ vim.lsp.config("clangd", {
     "--offset-encoding=utf-16",
   },
 })
+vim.lsp.enable("clangd")
+
+-- -- configure arduino server
+-- vim.lsp.config("arduino_language_server", {
+--   capabilities = {
+--     textDocument = {
+--       semanticTokens = vim.NIL,
+--     },
+--     workspace = {
+--       semanticTokens = vim.NIL,
+--     },
+--   },
+--   
+--   cmd = {
+--     "arduino-language-server",
+--     "-cli-config",
+--     "path to your cli configs go here",
+--     "-fqbn",
+--     "arduino:avr:exampleText",
+--     "-cli",
+--     "arduino-cli",
+--     "-clangd",
+--     "clangd",
+--   },
+--   
+--   filetypes = { "arduino" },
+--   
+--   root_dir = function(bufnr, on_dir)
+--     on_dir(vim.fn.expand "%:p:h")
+--   end,
+-- })
+-- vim.lsp.enable("arduino_language_server")
 
 -- configure lua server (with special settings)
 vim.lsp.config("lua_ls", {
