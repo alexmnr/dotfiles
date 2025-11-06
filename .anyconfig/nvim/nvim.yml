@@ -5,6 +5,8 @@ dependencies:
     - nvim
 install:
   pkg:
+    - unzip
+    - yarn
     - neovim
 
 dependencies:
@@ -15,6 +17,7 @@ dependencies:
 install:
   pkg:
     - unzip
+    - yarn
   mkdir:
     - "{home}/tmp"
   backup:
