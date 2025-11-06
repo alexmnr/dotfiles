@@ -86,6 +86,14 @@ vim.lsp.config("clangd", {
 })
 vim.lsp.enable("clangd")
 
+-- configure bash server
+vim.lsp.config("bashls", {
+	capabilities = capabilities,
+	on_attach = on_attach,
+  filetypes = { 'sh', 'bash', 'zsh-theme' },
+})
+vim.lsp.enable("bashls")
+
 -- -- configure arduino server
 -- vim.lsp.config("arduino_language_server", {
 --   capabilities = {

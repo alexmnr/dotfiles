@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "senaex.plugins" }, { import = "senaex.plugins.lsp" } }, {
+require("lazy").setup({{ import = "senaex.plugins" }}, {
 	install = {
 		colorscheme = { "carbonfox" },
 	},
