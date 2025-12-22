@@ -30,6 +30,11 @@ plugins=(
 
 ZSH_DISABLE_COMPFIX=true
 
+if [ -f ~/.rc/theme.sh ]; then
+  source ~/.rc/theme.sh
+fi
+source $ZSH/oh-my-zsh.sh
+
 ###################Aliases#################
 alias rc="vim ~/.zshrc"
 alias vrc="vim ~/.vimrc"
@@ -51,5 +56,3 @@ if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
     source $f
   done
 fi
-
-source $ZSH/oh-my-zsh.sh
