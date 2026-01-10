@@ -6,8 +6,6 @@ vim.keymap.set({ "n", "v" }, "H", "^^")
 vim.keymap.set({ "n", "v" }, "L", "$")
 vim.keymap.set({ "n", "v" }, "K", "5k")
 vim.keymap.set({ "n", "v" }, "J", "5j")
-vim.keymap.set("n", "<C-j>", ":m .+1<CR>==")
-vim.keymap.set("n", "<C-k>", ":m .-2<CR>==")
 ------------- Window -------------
 vim.keymap.set("n", "<C-l>", "<C-w>l", {})
 vim.keymap.set("n", "<leader>v", "<C-w>v", {})
@@ -40,4 +38,3 @@ vim.cmd([[
   nnoremap C "_C
   vnoremap C "_C
 ]])
--- ------------- Unused --------------
