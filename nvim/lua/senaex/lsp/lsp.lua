@@ -17,8 +17,8 @@ local on_attach = function(client, bufnr)
   opts.desc = "Apply Fix"
   keymap.set("n", "gf", vim.lsp.buf.code_action, opts)
 
-  opts.desc = "Show LSP references"
-  keymap.set("n", "gr", vim.lsp.buf.references, opts)
+  -- opts.desc = "Show LSP references"
+  -- keymap.set("n", "gr", vim.lsp.buf.references, opts)
 
   -- opts.desc = "Go to declaration"
   -- keymap.set("n", "gd", vim.lsp.buf.declaration, opts)
@@ -36,7 +36,7 @@ local on_attach = function(client, bufnr)
   keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts) -- see available code actions, in visual mode will apply to selection
 
   opts.desc = "Smart rename"
-  keymap.set("n", "gc", vim.lsp.buf.rename, opts) -- smart rename
+  keymap.set("n", "gr", vim.lsp.buf.rename, opts) -- smart rename
 
   opts.desc = "Show buffer diagnostics"
   keymap.set("n", "gE", "<cmd>Telescope diagnostics bufnr=0<CR>", opts) -- show  diagnostics for file
