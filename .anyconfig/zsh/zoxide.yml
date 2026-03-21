@@ -1,0 +1,14 @@
+dependencies:
+  task:
+    - zsh/zsh
+    - zsh/config 
+  noCommand:
+    - zoxide 
+  os:
+    - debian
+
+install:
+  apt:
+    - zoxide
+  cp:
+    - "{home}/.rc-temp/zoxide.sh > {home}/.rc"

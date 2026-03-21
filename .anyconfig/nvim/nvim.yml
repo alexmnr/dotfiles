@@ -1,0 +1,12 @@
+dependencies:
+  noCommand:
+    - nvim
+install:
+  mkdir:
+    - "{home}/tmp"
+  cmd:
+    - Downloading latest version of neovim | cd {home}/tmp && curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+    - Removing old versions of neovim | sudo rm -rf /opt/nvim-linux-x86_64
+    - Unpacking neovim | cd {home}/tmp && sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+  ln:
+    - Linking nvim binary | /opt/nvim-linux-x86_64/bin/nvim > /usr/bin

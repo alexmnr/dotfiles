@@ -1,0 +1,13 @@
+It's ok to save all donf settings like this :
+
+dconf dump / > dconf-settings.ini
+
+But you have to restore them like that ! :
+
+dconf load / < dconf-settings.ini
+
+
+Extensions installed:
+- Blur my shell
+- Dash to Panel
+- Forge

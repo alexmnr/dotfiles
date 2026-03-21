@@ -1,0 +1,6 @@
+dependencies:
+  noCommand:
+    - kitty 
+install:
+  pkg:
+    - kitty

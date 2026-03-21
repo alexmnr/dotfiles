@@ -1,0 +1,16 @@
+dependencies:
+  task:
+    - tmux/tmux
+    - zsh/config
+install:
+  backup:
+    - "{home}/.tmux"
+    - "{home}/.tmux.conf"
+  mkdir:
+    - "{home}/.tmux"
+  cmd:
+    - git clone https://github.com/tmux-plugins/tpm {home}/.tmux/plugins/tpm
+  ln:
+    - Linking .tmux.conf | {repo}/tmux/.tmux.conf > {home}
+  cp:
+    - Copy tmux add-in | {home}/.rc-temp/tmux.sh > {home}/.rc/
