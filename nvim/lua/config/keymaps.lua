@@ -31,6 +31,7 @@ vim.keymap.set("n", "yH", "y^", {}) -- yank till beginning
 ------------ Terminal -------------
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", {})
 ------------- dont yank when changing --------------
+vim.keymap.set("x", "p", "P", { silent = true })
 vim.cmd([[
   nnoremap c "_c
   vnoremap c "_c
