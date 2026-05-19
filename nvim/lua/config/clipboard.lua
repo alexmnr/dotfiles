@@ -17,4 +17,5 @@ vim.g.clipboard = {
   },
 }
 
-vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+-- vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
+vim.opt.clipboard:append { 'unnamedplus' }
