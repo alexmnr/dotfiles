@@ -3,12 +3,9 @@ dependencies:
     - zsh/zsh
     - zsh/config
 install:
+  pkg:
+    - fzf
   backup:
-    - "{home}/.fzf"
-    - "{home}/.fzf.zsh"
     - "{home}/.rc/fzf.sh"
-  cmd:
-    - clone fzf repo | git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-    - Installing fzf | ~/.fzf/install --key-bindings --no-completion --no-update-rc
   cp:
     - "{home}/.rc-temp/fzf.sh > {home}/.rc"
