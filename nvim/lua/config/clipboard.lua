@@ -1,9 +1,9 @@
-local function paste()
-  return {
-    vim.fn.split(vim.fn.getreg(""), "\n"),
-    vim.fn.getregtype(""),
-  }
-end
+-- local function paste()
+--   return {
+--     vim.fn.split(vim.fn.getreg(""), "\n"),
+--     vim.fn.getregtype(""),
+--   }
+-- end
 
 vim.g.clipboard = {
   name = "OSC 52",
@@ -12,10 +12,9 @@ vim.g.clipboard = {
     ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
   },
   paste = {
-    ["+"] = paste,
-    ["*"] = paste,
+    ['+'] = require('vim.ui.clipboard.osc52').paste('+'),
+    ['*'] = require('vim.ui.clipboard.osc52').paste('*'),
   },
 }
 
--- vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
 vim.opt.clipboard:append { 'unnamedplus' }
