@@ -29,6 +29,10 @@ alias ls='ls --color=auto'
 alias la="ls -alh"
 alias src="source ~/.zshrc"
 
+### Keybindings
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
+
 ### Load aditional configs from ~/.rc
 if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
   for f in ~/.rc/*
