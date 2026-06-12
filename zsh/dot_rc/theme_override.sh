@@ -1,3 +1,11 @@
+# Pink
+export PROMPT_SYMBOL='-'
+export USER_COLOR=219
+export LINE_COLOR=201
+export DIR_COLOR=219
+export GIT_COLOR=039
+export PYTHON_ENV_COLOR=039
+# Yellow
 export PROMPT_SYMBOL='-'
 export USER_COLOR=220
 export LINE_COLOR=202
