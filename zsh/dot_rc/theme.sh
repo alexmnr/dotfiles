@@ -25,7 +25,8 @@ if [ -n "$PYTHON_ENV_COLOR" ]; then
   python_env_color=$PYTHON_ENV_COLOR
 fi
 
-if [ $(echo $USER) = "root" ]; then
+# Root colors
+if [[ $EUID -eq 0 ]]; then
   user_color=197
   line_color=202
   dir_color=205

@@ -1,6 +1,0 @@
-dependencies:
-  noCommand:
-    - tmux
-install:
-  pkg:
-    - tmux

@@ -2,7 +2,7 @@
 source /opt/ros/jazzy/setup.zsh &> /dev/null
 
 # source ros workspace(s)
-source $HOME/<path-to-workspace>/install/local_setup.zsh
+source $HOME/ros2_ws/install/local_setup.zsh
 
 # autocompletion
 if command -v register-python-argcomplete3 &> /dev/null; then

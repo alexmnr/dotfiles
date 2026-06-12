@@ -1,0 +1,37 @@
+#!/bin/zsh
+### Path
+typeset -U path
+path+=(/usr/sbin)
+path+=(/usr/local/bin)
+if [ -d $HOME/bin ]; then
+    path+=($HOME/bin)
+fi
+if [ -d $HOME/.local/bin ]; then
+    path+=($HOME/.local/bin)
+fi
+
+### History
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
+
+### Plugins
+autoload -U compinit; compinit
+zstyle ':completion:*' menu select
+source ~/.zsh/fzf-tab/fzf-tab.plugin.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+### Aliases
+alias la="ls -alh"
+alias src="source ~/.zshrc"
+
+### Load aditional configs from ~/.rc
+if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
+  for f in ~/.rc/*
+  do
+    source $f
+  done
+fi
