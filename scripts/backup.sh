@@ -1,6 +1,6 @@
 #!/bin/bash
 BACKUP_SCRIPT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
-source ${BACKUP_SCRIPT_DIR}/visual_tools.sh
+source "${BACKUP_SCRIPT_DIR}/visual_tools.sh"
 
 backup() {
   local target_path="$1"
@@ -11,8 +11,8 @@ backup() {
     return 1
   fi
 
-  # Check if the file/directory actually exists
-  if [[ ! -e "$target_path" ]]; then
+  # Check if the file/directory actually exists OR if it's a soft link (-L)
+  if [[ ! -e "$target_path" && ! -L "$target_path" ]]; then
     return 0
   fi
 
@@ -31,13 +31,14 @@ backup() {
   fi
 
   # Create the backup directory if it doesn't exist
-  mkdir -p "$backup_dir"
-  # Perform the backup 
-  mv "$target_path" "$destination"
-  # Verify success
-  if ! [[ $? -eq 0 ]]; then
-    log_error "Failed to create backup."
+  if ! mkdir -p "$backup_dir"; then
+    log_error "Failed to create backup directory: $backup_dir"
+    return 1
+  fi
+
+  # Perform the backup and verify success in a single step
+  if ! mv "$target_path" "$destination"; then
+    log_error "Failed to create backup. The move operation encountered an error."
     return 1
   fi
 }
-
