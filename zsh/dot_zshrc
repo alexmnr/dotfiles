@@ -35,6 +35,7 @@ alias -g .....='../../../...'
 ### Keybindings
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
+bindkey '^[[3;5~' kill-word
 
 ### Load aditional configs from ~/.rc
 if [ -n "$(ls -A ~/.rc 2>/dev/null)" ]; then
