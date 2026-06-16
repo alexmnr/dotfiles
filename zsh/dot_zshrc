@@ -28,6 +28,9 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 alias ls='ls --color=auto'
 alias la="ls -alh"
 alias src="source ~/.zshrc"
+alias -g ...='../..'
+alias -g ....='../../..'
+alias -g .....='../../../...'
 
 ### Keybindings
 bindkey '^[[1;5C' forward-word
