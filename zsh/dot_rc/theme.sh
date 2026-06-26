@@ -1,3 +1,6 @@
+setopt PROMPT_SUBST
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 prompt_symbol=-
 if [ -n "$PROMPT_SYMBOL" ]; then
   prompt_symbol=$PROMPT_SYMBOL
@@ -33,11 +36,11 @@ if [[ $EUID -eq 0 ]]; then
 fi
 
 username() {
-  echo "%F{$user_color}%B%n $prompt_symbol %m%b"
+  echo "%F{$user_color}%B%n $prompt_symbol %m%b%f"
 }
 
 current_dir() {
-  echo "%B%F{$dir_color}%(6~.%-1~/…/%4~.%5~)%b"
+  echo "%B%F{$dir_color}%(6~.%-1~/…/%4~.%5~)%b%f"
 }
 
 conda_prompt_info() {
@@ -47,29 +50,29 @@ conda_prompt_info() {
 }
 
 venv_prompt_info() {
-  if [ -n "$VIRTUAL_ENV_PROMPT" ]; then
-    echo -n "%B($VIRTUAL_ENV_PROMPT)%b"
+  if [ -n "$VIRTUAL_ENV" ]; then
+    echo -n "%B($(basename $VIRTUAL_ENV))%b"
   fi
 }
 
 git_info() {
   local repo_path
-  if repo_path="$(__git_prompt_git rev-parse --show-toplevel 2>/dev/null)" && [[ -n "$repo_path" ]]; then
-    echo "%B($(git_repo_name) --> $(git_current_branch))%b"
-  else
-    echo ""
+  if repo_path="$(git rev-parse --show-toplevel 2>/dev/null)" && [[ -n "$repo_path" ]]; then
+    local repo_name="$(basename "$repo_path")"
+    local branch_name="$(git branch --show-current 2>/dev/null)"
+    echo "%B($repo_name --> $branch_name)%b"
   fi
 }
 
-
-local git='%F{$git_color}$(git_info)'
-
-local conda_info='%B%F{$python_env_color}$(conda_prompt_info)%b'
+local git="%F{$git_color}\$(git_info)%f"
+local conda_info="%B%F{$python_env_color}\$(conda_prompt_info)%b%f"
 
 ZSH_THEME_VIRTUALENV_PREFIX="("
 ZSH_THEME_VIRTUALENV_SUFFIX=")"
-local venv_info='%B%F{$python_env_color}$(virtualenv_prompt_info)%b'
 
-PROMPT="%F{$line_color}┌──($(username)%F{$line_color})-[$(current_dir)%F{$line_color}]  
-└─%B%F{$user_color}$%b%F{reset} "
+local venv_info="%B%F{$python_env_color}\$(venv_prompt_info)%b%f"
+
+PROMPT="%F{$line_color}┌──(\$(username)%F{$line_color})-[\$(current_dir)%F{$line_color}]  
+└─%B%F{$user_color}$%b%f "
+
 RPROMPT="${git}  ${conda_info} ${venv_info}"
