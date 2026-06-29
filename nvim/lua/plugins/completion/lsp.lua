@@ -118,6 +118,34 @@ return {
       },
     })
     vim.lsp.enable("lua_ls")
+
+    -- Define the path to the Vue language server (assuming installation via Mason)
+    local vue_language_server_path = vim.fn.stdpath("data") .. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
+
+    -- Configure TypeScript server (REQUIRED by vue_ls)
+    vim.lsp.config("ts_ls", {
+      capabilities = capabilities,
+      on_attach = on_attach,
+      init_options = {
+        plugins = {
+          {
+            name = "@vue/typescript-plugin",
+            location = vue_language_server_path,
+            languages = { "vue" },
+          },
+        },
+      },
+      -- Make sure "vue" is added to the filetypes so ts_ls attaches to your components
+      filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+    })
+    vim.lsp.enable("ts_ls")
+
+    -- Configure Vue server (handles template + CSS)
+    vim.lsp.config("vue_ls", {
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+    vim.lsp.enable("vue_ls")
   end,
 }
 
