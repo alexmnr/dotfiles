@@ -40,6 +40,8 @@ return {
           mappings = {
             ["i"] = {
               ["<C-d>"] = fb_actions.change_cwd,
+              ["<C-c>"] = fb_actions.create,
+              ["<C-r>"] = fb_actions.rename,
             },
           }
 				},
