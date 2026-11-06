@@ -55,6 +55,15 @@ venv_prompt_info() {
   fi
 }
 
+distrobox_prompt_info() {
+  [[ -n "${CONTAINER_ID:-}" ]] || return 0
+
+  # Escape percent signs so the name is displayed literally.
+  local box_name="${CONTAINER_ID//\%/%%}"
+
+  print -nr -- " %B%F{${DISTROBOX_COLOR:-117}}[box:${box_name}]%b%f"
+}
+
 git_info() {
   local repo_path
   if repo_path="$(git rev-parse --show-toplevel 2>/dev/null)" && [[ -n "$repo_path" ]]; then
@@ -72,7 +81,7 @@ ZSH_THEME_VIRTUALENV_SUFFIX=")"
 
 local venv_info="%B%F{$python_env_color}\$(venv_prompt_info)%b%f"
 
-PROMPT="%F{$line_color}┌──(\$(username)%F{$line_color})-[\$(current_dir)%F{$line_color}]  
+PROMPT="%F{$line_color}┌──(\$(username)%F{$line_color})-[\$(current_dir)%F{$line_color}]\$(distrobox_prompt_info)%F{$line_color}
 └─%B%F{$user_color}$%b%f "
 
 RPROMPT="${git}  ${conda_info} ${venv_info}"
